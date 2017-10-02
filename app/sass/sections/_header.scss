@@ -1,0 +1,30 @@
+.bl_fullNavigation {
+  position: relative;
+  width: 100%;
+  background-color: $color_blue;
+  min-height: 28px;
+  color: #fff;
+}
+
+
+
+  .bl_nav {
+    position: relative;
+    height: 100%;
+    width: 100%;
+  }
+  .bl_nav__fullItems {
+
+    width: 100%;
+    height: 100%;
+  }
+
+  .bl_nav__item {
+    float: left;
+
+    height: 100%;
+    line-height: 2;
+    text-align: center;
+    margin-right: 4.5%; ////////// 30px
+
+  }
