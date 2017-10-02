@@ -1,0 +1,10 @@
+node_modules
+backupJSOn
+.idea
+idea/
+prepros.cfg
+
+app/css/components/
+app/css/helpers/
+app/css/sections/
+app/css/vendors/
