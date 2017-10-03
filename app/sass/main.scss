@@ -10,9 +10,7 @@
 /*FONTS*/
 /*********************************************/
 
-@include font-face("Tahoma", "../fonts/Tahoma/Tahoma", 400, normal, eot ttf woff);
-@include font-face("TahomaBold", "../fonts/TahomaBold/Tahoma-Bold", 700, normal, eot ttf woff);
-@include font-face("CalibriBold", "../fonts/CalibriBold/CalibriBold", 700, normal, eot ttf woff);
+
 @include font-face("FontAwesome", "../fonts/FontAwesome/FontAwesome", 400, normal, eot ttf woff woff2);
 
 /*********************************************/
@@ -25,12 +23,12 @@ body {
 }
 
 body {
-  font-family: Tahoma, sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 16px;
   font-weight: 400;
   min-width: 320px;
   position: relative;
-  background-color: $color_lightGrey;
+
 
   display: -webkit-box;
   display: flex;
@@ -139,7 +137,7 @@ textarea {
   }
 
   &::placeholder {
-    color: $color_blue;
+    color: #000;
     opacity: 1;
     transition: opacity .3s;
   }
@@ -186,10 +184,8 @@ textarea {
   position: relative;
   width: 100%;
   min-width: 320px;
-  //height: 100%;
   padding: 0;
   margin: 0 !important;
-  //overflow: hidden;
 }
 
 
@@ -261,8 +257,6 @@ textarea {
       display: block;
       width: 16px;
       height: 30px;
-      //background: url("../image/arrow_right.svg") 50% 50% no-repeat;
-
     }
 
   }
@@ -323,8 +317,8 @@ textarea {
 }
 
 .arrow-prev__hover {
-  background-color: $color_blue !important;
-  border-color: $color_blueDark !important;
+  //background-color: $color_blue !important;
+  //border-color: $color_blueDark !important;
 }
 
 .product_image__slider.owl-carousel .owl-nav {
@@ -341,7 +335,7 @@ textarea {
     width: 30px;
     height: 50px;
 
-    background-color: $color_blue;
+    //background-color: $color_blue;
     box-sizing: border-box;
 
     z-index: 11;
@@ -363,7 +357,7 @@ textarea {
     }
 
     &:hover {
-      background-color: $color_blue2;
+      //background-color: $color_blue2;
     }
 
   }
@@ -455,8 +449,8 @@ textarea {
     position: relative;
     display: inline-block;
     padding-right: 4%;
-    color: $color_grey2;
-    font-family: $Tahoma;
+    color: $color_grey;
+    font-family: $OpenSans;
     font-size: 14px;
     font-weight: 400;
     text-decoration: underline;
@@ -482,7 +476,7 @@ textarea {
   &__active {
     display: inline-block;
     text-decoration: none;
-    font-family: $TahomaBold;
+    font-family: $OpenSans;
   }
 
 }
@@ -500,17 +494,17 @@ textarea {
 
   box-sizing: border-box;
   transition: all 0.2s;
-  border: 1px solid $color_blue;
+  //border: 1px solid $color_blue;
 
-  background-color: #fff;
-  color: $color_blue;
+  //background-color: #fff;
+  //color: $color_blue;
 
   border-radius: 24px;
 
   &:hover {
     transition: all 0.2s;
     color: white;
-    background-color: $color_blue;
+    //background-color: $color_blue;
   }
 
 }
@@ -547,12 +541,12 @@ textarea {
 }
 
 .bl_filters__allFilters .btn-danger {
-  background-color: $color_blue;
-  border-color: $color_blueDark;
+  //background-color: $color_blue;
+  //border-color: $color_blueDark;
 }
 
 .bl_filters__allFilters .ocfilter-option .fa-times {
-  color: $color_red;
+  //color: $color_red;
 }
 
 .ocfilter-option{
@@ -594,7 +588,7 @@ textarea {
     color: #000;
 
     box-sizing: border-box;
-    font-family: $Tahoma;
+    font-family: $OpenSans;
     font-size: 16px;
     line-height: 34px;
 
@@ -655,7 +649,7 @@ textarea {
 
     &:focus,
     &:active {
-      background-color: $color_blue2;
+      //background-color: $color_blue2;
       color: #000 !important;
     }
   }
@@ -677,7 +671,7 @@ textarea {
 
 .catalog_article__title {
   color: #333;
-  font-family: $TahomaBold;
+  font-family: $OpenSans;
   font-size: 18px;
   line-height: 24px;
 }
@@ -699,7 +693,7 @@ textarea {
 
 .error_text {
   font-size: 16px;
-  color: $color_red;
+  color: #f00;
 }
 
 /// success Buying
@@ -713,7 +707,7 @@ textarea {
   left: calc(50% - 150px);
 
   background-color: #fff;
-  border: 2px solid $color_blue;
+  //border: 2px solid $color_blue;
   text-align: center;
 
   z-index: 1080;
@@ -751,7 +745,7 @@ textarea {
 
   &:hover {
     .decor_icon__close {
-      color: $color_blue2;
+      color: #f00;
     }
   }
 }
@@ -761,64 +755,7 @@ textarea {
   height: 100%;
   display: block;
   font-size: 22px;
-  color: $color_blue;
-}
-
-.animated {
-  animation-duration: 1s;
-  animation-fill-mode: both;
-}
-
-.bounceInDown {
-  animation-name: bounceInDown;
-}
-
-@keyframes bounceInDown {
-  from, 60%, 75%, 90%, to {
-    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
-  }
-
-  0% {
-    opacity: 0;
-    transform: translate3d(0, -3000px, 0);
-  }
-
-  60% {
-    opacity: 1;
-    transform: translate3d(0, 25px, 0);
-  }
-
-  75% {
-    transform: translate3d(0, -10px, 0);
-  }
-
-  90% {
-    transform: translate3d(0, 5px, 0);
-  }
-
-  to {
-    transform: none;
-  }
-}
-
-.bounceOutUp {
-  animation-name: bounceOutUp;
-}
-
-@keyframes bounceOutUp {
-  20% {
-    transform: translate3d(0, -10px, 0);
-  }
-
-  40%, 45% {
-    opacity: 1;
-    transform: translate3d(0, 20px, 0);
-  }
-
-  to {
-    opacity: 0;
-    transform: translate3d(0, -2000px, 0);
-  }
+  color: #000;
 }
 
 // popup_likeShopbag
@@ -844,7 +781,7 @@ textarea {
 
   transform: translate(-50%, -50%);
   background-color: #fff;
-  border: 2px solid $color_blue;
+  //border: 2px solid $color_blue;
   padding: 20px 20px;
   z-index: 1080;
 }
@@ -856,14 +793,14 @@ textarea {
 
   width: 12px;
   height: 12px;
-  color: $color_blue;
+  //color: $color_blue;
   background: none;
   font-size: 18px;
   font-weight: 400;
   z-index: 4;
 
   &:hover {
-    color: $color_pink;
+    //color: $color_pink;
   }
 }
 
@@ -884,7 +821,7 @@ textarea {
 }
 
 .button_buyProduct {
-  background-color: $color_blue;
+  //background-color: $color_blue;
   min-height: 30px;
   &:hover {
     background-color: #157dd0;
@@ -915,237 +852,6 @@ textarea {
     color: #fff;
   }
 }
-
-// SHOPING BAG
-
-.bl_receiver,
-.bl_deliveryMethod {
-  margin-top: 32px;
-  padding: 10px 65px;
-  height: 100%;
-  min-height: 500px;
-  background-color: #fff;
-
-  .text_title {
-    color: $color_blue;
-    padding-bottom: 6px;
-    border-bottom: 1px solid #eee;
-  }
-}
-
-.form-group {
-  margin: 0;
-
-  input, textarea, select {
-    outline: none;
-    border: 1px solid #d7d7d7;
-    box-shadow: 0 0 0 #0160ac;
-
-    &:focus {
-      box-shadow: 0 0 6px $color_blue;
-    }
-  }
-
-}
-
-.personal-form-review .form-control,
-.personal-form-review .bl_review__raiting {
-  margin-top: 16px;
-  //height: 30px;
-}
-
-.form-lineStyle {
-  width: 100%;
-}
-
-.form_telephone {
-  clear: both;
-}
-
-.text_paragraph {
-  position: relative;
-  margin: 0;
-  padding: 0;
-  font-family: $TahomaBold;
-  color: #333;
-  font-size: 13px;
-  line-height: 30px;
-}
-
-.text_decor__importantField {
-  &:before {
-    position: absolute;
-    top: 0;
-    left: -10px;
-    content: "*";
-    color: #de0d16;
-    font-family: $Tahoma;
-    font-size: 16px;
-    line-height: 30px;
-  }
-}
-
-.shoppingBasket_label {
-  position: relative;
-  width: 100%;
-  cursor: pointer;
-}
-
-.shoppingBasket_input {
-  position: absolute;
-  visibility: hidden;
-}
-
-.shoppingBasket_text {
-  position: relative;
-  width: 100%;
-
-  margin-top: 3px;
-  color: #333;
-  font-size: 15px;
-  font-family: $TahomaBold;
-  line-height: 16px;
-
-  &:before {
-    position: absolute;
-    top: 2px;
-    left: -18px;
-    content: "";
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background-color: white;
-    border: 1px solid $color_grey4;
-    z-index: 2;
-  }
-}
-
-.shoppingBasket_label input:checked + .shoppingBasket_text {
-
-  &:before {
-    border-color: $color_pink;
-  }
-
-  &:after {
-    content: "";
-    position: absolute;
-    top: 4px;
-    left: -16px;
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background-color: #de0d16;
-
-    z-index: 3;
-  }
-}
-
-.group_selects {
-  margin-top: 14px;
-  width: 100%;
-}
-
-#cart_table {
-  background-color: #fff;
-  padding: 0 15px
-}
-
-.shoppingBasket_product {
-  clear: both;
-  width: 100%;
-  margin-top: 0;
-}
-
-.boredr_bottom {
-
-  border-top: 1px solid red;
-}
-
-.table_title {
-  display: block;
-  width: 100%;
-  color: $color_blue;
-  font-family: $TahomaBold;
-  font-size: 15px;
-  text-transform: uppercase;
-  text-align: center;
-
-}
-
-.table_title__left {
-  text-align: left;
-}
-
-.shoppingBasket_product__good {
-  border-bottom: 1px solid #eee;
-  padding: 8px 0;
-}
-
-.shoppingBasket_product__title {
-  padding-bottom: 3px;
-  border-bottom: 1px solid $color_blue;
-}
-
-.shoppingBasket_product__item {
-  clear: both;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  width: 100%;
-  min-height: 80px;
-  margin-top: 0;
-  text-align: center;
-
-}
-
-.shoppingBasket_product__wrapper {
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-
-.wrapperButton {
-  float: left;
-  display: inline-block;
-  position: relative;
-  height: 100%;
-  min-height: 120px;
-}
-
-.delite_product {
-  position: absolute;
-  left: 0;
-  top: 35%;
-  width: 24px;
-  height: 24px;
-  background: transparent;
-  color: $color_red;
-  font-size: 24px;
-
-  &:before {
-
-    content: "\f05c";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
-    font-family: $FontAwesom;
-
-    font-size: 24px;
-    z-index: 2;
-  }
-
-  &:hover {
-    color: $color_pink;
-  }
-
-}
-///////////////////
-
-
 
 
 /*********************************************/

@@ -1,7 +1,7 @@
 $(document).ready(function () {
 
 //MENU
-    var headerPage = $('.header');
+
     var blackWrapper = $(".blackWrapper");
 
     $('.open-menu-min').on("click", function () {
@@ -9,33 +9,6 @@ $(document).ready(function () {
         $(".bl_nav__mobile").toggleClass('closeMenu');
 
     });
-
-
-    var buttonRubrics = $(".open-menu-main"),
-        fieldRubrics = $(".bl_fullCategories__field");
-
-
-    var buttonCategories = $(".bl_catalogProducts__title"),
-        fieldCategories = $(".bl_catalogProducts__full");
-
-
-    var buttonInformation = $(".code_information__title"),
-        fieldInformation = $(".code_information__full");
-
-
-    var buttonContacts = $(".code_contacts__title"),
-        fieldContacts = $(".code_contacts__full");
-
-
-    var buttonAdress = $(".code_adress__title"),
-        fieldAdress = $(".code_adress__full");
-
-
-    var buttonFilterCategories =$(".rubric__title_button__categories"),
-        fieldFilterCategories = $(".bl_filters");
-
-    var buttonAllFilters = $(".rubric__title_button__filters"),
-        fieldAllFilters = $(".bl_filters__productsFilters");
 
 
 //////////////////////////////////////////
@@ -58,14 +31,6 @@ $(document).ready(function () {
     }
 
 
-    var buttonLanguage = $(".bl_language__active"),
-        fieldWithOtherLanguage = $(".bl_language__variables"),
-        buttonChooseRigthLanguage = $(".bl_language__variables_item");
-
-    hideShowEffect(buttonLanguage, fieldWithOtherLanguage);
-    hideShowEffect(buttonChooseRigthLanguage, fieldWithOtherLanguage);
-
-
 /// buttons must work only  $(window).width() <=991px
 
 
@@ -73,13 +38,7 @@ $(document).ready(function () {
 
         if ($(window).width() <= 991) {
 
-            sliderEffectForButtons(buttonRubrics, fieldRubrics, 600);
-            sliderEffectForButtons(buttonCategories, fieldCategories, 600);
-            sliderEffectForButtons(buttonInformation, fieldInformation, 600);
-            sliderEffectForButtons(buttonContacts, fieldContacts, 600);
-            sliderEffectForButtons(buttonAdress, fieldAdress, 600);
-
-            sliderEffectForButtons(buttonAllFilters, fieldAllFilters , 600);
+            // sliderEffectForButtons(buttonRubrics, fieldRubrics, 600);
 
         } else {
             return false;
@@ -88,8 +47,6 @@ $(document).ready(function () {
     }
 
     liveScopeOfButtons();
-
-    sliderEffectForButtons(buttonFilterCategories, fieldFilterCategories, 600);
 
 
     //// Main-slider
@@ -113,6 +70,7 @@ $(document).ready(function () {
             }
         }
     });
+
 
 // slider_popular
 
@@ -288,42 +246,6 @@ $(document).ready(function () {
         }
     });
 
-//// hover sliders arrows navigations
-
-    function hoverArrows(sliderBox, fullArrows, changedClass) {
-
-        sliderBox.hover(function () {
-                fullArrows.addClass(changedClass);
-
-            },
-            function () {
-                fullArrows.removeClass(changedClass);
-            });
-    }
-
-
-    var blockPopular = $(".bl_popular"),
-        allPopularArrows = $(".slider_popular.owl-carousel .owl-prev, .slider_popular.owl-carousel .owl-next"),
-
-
-        blockNewProducts = $(".bl_newProducts"),
-        allNewProductsArrows = $(".slider_newProducts.owl-carousel .owl-prev, .slider_newProducts.owl-carousel .owl-next"),
-
-
-        blockWithThisProductBuy = $(".bl_withThisProductBuy"),
-        allWithThisProductBuyArrows = $(".slider_withThisProductBuy.owl-carousel .owl-prev, .slider_withThisProductBuy.owl-carousel .owl-next"),
-
-        blockYouViewed = $(".bl_youViewed"),
-        allYouViewedArrows = $(".slider_youViewed.owl-carousel .owl-prev, .slider_youViewed.owl-carousel .owl-next"),
-
-
-        hover_arrowsClass = "arrow-prev__hover";
-
-    hoverArrows(blockPopular, allPopularArrows, hover_arrowsClass);
-    hoverArrows(blockNewProducts, allNewProductsArrows, hover_arrowsClass);
-    hoverArrows(blockWithThisProductBuy, allWithThisProductBuyArrows, hover_arrowsClass);
-    hoverArrows(blockYouViewed, allYouViewedArrows, hover_arrowsClass);
-
 
 //// Img for main product slider
 
@@ -381,15 +303,15 @@ $(document).ready(function () {
     }
 
 
-    $(".bl_filter__label").on("click", function(event){
+    $(".bl_filter__label").on("click", function (event) {
 
         $(this).find(".filter_text").toggleClass("filter_text__active");
 
-            if ($(this).find(".bl_filter__checkbox").prop("checked") === true){
-                $(this).find(".bl_filter__checkbox").prop("checked", false);
-            }else{
-                $(this).find(".bl_filter__checkbox").prop("checked", true);
-            }
+        if ($(this).find(".bl_filter__checkbox").prop("checked") === true) {
+            $(this).find(".bl_filter__checkbox").prop("checked", false);
+        } else {
+            $(this).find(".bl_filter__checkbox").prop("checked", true);
+        }
 
 
         event.preventDefault();
@@ -400,20 +322,6 @@ $(document).ready(function () {
     sliderShowForAllCategories();
 
 
-//  Fancybox - увеличение главной фотки товара по клику ////////////////////
-
-
-    $('.fancybox-animated').fancybox({
-        youtube: {
-            controls: 0,
-            showinfo: 0
-        },
-        vimeo: {
-            color: 'f00'
-        },
-        arrows: true
-    });
-
 ////// GRID / LIST view - switch
 
     var buttonGridView = $(".code_grid"),
@@ -422,7 +330,7 @@ $(document).ready(function () {
         classGrid = "view_grid__STYLE",
         classList = "view_list__STYLE",
 
-        bl_fullProducts__item =$(".bl_fullProducts__item"),
+        bl_fullProducts__item = $(".bl_fullProducts__item"),
 
         code_listView1 = $(".code_listView1"),
         code_listView2 = $(".code_listView2"),
@@ -430,10 +338,9 @@ $(document).ready(function () {
         code_listView4 = $(".code_listView4"),
 
 
-
         allProducts = $(".bl_products");
 
-    buttonGridView.on("click", function(){
+    buttonGridView.on("click", function () {
         allProducts.removeClass(classList);
         allProducts.addClass(classGrid);
 
@@ -444,7 +351,7 @@ $(document).ready(function () {
         code_listView4.removeClass("bl_fullProducts__listStyle");
     });
 
-    buttonListView.on("click", function(){
+    buttonListView.on("click", function () {
         allProducts.removeClass(classGrid);
         allProducts.addClass(classList);
 
@@ -454,35 +361,6 @@ $(document).ready(function () {
         code_listView3.addClass("col-xs-8");
         code_listView4.addClass("bl_fullProducts__listStyle");
 
-
-    });
-
-
-
-
-//// Short description
-
-    var sizeDescription = $(".product_sizeDescription"),
-        labelSize = $('.product_size__label'),
-        fullSizeRadioButtons = $(".product_size__input"),
-        blockWoodBeHidden = $(".bl_minInformationAboutProduct");
-
-    fullSizeRadioButtons.on("click", function () {
-
-        blockWoodBeHidden.addClass("hidden");
-
-        var index = 0;
-        var count = 0;
-
-        labelSize.each(function () {
-            count++;
-            if ($(this).children('input').prop('checked') == true) {
-                index = count;
-            }
-        });
-
-        sizeDescription.removeClass("product_sizeDescription__showed");
-        sizeDescription.eq(index - 1).addClass("product_sizeDescription__showed");
 
     });
 
@@ -499,26 +377,26 @@ $(document).ready(function () {
 // FILTER for telephone number
 
     var telephonseInput = $("input[type='tel']");
-    telephonseInput.mask( "+38 (0" + "99) 999-99-99", {placeholder: "+38 (0__) ___+__+__"});
+    telephonseInput.mask("+38 (0" + "99) 999-99-99", {placeholder: "+38 (0__) ___+__+__"});
 
 
 /// POPUP BIFORE ADD TO SHOPBAG
 
-   function popupWindowBiforeAddToShopBag() {
+    function popupWindowBiforeAddToShopBag() {
 
-       var TESTBUTTON = $(".TEST_BUTTON");
+        var TESTBUTTON = $(".TEST_BUTTON");
 
-       var popupWindow = $(".popup_likeShopbag"),
-           buttonClose = $(".popup_likeShopbag__close"),
-           buttonContinueBuying = $(".popup_likeShopbag__continueBuying");
+        var popupWindow = $(".popup_likeShopbag"),
+            buttonClose = $(".popup_likeShopbag__close"),
+            buttonContinueBuying = $(".popup_likeShopbag__continueBuying");
 
 
-       TESTBUTTON.on("click", function () {
+        TESTBUTTON.on("click", function () {
 
-           popupWindow.removeClass("hidden");
-           blackWrapper.removeClass("hidden");
-           blackWrapper.animate({opacity: 0.6}, 300);
-       });
+            popupWindow.removeClass("hidden");
+            blackWrapper.removeClass("hidden");
+            blackWrapper.animate({opacity: 0.6}, 300);
+        });
 
         function closePopupWindow(btn) {
             btn.on("click", function () {
@@ -527,14 +405,15 @@ $(document).ready(function () {
                 blackWrapper.animate({opacity: 0}, 400);
             })
         }
+
         closePopupWindow(buttonClose);
         closePopupWindow(buttonContinueBuying);
         closePopupWindow(blackWrapper);
 
 
+    }
 
-   } popupWindowBiforeAddToShopBag();
-
+    popupWindowBiforeAddToShopBag();
 
 
 /// Success Buying
@@ -555,8 +434,8 @@ $(document).ready(function () {
 
         function showBlock() {
 
-           blackWrapper.removeClass("hidden");
-           blackWrapper.animate({opacity: 0.6}, 300);
+            blackWrapper.removeClass("hidden");
+            blackWrapper.animate({opacity: 0.6}, 300);
 
             blSuccsess.removeClass("hidden");
             blSuccsess.removeClass("bounceOutUp");
@@ -569,23 +448,19 @@ $(document).ready(function () {
             blackWrapper.animate({opacity: 0}, 400);
 
 
-            setTimeout(function(){
+            setTimeout(function () {
                 blackWrapper.addClass("hidden");
                 blSuccsess.addClass("hidden");
-            },1000);
+            }, 1000);
 
 
         }
 
 
-
-
     }
 
 
-
     $(".btn_buy__send").on("click", successfulPurchasePassed); //// Заменить нажатие на кнопку на обработку события
-
 
 
 ////// Product quantity
@@ -610,58 +485,25 @@ $(document).ready(function () {
     });
 
 
-
-// Road Map
-
-    function roadMap() {
-        var blockMap = $(".bl_map"),
-            buttonCloseMap = $(".bl_map__close");
-
-        $(".button_map").on("click", function () {
-            blackWrapper.removeClass("hidden");
-            blackWrapper.animate({opacity: 0.6}, 300);
-            blockMap.removeClass("hidden");
-
-            if ( $(".bl_map__iframe").length == 0){
-                $('<iframe class="bl_map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.2340071664594!2d30.62924531598441!3d50.455366979476075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4c554bbd79077%3A0x433aacf838798f5b!2z0JrQntCg0JzQkNCa!5e0!3m2!1sru!2sru!4v1496344340189" frameborder="0" style="border:0"></iframe>').insertAfter(".bl_map__title");
-            }
-        });
-
-        buttonCloseMap.on("click", function () {
-            blackWrapper.animate({opacity: 0}, 200);
-            blackWrapper.addClass("hidden");
-            blockMap.addClass("hidden");
-        });
-
-        blackWrapper.on("click", function () {
-            blockMap.addClass("hidden");
-        });
-
-    }roadMap();
-
-    
-    
-
-
-});
+}
 
 // Showed ancor only when scrolling > scrineSize
 
-$(window).scroll(function () {
-
-    var ancorFish = $(".bl_ancor"),
-        windowHeight = $(window).height() / 2;
-
-    if ($(this).scrollTop() > windowHeight) {
-
-        ancorFish.removeClass("hidden");
-
-    } else {
-        ancorFish.addClass("hidden");
-
-    }
-
-});
+// $(window).scroll(function () {
+//
+//     var ancorFish = $(".bl_ancor"),
+//         windowHeight = $(window).height() / 2;
+//
+//     if ($(this).scrollTop() > windowHeight) {
+//
+//         ancorFish.removeClass("hidden");
+//
+//     } else {
+//         ancorFish.addClass("hidden");
+//
+//     }
+//
+// });
 
 
 // RESIZE WINDOW
@@ -740,6 +582,8 @@ $(window).resize(function () {
 
 
 });
+
+
 $(window).resize();
 
 
