@@ -217,32 +217,60 @@
 // NAVIGATION
 
 .nav_main{
-  display: inline-block;
+  width: 100%;
   min-height: 76px;
+  box-sizing: border-box;
+  border-top: 1px solid $color_borderLightGrey;
+  border-bottom: 1px solid $color_borderLightGrey;
+}
+
+.nav_main__fullItems{
+  display: inline-block;
+
   line-height: 76px;
 }
 
 .nav_main__items{
   display: inline-block;
+
+
 }
 
 .nav_main__link{
+  display: block;
+
+  width: 100%;
+  height: 100%;
+  padding: 0 20px;
   color: $color_lightBlue2;
   font-family: $OpenSans;
   font-size: 14px;
   font-weight: 700;
   text-transform: uppercase;
+  box-sizing: border-box;
+  border-left: 1px solid $color_borderLightGrey;
+
   &:hover,
   &:focus{
     color: $color_lightBlue;
   }
 }
+
+.nav_main__items:first-child .nav_main__link{
+  border-left: none;
+  padding-left: 0;
+}
+
+
 .nav_main__link_active{
   color: $color_lightBlue;
 }
 
 
 .btn_callBack{
+
+  margin-top: 17px;
+
   float: right;
   background-color: #fff;
   width: 244px;
