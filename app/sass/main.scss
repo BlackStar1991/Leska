@@ -29,6 +29,7 @@ body {
   min-width: 320px;
   position: relative;
 
+  background-color: $color_grey;
 
   display: -webkit-box;
   display: flex;
@@ -844,6 +845,23 @@ textarea {
     color: #fff;
   }
 }
+
+
+.filter_name{
+  color: $color_title;
+  font-family: $OpenSansSemibold;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+///// Categories
+.bl_catalogs{
+
+}
+
+
+
+
 
 
 /*********************************************/
