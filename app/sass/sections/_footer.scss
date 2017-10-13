@@ -1,7 +1,231 @@
 
+.bl_footerFirst {
+  width: 100%;
+  padding: 42px 0;
+  background-color: #383458;
+}
+
+.bl_logos {
+
+}
+
+.bl_logos__leska {
+  color: $color_lightBlue;
+  transition: all, .2s;
+  p {
+    margin: 0;
+    padding: 0;
+  }
+
+  &:hover,
+  &:focus {
+    transition: all, .2s;
+    color: #fff;
+  }
+  .bl_logo__bigText {
+    line-height: 50px;
+  }
+}
+
+.bl_cosLinks,
+.bl_bankCarts {
+  clear: both;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.bl_cosLinks__link,
+.bl_bankCarts__link {
+  position: relative;
+  display: block;
+  float: left;
+
+  opacity: .3;
+  transition: opacity, .3s;
+
+  &:hover {
+    opacity: 1;
+    transition: opacity, .3s;
+  }
+
+}
+
+.icon_fb {
+  @include sprite-width($icon-fb);
+  @include sprite-height($icon-fb);
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    @include sprite($icon-fb);
+    z-index: 2;
+  }
+}
+
+.icon_tw {
+  margin-left: 22px;
+  @include sprite-width($icon-tw);
+  @include sprite-height($icon-tw);
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    @include sprite($icon-tw);
+    z-index: 2;
+  }
+}
+
+.icon_vk {
+  margin-left: 12px;
+  @include sprite-width($icon-vk);
+  @include sprite-height($icon-vk);
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    @include sprite($icon_vk);
+    z-index: 2;
+  }
+}
+
+.icon_masterCard {
+
+  @include sprite-width($icon-mastercard);
+  @include sprite-height($icon-mastercard);
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    @include sprite($icon-mastercard);
+    z-index: 2;
+  }
+}
+
+.icon_visa {
+  margin-left: 18px;
+  @include sprite-width($icon-visa);
+  @include sprite-height($icon-visa);
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    @include sprite($icon-visa);
+    z-index: 2;
+  }
+}
+
+.bl_informations {
+
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+
+.bl_info {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.bl_informations__item {
+  position: relative;
+  width: 100%;
+  max-width: 25%;
+}
+
+.bl_informations__title {
+  font-family: $OpenSans;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.bl_info__item {
+  width: 100%;
+  margin-top: 5px;
+  color: $color_greyFen;
+
+  span {
+    display: block;
+  }
+}
+
+.bl_info__item {
+  position: relative;
+}
+
+.bl_informations__item:last-child .bl_info .bl_info__item {
+  padding-left: 20px;
+}
+
+.bl_info__link {
+  font-family: $OpenSansSemibold;
+  font-weight: 400;
+  color: #9e9e9e;
+
+  &:hover,
+  &:focus {
+    color: #fff;
+  }
+}
+
+.icon-phone {
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    @include sprite($icon-phone);
+    z-index: 2;
+  }
+}
+
+.icon-clock {
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    @include sprite($icon-clock);
+    z-index: 2;
+  }
+}
+
+.icon-envelope {
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    @include sprite($icon-envelope);
+    z-index: 2;
+  }
+}
+
+.icon-pointer {
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    @include sprite($icon-pointer);
+    z-index: 2;
+  }
+}
 
 // ANCOR
 
-.bl_ancor{
+.bl_ancor {
 
 }
