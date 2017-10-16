@@ -36,6 +36,7 @@ body {
 
   -webkit-box-orient: vertical;
   flex-direction: column;
+  height: 100%;
   min-height: 100vh;
 
 }
@@ -82,13 +83,13 @@ body {
   height: 100%;
 }
 
-.main {
+header {
 
   flex: 1 0 auto;
-  padding-bottom: 24px;
+  //padding-bottom: 24px;
 }
 
-.footer {
+footer {
 
   flex: 0 0 auto;
 }
@@ -934,7 +935,7 @@ textarea {
 }
 
 .bl_shortReviews__fullReviews{
-  padding-right: 36px;
+  padding-right: 30px;
 }
 
 .bl_shortReviews__item{
@@ -944,7 +945,7 @@ textarea {
 .bl_shortReviews__image{
   display: block;
   width: 100%;
-
+  object-fit:cover;
 }
 .bl_shortReviews__name{
   width: 100%;

@@ -5,12 +5,51 @@
 
 /* Large Devices, Wide Screens 1280px */
 @media only screen and (max-width: 1200px) {
+  .bl_personalRoom{
+    border: none;
+  }
 
+  .bl_search{
+    clear: both;
+    margin: 10px auto 0;
+  }
 }
 
 /* Medium Devices, Desktops 992px */
 @media only screen and (max-width: 991px) {
 
+  .bl_logo{
+    margin: 0 auto;
+  }
+
+  .bl_mainControls{
+    float: none;
+    margin: 10px auto;
+    text-align: center;
+  }
+  .bl_shopBasket{
+    float: none;
+    display: inline-block;
+    padding-right: 0;
+  }
+
+
+  .bl_search{
+    float: none;
+
+  }
+
+  .bl_search__wrapper{
+    margin: 10px auto 0;
+    max-width: 200px;
+  }
+
+
+  .btn_callBack{
+    float: none;
+    display: block;
+    margin: 10px auto;
+  }
 }
 
 /* Small Devices, Tablets 768px */
