@@ -178,6 +178,12 @@
   text-transform: uppercase;
 }
 
+.bl_informations__title.decor_triangle{
+  &:after{
+    content: none;
+  }
+}
+
 .bl_info__item {
   width: 100%;
   margin-top: 5px;

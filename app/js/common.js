@@ -40,7 +40,17 @@ $(document).ready(function () {
         $(this).siblings("ul").eq(0).slideToggle(400);
     });
 
+/// Pages button
 
+    sliderEffectForButtons($(".btn_pages"), $(".nav_main__fullItems"), 500);
+
+//// Footer Information buttons
+
+    function footerButtonsInformation() {
+        $(".bl_informations__title").on("click", function () {
+            $(this).siblings(".bl_info").slideToggle(500);
+        })
+    }
 
 
 /// buttons must work only  $(window).width() <=991px
@@ -48,8 +58,8 @@ $(document).ready(function () {
 
     function liveScopeOfButtons() {
 
-        if ($(window).width() <= 991) {
-
+        if ($(window).width() <= 820) {
+            footerButtonsInformation();
 
         } else {
             return false;
