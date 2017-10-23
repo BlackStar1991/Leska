@@ -1,8 +1,9 @@
 $(document).ready(function () {
 
 //MENU
-
+    var body = $("body");
     var blackWrapper = $(".blackWrapper");
+
 
     $('.open-menu-min').on("click", function () {
         $(this).toggleClass('close-menu-min');
@@ -30,12 +31,19 @@ $(document).ready(function () {
         });
     }
 
+//// Categories
+    var buttonCategories = $(".filter_name"),
+        fullCategories =$(".bl_catalogs__firstLevel");
+
+    sliderEffectForButtons(buttonCategories, fullCategories, 500);
+
+
 //// Categories Buttons
 
-    var buttonsCategories = $(".bl_catalogs__button"),
+    var buttonsSubCategories = $(".bl_catalogs__button"),
         active = "active";
 
-    buttonsCategories.click(function () {
+    buttonsSubCategories.click(function () {
         $(this).parent(".bl_catalogs__item").toggleClass(active);
         $(this).siblings("ul").eq(0).slideToggle(400);
     });
@@ -482,25 +490,23 @@ $(window).resize(function () {
 
 
     if (body.width() >= 992) {
-        fieldRubrics.css({"display": "block"});
-        fieldCategories.css({"display": "block"});
-        fieldInformation.css({"display": "block"});
-        fieldContacts.css({"display": "block"});
-        fieldAdress.css({"display": "block"});
+
+
+        // fieldRubrics.css({"display": "block"});
+        // fieldCategories.css({"display": "block"});
+        // fieldInformation.css({"display": "block"});
+        // fieldContacts.css({"display": "block"});
+        // fieldAdress.css({"display": "block"});
 
         // $(".bl_filters").css({"display": "block"});
         // $(".bl_filters__productsFilters").css({"display": "block"});
 
-
-        return false;
-
-
     } else {
-        fieldRubrics.css({"display": "none"});
-        fieldCategories.css({"display": "none"});
-        fieldInformation.css({"display": "none"});
-        fieldContacts.css({"display": "none"});
-        fieldAdress.css({"display": "none"});
+        // fieldRubrics.css({"display": "none"});
+        // fieldCategories.css({"display": "none"});
+        // fieldInformation.css({"display": "none"});
+        // fieldContacts.css({"display": "none"});
+        // fieldAdress.css({"display": "none"});
 
 
         // $(".bl_filters").css({"display": "none"});

@@ -69,8 +69,66 @@
     margin: 10px auto;
   }
 
+  .bl_shortReviews__fullReviews{
+    padding-right: 0;
+  }
 
-  .bl_logos{
+  .bl_catalogs{
+    width: 100%;
+    margin: 15px auto;
+  }
+
+  .filter_name{
+    padding:5px 10%;
+    background-color: $color_lightBlue;
+    color: #fff;
+    border-radius: 8px;
+    margin: 0 auto;
+  }
+  .bl_catalogs__firstLevel{
+    display: none;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+    .bl_catalogs__item{
+      position: relative;
+      margin: 5px auto;
+      padding: 10px 0;
+      border-top: 1px solid #000;
+      &:last-child{
+        border-bottom: 1px solid #000;
+      }
+    }
+
+
+
+    .bl_catalogs__link{
+      text-align: center;
+      margin: 0 auto;
+      width: 100%;
+      font-size: 20px;
+    }
+
+  .bl_catalogs__secondLevel{
+    padding-left:0;
+    .bl_catalogs__link{
+      font-size: 18px;
+    }
+  }
+
+
+    .bl_catalogs__button{
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 40px;
+      height: 40px;
+      background-color: $color_lightBlue;
+    }
+  
+  
+    .bl_logos{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -88,6 +146,10 @@
     text-align: center;
   }
 
+
+  .bl_ancor{
+    top: -160px;
+  }
 }
 
 @media only screen and (max-width: 820px) {
