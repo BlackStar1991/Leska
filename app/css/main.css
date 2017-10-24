@@ -2065,6 +2065,48 @@ textarea::-moz-focus-inner {
   width: 100%;
   height: 100%; }
 
+.bl_offlineQuestion_button {
+  position: absolute;
+  top: 120px;
+  right: -83px;
+  width: 204px;
+  height: 37px;
+  border-radius: 20px 20px 0 0;
+  background-color: #12b1df;
+  -ms-transform: rotate(-90deg);
+      transform: rotate(-90deg);
+  color: #28305e;
+  font-size: 14px; }
+  .bl_offlineQuestion_button:hover {
+    color: #fff; }
+
+.bl_offlineQuestion__full {
+  position: absolute;
+  top: -120px;
+  right: 0;
+  width: 252px;
+  min-height: 345px;
+  background-color: #fff;
+  border-radius: 20px 0 0 20px;
+  z-index: 2; }
+
+.bl_offlineQuestion__header {
+  border-radius: 20px 0 0 0;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  padding: 20px 20px 15px 20px;
+  font-size: 14px;
+  color: #fff;
+  background-color: #12b1df; }
+
+.bl_offlineQuestion__text {
+  width: 214px;
+  height: 43px;
+  color: #646464;
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  font-weight: 300; }
+
 /*********************************************/
 /*@IMPORT MEDIA*/
 /*********************************************/
