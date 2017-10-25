@@ -292,4 +292,11 @@
   border-radius: 20px;
   box-sizing: border-box;
   border: 1px solid $color_textName;
+  transition: all, .2s;
+
+  &:hover{
+    color: #fff;
+    background-color:  #0160ac;
+    transition: all, .2s;
+  }
 }

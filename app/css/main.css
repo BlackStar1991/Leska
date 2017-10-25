@@ -1198,7 +1198,12 @@ textarea::-moz-focus-inner {
   height: 43px;
   border-radius: 20px;
   box-sizing: border-box;
-  border: 1px solid #12171f; }
+  border: 1px solid #12171f;
+  transition: all, .2s; }
+  .btn_callBack:hover {
+    color: #fff;
+    background-color: #0160ac;
+    transition: all, .2s; }
 
 /*********************************************/
 /*SECTIONS*/
@@ -1567,26 +1572,14 @@ textarea::-moz-focus-inner {
   margin-right: 16px;
   width: 162px; }
 
-.error_text {
-  font-size: 16px;
+.error_text,
+.text_error {
+  font-size: 14px;
   color: #f00; }
 
-.bl_successBuying {
-  position: fixed;
-  width: 300px;
-  min-height: 50px;
-  padding: 0 10px 15px;
-  top: 35%;
-  left: calc(50% - 150px);
-  background-color: #fff;
-  text-align: center;
-  z-index: 1080; }
-
-.bl_successBuying__text {
-  position: relative;
-  margin-top: 10px;
+.text_success {
   font-size: 16px;
-  color: #000; }
+  color: #008300; }
 
 .decor_icon__seccuess:before {
   content: "\f00c";
@@ -1594,28 +1587,20 @@ textarea::-moz-focus-inner {
   font-size: 24px;
   color: #0f0; }
 
-.bl_successBuying__close,
-.bl_map__close,
-.bl_callback__close {
-  position: absolute;
-  top: -8px;
-  right: -4px;
-  margin: 0;
-  width: 20px;
-  height: 20px;
-  background: none;
-  z-index: 3; }
-  .bl_successBuying__close:hover .decor_icon__close,
-  .bl_map__close:hover .decor_icon__close,
-  .bl_callback__close:hover .decor_icon__close {
-    color: #f00; }
-
 .decor_icon__close {
   width: 100%;
   height: 100%;
   display: block;
   font-size: 22px;
   color: #000; }
+
+.button_simple {
+  color: #fff;
+  font-size: 16px;
+  line-height: 24px;
+  border-radius: 18px;
+  padding: 5px 7px;
+  background-color: #0160ac; }
 
 .TEST_BUTTON {
   width: 50px;
@@ -1747,16 +1732,39 @@ textarea::-moz-focus-inner {
   font-size: 18px; }
 
 .decor_arrowUp:after {
+  content: "";
   position: absolute;
   top: 35%;
   left: 50%;
   -ms-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%);
-  content: "";
   background-image: url(../image/sprite.png);
   background-position: -165px -68px;
   width: 24px;
   height: 13px; }
+
+.decor_minLine:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+  height: 5px;
+  width: 100%;
+  background-color: #fff; }
+
+.decor_close:after {
+  content: "\f00d";
+  font-family: "FontAwesome";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+  height: 100%;
+  width: 100%;
+  color: #29bfeb; }
 
 .bl_shortReviews {
   margin-top: 52px;
@@ -1825,6 +1833,53 @@ textarea::-moz-focus-inner {
   font-family: "Open Sans - Semibold", sans-serif;
   font-size: 14px;
   text-decoration: underline; }
+
+.bl_callback {
+  display: block;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+  background-color: #fff;
+  border: 1px solid #12b1df;
+  width: 100%;
+  max-width: 220px;
+  min-height: 120px;
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  padding: 10px;
+  z-index: 1080; }
+
+.bl_callback__close {
+  position: relative;
+  float: right;
+  width: 26px;
+  height: 26px;
+  font-size: 26px;
+  background: none;
+  z-index: 3; }
+  .bl_callback__close:hover .decor_icon__close {
+    color: #f00; }
+
+.bl_callback__form {
+  clear: both;
+  width: 100%;
+  margin-top: 5px; }
+
+.bl_callback__label {
+  display: block;
+  position: relative;
+  width: 100%;
+  margin: 10px 0; }
+
+.bl_callback__input {
+  display: block;
+  width: 100%; }
+
+.bl_callback__button {
+  display: block;
+  margin: 5px auto; }
 
 /*********************************************/
 /*FOOTER*/
@@ -2099,13 +2154,88 @@ textarea::-moz-focus-inner {
   color: #fff;
   background-color: #12b1df; }
 
+.bl_offlineQuestion__rollUp {
+  position: relative;
+  float: right;
+  width: 20px;
+  height: 20px;
+  background: none; }
+
+.bl_offlineQuestion__main {
+  width: 100%;
+  padding: 19px 19px 16px; }
+
 .bl_offlineQuestion__text {
   width: 214px;
-  height: 43px;
-  color: #646464;
+  color: #a3a3a3;
   font-family: "Open Sans", sans-serif;
   font-size: 13px;
   font-weight: 300; }
+
+.bl_offlineQuestion__form {
+  clear: both;
+  width: 100%; }
+  .bl_offlineQuestion__form input {
+    margin-top: 16px;
+    width: 100%;
+    height: 30px;
+    border: 1px solid #c6c6c6; }
+    .bl_offlineQuestion__form input::-webkit-input-placeholder {
+      text-indent: 12px;
+      color: #919191;
+      font-family: "Open Sans Light", sans-serif;
+      font-size: 13px;
+      font-weight: 300;
+      font-style: italic; }
+    .bl_offlineQuestion__form input:-ms-input-placeholder {
+      text-indent: 12px;
+      color: #919191;
+      font-family: "Open Sans Light", sans-serif;
+      font-size: 13px;
+      font-weight: 300;
+      font-style: italic; }
+    .bl_offlineQuestion__form input::placeholder {
+      text-indent: 12px;
+      color: #919191;
+      font-family: "Open Sans Light", sans-serif;
+      font-size: 13px;
+      font-weight: 300;
+      font-style: italic; }
+  .bl_offlineQuestion__form textarea {
+    margin-top: 15px;
+    width: 100%;
+    height: 77px;
+    border: 1px solid #c6c6c6;
+    resize: none; }
+    .bl_offlineQuestion__form textarea::-webkit-input-placeholder {
+      text-indent: 12px;
+      color: #919191;
+      font-family: "Open Sans", sans-serif;
+      font-size: 13px;
+      font-weight: 300; }
+    .bl_offlineQuestion__form textarea:-ms-input-placeholder {
+      text-indent: 12px;
+      color: #919191;
+      font-family: "Open Sans", sans-serif;
+      font-size: 13px;
+      font-weight: 300; }
+    .bl_offlineQuestion__form textarea::placeholder {
+      text-indent: 12px;
+      color: #919191;
+      font-family: "Open Sans", sans-serif;
+      font-size: 13px;
+      font-weight: 300; }
+
+.bl_offlineQuestion__submit {
+  float: right;
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  color: #fff;
+  width: 100px;
+  height: 30px;
+  margin-top: 18px;
+  border-radius: 14px;
+  background-color: #12b1df; }
 
 /*********************************************/
 /*@IMPORT MEDIA*/

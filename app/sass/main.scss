@@ -686,35 +686,41 @@ textarea {
   width: 162px;
 }
 
-.error_text {
-  font-size: 16px;
+.error_text,
+.text_error{
+  font-size: 14px;
   color: #f00;
 }
 
-/// success Buying
-
-.bl_successBuying {
-  position: fixed;
-  width: 300px;
-  min-height: 50px;
-  padding: 0 10px 15px;
-  top: 35%;
-  left: calc(50% - 150px);
-
-  background-color: #fff;
-  //border: 2px solid $color_blue;
-  text-align: center;
-
-  z-index: 1080;
-}
-
-.bl_successBuying__text {
-  position: relative;
-  margin-top: 10px;
+.text_success{
   font-size: 16px;
-  color: #000;
-
+  color: #008300;
 }
+
+/// success Buying
+//
+//.bl_successBuying {
+//  position: fixed;
+//  width: 300px;
+//  min-height: 50px;
+//  padding: 0 10px 15px;
+//  top: 35%;
+//  left: calc(50% - 150px);
+//
+//  background-color: #fff;
+//  //border: 2px solid $color_blue;
+//  text-align: center;
+//
+//  z-index: 1080;
+//}
+//
+//.bl_successBuying__text {
+//  position: relative;
+//  margin-top: 10px;
+//  font-size: 16px;
+//  color: #000;
+//
+//}
 
 .decor_icon__seccuess {
   &:before {
@@ -726,31 +732,21 @@ textarea {
   }
 }
 
-.bl_successBuying__close,
-.bl_map__close,
-.bl_callback__close {
-  position: absolute;
-  top: -8px;
-  right: -4px;
-  margin: 0;
-  width: 20px;
-  height: 20px;
-  background: none;
-  z-index: 3;
-
-  &:hover {
-    .decor_icon__close {
-      color: #f00;
-    }
-  }
-}
-
 .decor_icon__close {
   width: 100%;
   height: 100%;
   display: block;
   font-size: 22px;
   color: #000;
+}
+
+.button_simple{
+  color: #fff;
+  font-size: 16px;
+  line-height: 24px;
+  border-radius: 18px;
+  padding: 5px 7px;
+  background-color: $color_button;
 }
 
 // popup_likeShopbag
@@ -930,15 +926,42 @@ textarea {
 
 .decor_arrowUp{
   &:after{
+    content: "";
     position: absolute;
     top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
-    content: "";
+
     @include sprite($arrow-up);
   }
 }
 
+.decor_minLine{
+  &:after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 5px;
+    width: 100%;
+    background-color: #fff;
+  }
+}
+
+.decor_close{
+  &:after{
+    content: "\f00d";
+    font-family:$FontAwesome;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 100%;
+    width: 100%;
+    color: $color_lightBlue;
+  }
+}
 
 /////  short Reviews
 
@@ -1024,6 +1047,66 @@ textarea {
   font-family: $OpenSansSemibold;
   font-size: 14px;
   text-decoration: underline;
+}
+
+///////////// CALLBACK FORM
+
+.bl_callback{
+  display: block;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  border: 1px solid $color_lightBlue3;
+  width: 100%;
+  max-width: 220px;
+  min-height: 120px;
+  font-size: 16px;
+  font-family:$OpenSans;
+  padding:10px;
+  z-index: 1080;
+}
+
+.bl_callback__close {
+  position: relative;
+  float: right;
+  width: 26px;
+  height: 26px;
+  font-size: 26px;
+  background: none;
+  z-index: 3;
+
+  &:hover {
+    .decor_icon__close {
+      color: #f00;
+    }
+  }
+}
+.bl_callback__form{
+  clear: both;
+  width: 100%;
+  margin-top: 5px;
+}
+
+
+.bl_callback__label{
+  display: block;
+  position: relative;
+  width: 100%;
+  margin: 10px 0;
+
+
+}
+
+.bl_callback__input{
+  display: block;
+  width: 100%;
+}
+
+.bl_callback__button{
+  display: block;
+  margin: 5px auto;
 }
 
 

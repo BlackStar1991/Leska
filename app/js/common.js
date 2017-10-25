@@ -52,6 +52,15 @@ $(document).ready(function () {
 
     sliderEffectForButtons($(".btn_pages"), $(".nav_main__fullItems"), 500);
 
+/// Offline Qestion
+    var buttonShowOfflineQuestion = $(".bl_offlineQuestion_button"),
+        buttonCloseOfflineQuestion = $(".bl_offlineQuestion__rollUp"),
+        fieldOfflineQuestion = $(".bl_offlineQuestion__full");
+
+    hideShowEffect(buttonShowOfflineQuestion, fieldOfflineQuestion);
+    hideShowEffect(buttonCloseOfflineQuestion, fieldOfflineQuestion);
+
+
 //// Footer Information buttons
 
     function footerButtonsInformation() {
