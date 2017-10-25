@@ -33,7 +33,7 @@ $(document).ready(function () {
 
 //// Categories
     var buttonCategories = $(".filter_name"),
-        fullCategories =$(".bl_catalogs__firstLevel");
+        fullCategories = $(".bl_catalogs__firstLevel");
 
     sliderEffectForButtons(buttonCategories, fullCategories, 500);
 
@@ -285,49 +285,6 @@ $(document).ready(function () {
     // });
 
 
-////// GRID / LIST view - switch
-
-    var buttonGridView = $(".code_grid"),
-        buttonListView = $(".code_list"),
-
-        classGrid = "view_grid__STYLE",
-        classList = "view_list__STYLE",
-
-        bl_fullProducts__item = $(".bl_fullProducts__item"),
-
-        code_listView1 = $(".code_listView1"),
-        code_listView2 = $(".code_listView2"),
-        code_listView3 = $(".code_listView3"),
-        code_listView4 = $(".code_listView4"),
-
-
-        allProducts = $(".bl_products");
-
-    buttonGridView.on("click", function () {
-        allProducts.removeClass(classList);
-        allProducts.addClass(classGrid);
-
-        bl_fullProducts__item.addClass("col-md-4 col-sm-6 col-xs-12");
-        code_listView1.removeClass("col-xs-12");
-        code_listView2.removeClass("col-xs-4");
-        code_listView3.removeClass("col-xs-8");
-        code_listView4.removeClass("bl_fullProducts__listStyle");
-    });
-
-    buttonListView.on("click", function () {
-        allProducts.removeClass(classGrid);
-        allProducts.addClass(classList);
-
-        bl_fullProducts__item.removeClass("col-md-4 col-sm-6 col-xs-12");
-        code_listView1.addClass("col-xs-12");
-        code_listView2.addClass("col-xs-4");
-        code_listView3.addClass("col-xs-8");
-        code_listView4.addClass("bl_fullProducts__listStyle");
-
-
-    });
-
-
 // Ancor to top
 
     $(".bl_ancor").on("click", "a", function (event) {
@@ -343,6 +300,26 @@ $(document).ready(function () {
     telephonseInput.mask("+38 (0" + "99) 999-99-99", {placeholder: "+38 (0__) ___+__+__"});
 
 
+////////////////// POPUPS LOGIC
+
+    function popupWindowShow(btn, field) {
+        btn.on("click", function () {
+
+            field.removeClass("hidden");
+            blackWrapper.removeClass("hidden");
+            blackWrapper.animate({opacity: 0.6}, 300);
+        });
+    }
+
+    function closePopupWindow(btn, field) {
+        btn.on("click", function () {
+            field.addClass("hidden");
+            blackWrapper.addClass("hidden");
+            blackWrapper.animate({opacity: 0}, 400);
+        })
+    }
+
+
 /// POPUP BIFORE ADD TO SHOPBAG
 
     function popupWindowBiforeAddToShopBag() {
@@ -353,181 +330,129 @@ $(document).ready(function () {
             buttonClose = $(".popup_likeShopbag__close"),
             buttonContinueBuying = $(".popup_likeShopbag__continueBuying");
 
+        popupWindowShow(TESTBUTTON, popupWindow);
 
-        TESTBUTTON.on("click", function () {
-
-            popupWindow.removeClass("hidden");
-            blackWrapper.removeClass("hidden");
-            blackWrapper.animate({opacity: 0.6}, 300);
-        });
-
-        function closePopupWindow(btn) {
-            btn.on("click", function () {
-                popupWindow.addClass("hidden");
-                blackWrapper.addClass("hidden");
-                blackWrapper.animate({opacity: 0}, 400);
-            })
-        }
-
-        closePopupWindow(buttonClose);
-        closePopupWindow(buttonContinueBuying);
-        closePopupWindow(blackWrapper);
-
+        closePopupWindow(buttonClose, popupWindow);
+        closePopupWindow(buttonContinueBuying, popupWindow);
+        closePopupWindow(blackWrapper, popupWindow);
 
     }
 
     popupWindowBiforeAddToShopBag();
 
+////////// CallBack PopUp
 
-/// Success Buying
-//  Если пользователю удалось отправить номер своего мобильного продавцу должна отрабатывать эта функция
+    function popupWindowCallBack() {
+        var buttonCallback = $(".btn_callBack"),
+            fieldCallBack = $(".bl_callback"),
+            buttonClose = $(".bl_callback__close");
 
-
-    function successfulPurchasePassed() {
-
-        var blSuccsess = $(".bl_successBuying"),
-            buttonClose = $(".bl_successBuying__close");
-
-
-        setTimeout(showBlock, 200);
-
-        buttonClose.on("click", hideBlock);
-        blackWrapper.on("click", hideBlock);
-
-
-        function showBlock() {
-
-            blackWrapper.removeClass("hidden");
-            blackWrapper.animate({opacity: 0.6}, 300);
-
-            blSuccsess.removeClass("hidden");
-            blSuccsess.removeClass("bounceOutUp");
-            blSuccsess.addClass("animated bounceInDown");
-        }
-
-        function hideBlock() {
-            blSuccsess.removeClass("bounceInDown");
-            blSuccsess.addClass("bounceOutUp");
-            blackWrapper.animate({opacity: 0}, 400);
-
-
-            setTimeout(function () {
-                blackWrapper.addClass("hidden");
-                blSuccsess.addClass("hidden");
-            }, 1000);
-
-
-        }
+        popupWindowShow(buttonCallback, fieldCallBack);
+        closePopupWindow(buttonClose, fieldCallBack);
+        closePopupWindow(blackWrapper, fieldCallBack);
 
 
     }
 
+    popupWindowCallBack();
 
-    $(".btn_buy__send").on("click", successfulPurchasePassed); //// Заменить нажатие на кнопку на обработку события
+
+//// Succsess PopUp
+
+
+
+
+    function popupWindowSuccsess() {
+
+        var fieldSuccess = $(".bl_success");
+
+        closePopupWindow(blackWrapper, fieldSuccess);
+        closePopupWindow( fieldSuccess, fieldSuccess);
+    }
+
+    popupWindowSuccsess();
 
 
 ////// Product quantity
 
-    var quantityProduct = $(".block_quantity__input"),
-        plusProduct = $(".block_quantity__plus"),
-        minusProduct = $(".block_quantity__minus");
-
-    plusProduct.on("click", function () {
-        quantityProduct.val(Number(quantityProduct.val()) + 1);
-    });
-
-    minusProduct.on("click", function () {
-
-        if (quantityProduct.val() > 1) {
-            quantityProduct.val(Number(quantityProduct.val()) - 1);
-            quantityProduct.val(Number(quantityProduct.val()) - 1);
-        }
-        else {
-            quantityProduct.val(1);
-        }
-    });
-
-
-});
-
 
 // RESIZE WINDOW
 
-var body = $("body");
+    var body = $("body");
 
-var iconMenu = $(".open-menu-min"),
-    iconMenu_close = "close-menu-min";
+    var iconMenu = $(".open-menu-min"),
+        iconMenu_close = "close-menu-min";
 
-var fullNavigation = $(".bl_fullNavigation"),
-    mobileNavigation = "bl_fullNavigation_mobile",
+    var fullNavigation = $(".bl_fullNavigation"),
+        mobileNavigation = "bl_fullNavigation_mobile",
 
-    blockNavigation = $(".bl_nav"),
-    menuMobile = "bl_nav__mobile",
-    closeMenu = "closeMenu";
-
-
-$(window).resize(function () {
-
-    var fieldRubrics = $(".bl_fullCategories__field"),
-        fieldCategories = $(".bl_catalogProducts__full"),
-
-        fieldInformation = $(".code_information__full"),
-        fieldContacts = $(".code_contacts__full"),
-        fieldAdress = $(".code_adress__full");
+        blockNavigation = $(".bl_nav"),
+        menuMobile = "bl_nav__mobile",
+        closeMenu = "closeMenu";
 
 
-    // var buttonsWorkRight = liveScopeOfButtons();      ///////////// Эта хрень не работает =(
+    $(window).resize(function () {
+
+        var fieldRubrics = $(".bl_fullCategories__field"),
+            fieldCategories = $(".bl_catalogProducts__full"),
+
+            fieldInformation = $(".code_information__full"),
+            fieldContacts = $(".code_contacts__full"),
+            fieldAdress = $(".code_adress__full");
 
 
-    if (body.width() >= 1200) {
+        // var buttonsWorkRight = liveScopeOfButtons();      ///////////// Эта хрень не работает =(
 
 
-        fullNavigation.removeClass(mobileNavigation);
-        blockNavigation.removeClass(menuMobile);
-        blockNavigation.removeClass(closeMenu);
-    } else {
-        fullNavigation.addClass(mobileNavigation);
+        if (body.width() >= 1200) {
 
 
-        blockNavigation.addClass(menuMobile);
-        blockNavigation.addClass(closeMenu);
-
-        iconMenu.removeClass(iconMenu_close);
-
-
-    }
+            fullNavigation.removeClass(mobileNavigation);
+            blockNavigation.removeClass(menuMobile);
+            blockNavigation.removeClass(closeMenu);
+        } else {
+            fullNavigation.addClass(mobileNavigation);
 
 
-    if (body.width() >= 992) {
+            blockNavigation.addClass(menuMobile);
+            blockNavigation.addClass(closeMenu);
+
+            iconMenu.removeClass(iconMenu_close);
 
 
-        // fieldRubrics.css({"display": "block"});
-        // fieldCategories.css({"display": "block"});
-        // fieldInformation.css({"display": "block"});
-        // fieldContacts.css({"display": "block"});
-        // fieldAdress.css({"display": "block"});
-
-        // $(".bl_filters").css({"display": "block"});
-        // $(".bl_filters__productsFilters").css({"display": "block"});
-
-    } else {
-        // fieldRubrics.css({"display": "none"});
-        // fieldCategories.css({"display": "none"});
-        // fieldInformation.css({"display": "none"});
-        // fieldContacts.css({"display": "none"});
-        // fieldAdress.css({"display": "none"});
+        }
 
 
-        // $(".bl_filters").css({"display": "none"});
-        // $(".bl_filters__productsFilters").css({"display": "none"});
-
-    }
+        if (body.width() >= 992) {
 
 
-});
+            // fieldRubrics.css({"display": "block"});
+            // fieldCategories.css({"display": "block"});
+            // fieldInformation.css({"display": "block"});
+            // fieldContacts.css({"display": "block"});
+            // fieldAdress.css({"display": "block"});
+
+            // $(".bl_filters").css({"display": "block"});
+            // $(".bl_filters__productsFilters").css({"display": "block"});
+
+        } else {
+            // fieldRubrics.css({"display": "none"});
+            // fieldCategories.css({"display": "none"});
+            // fieldInformation.css({"display": "none"});
+            // fieldContacts.css({"display": "none"});
+            // fieldAdress.css({"display": "none"});
 
 
-$(window).resize();
+            // $(".bl_filters").css({"display": "none"});
+            // $(".bl_filters__productsFilters").css({"display": "none"});
+
+        }
+
+
+    });
+
+
+})
 
 
 

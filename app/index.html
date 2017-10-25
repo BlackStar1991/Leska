@@ -322,7 +322,37 @@
 
 
                 </div>
-                <div class="cpl-md-9"></div>
+                <div class="col-md-9">
+                    <div class="bl_new">
+                        <p class="slider_name decor_greyTrapeze">Новые поступления</p>
+
+                        <ul class="slider_newProducts owl-carousel">
+                            <li class="product_sliderCart__item">
+                                <div class="product_sliderCart__item_wrapper">
+
+                                    <a href="#" class="product_sliderCart__link">
+                                        <img class="product_sliderCart__image" src="image/Products/product_1.jpg"
+                                             alt="">
+                                        <p class="product_sliderCart__name">
+                                            Рюкзак тактический Norfin TACTIC 45 45л / NF
+                                        </p>
+                                    </a>
+
+
+
+
+                                    <div class="product_sliderCart__price clearfix">
+                                        <span class="product_sliderCart__price_oldPrice">2034 грн.</span>
+                                        <span class="product_sliderCart__price_newPrice">100 грн.</span>
+                                        <!--<span class="product_sliderCart__price_normalPrice">100 грн.</span>  ///Если акции нету -->
+                                    </div>
+
+                                </div>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
             </div>
 
 
@@ -445,12 +475,10 @@
 
 
                 </div>
-
-
             </div>
-
-
         </section>
+
+
         <section class="bl_footerSecond">
             <div class="container">
                 <div class="col-xs-12">
@@ -459,8 +487,8 @@
             </div>
         </section>
     </footer>
-
 </div>
+
 
 <div class="blackWrapper hidden"></div>
 
@@ -497,25 +525,25 @@
 
 <!-- CALLBACK FORM -->
 
-<div class="bl_callback">
+<div class="bl_callback hidden">
+    <button class="bl_callback__close decor_close"></button>
+    <form class="bl_callback__form ">
+        <label class="bl_callback__label">
+            <input class="bl_callback__input" type="text" placeholder="Ваше имя" required>
+            <span class="text_error hidden">Пиши нормальное Имя</span> <!-- Можешь сюда выводить текст ошибки -->
+        </label>
+        <label class="bl_callback__label">
+            <input class="bl_callback__input" type="tel" placeholder="Ваш телефон" required>
+            <span class="text_error  hidden">Я не верю что это телефон</span> <!-- Можешь сюда выводить текст ошибки -->
+        </label>
+        <button class="bl_callback__button button_simple" type="submit">Заказать звонок</button>
+    </form>
+</div>
 
-        <button class="bl_callback__close decor_close"></button>
-
-        <form class="bl_callback__form">
-            <label class="bl_callback__label">
-                <input class="bl_callback__input" type="text" placeholder="Ваше имя" required>
-                <span class="text_error">Пиши нормальное Имя</span> <!-- Можешь сюда выводить текст ошибки -->
-            </label>
-            <label class="bl_callback__label">
-                <input class="bl_callback__input" type="tel" placeholder="Ваш телефон" required>
-                <span class="text_error">Я не верю что это телефон</span> <!-- Можешь сюда выводить текст ошибки -->
-            </label>
-            <button class="bl_callback__button button_simple" type="submit">Заказать звонок</button>
-        </form>
-        <div class="bl_callback__success hidden">
-            <p class="">Ваш запрос принят, наш специалист свяжется с Вами в блежайшее время </p>
-        </div>
-   
+<!-- Succsess FORM-->
+<div class="bl_success hidden">
+    <p class="text_success decor_icon__seccuess">Ваш запрос принят.</p>
+    <p class="text_success">Наш специалист свяжется с Вами в блежайшее время </p>
 </div>
 
 

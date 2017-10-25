@@ -29,7 +29,7 @@ body {
   min-width: 320px;
   position: relative;
 
-  background-color: $color_grey;
+  //background-color: $color_grey;
 
   display: -webkit-box;
   display: flex;
@@ -204,6 +204,9 @@ textarea {
 }
 
 
+///
+
+
 
 // OWL
 
@@ -330,16 +333,15 @@ textarea {
   }
 
 }
-///////////
 
 
 
 
-
-.slider_popular.owl-carousel .owl-nav,
-.slider_newProducts.owl-carousel .owl-nav,
-.slider_withThisProductBuy.owl-carousel .owl-nav,
-.slider_youViewed.owl-carousel .owl-nav {
+//.slider_popular.owl-carousel .owl-nav,
+//
+//.slider_withThisProductBuy.owl-carousel .owl-nav,
+//.slider_youViewed.owl-carousel .owl-nav,
+.slider_newProducts.owl-carousel .owl-nav{
   width: initial;
   height: auto;
   top: -34px;
@@ -954,11 +956,7 @@ textarea {
     content: "\f00d";
     font-family:$FontAwesome;
     position: absolute;
-    top: 50%;
-    left: 50%;
     transform: translate(-50%, -50%);
-    height: 100%;
-    width: 100%;
     color: $color_lightBlue;
   }
 }
@@ -1051,7 +1049,7 @@ textarea {
 
 ///////////// CALLBACK FORM
 
-.bl_callback{
+.bl_callback, .bl_success{
   display: block;
   position: fixed;
   top: 50%;
@@ -1059,18 +1057,22 @@ textarea {
   transform: translate(-50%, -50%);
   background-color: #fff;
   border: 1px solid $color_lightBlue3;
-  width: 100%;
-  max-width: 220px;
-  min-height: 120px;
-  font-size: 16px;
-  font-family:$OpenSans;
-  padding:10px;
+  border-radius: 4px;
+   min-width: 120px;
   z-index: 1080;
 }
+.bl_success{
+  text-align: center;
+  padding:0 10px 10px;
+  cursor: pointer;
+}
+
 
 .bl_callback__close {
   position: relative;
   float: right;
+  margin-top: 10px;
+  margin-right: 10px;
   width: 26px;
   height: 26px;
   font-size: 26px;
@@ -1086,7 +1088,7 @@ textarea {
 .bl_callback__form{
   clear: both;
   width: 100%;
-  margin-top: 5px;
+  padding: 1px 10px 10px;
 }
 
 
@@ -1094,9 +1096,13 @@ textarea {
   display: block;
   position: relative;
   width: 100%;
-  margin: 10px 0;
+  margin: 0 auto 24px;
 
-
+  span{
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+  }
 }
 
 .bl_callback__input{
@@ -1109,6 +1115,49 @@ textarea {
   margin: 5px auto;
 }
 
+
+.bl_callback__success{
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 0 10px 10px;
+}
+
+
+///////////
+
+.slider_name{
+  position: relative;
+  height: 36px;
+  line-height: 36px;
+  background-color: $color_grey;
+  color: #fff;
+  font-family: $OpenSans;
+  text-indent: 16px;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  z-index:2;
+}
+
+
+
+////// Slider NEW
+.bl_new{
+  width: 100%;
+  margin-top: 62px;
+}
+
+.decor_greyTrapeze{
+  &:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    @include sprite($mark-grey-pentagon);
+    z-index: -1;
+  }
+}
 
 /*********************************************/
 /*FOOTER*/
