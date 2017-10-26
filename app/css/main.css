@@ -1221,6 +1221,9 @@ textarea::-moz-focus-inner {
   position: relative;
   width: 100%; }
 
+.owl-carousel {
+  z-index: 2; }
+
 .owl-carousel .owl-nav {
   position: absolute;
   width: 100%;
@@ -1319,7 +1322,7 @@ textarea::-moz-focus-inner {
 .slider_newProducts.owl-carousel .owl-nav {
   width: initial;
   height: auto;
-  top: -34px;
+  top: -58px;
   right: 0; }
   .slider_newProducts.owl-carousel .owl-nav .owl-prev,
   .slider_newProducts.owl-carousel .owl-nav .owl-next {
@@ -1327,42 +1330,74 @@ textarea::-moz-focus-inner {
     position: relative;
     top: 0;
     left: 0;
-    width: 50px;
-    height: 70px;
-    background-color: #fff;
+    width: 24px;
+    height: 36px;
+    color: #9f9f9f;
+    background-color: #f6f6f6;
     box-sizing: border-box;
-    vertical-align: top;
-    border: 1px solid #4e5665; }
+    vertical-align: top; }
+    .slider_newProducts.owl-carousel .owl-nav .owl-prev:hover,
+    .slider_newProducts.owl-carousel .owl-nav .owl-next:hover {
+      color: #464d5a; }
     .slider_newProducts.owl-carousel .owl-nav .owl-prev:before,
     .slider_newProducts.owl-carousel .owl-nav .owl-next:before {
       position: absolute;
       content: "\f104";
       font-family: "FontAwesome";
-      height: 100%;
-      left: 50%;
-      top: 64%;
+      display: block;
+      width: 100%;
+      left: 79%;
+      top: 44%;
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-      font-size: 48px;
-      color: #e5e5e5;
+      font-size: 32px;
       background: none; }
   .slider_newProducts.owl-carousel .owl-nav .owl-next {
-    float: right; }
+    float: right;
+    border-left: 1px solid #d8d8d8; }
     .slider_newProducts.owl-carousel .owl-nav .owl-next:before {
       content: "\f105";
-      top: 50%;
+      top: 28%;
       background: none; }
+
+.slider_newProducts.owl-carousel .owl-dots {
+  position: absolute;
+  top: -74px;
+  left: 32%;
+  z-index: 3; }
+  .slider_newProducts.owl-carousel .owl-dots .owl-dot {
+    display: inline-block;
+    width: 46px;
+    height: 5px;
+    background-color: #d8d8d8;
+    margin-left: 2px;
+    box-sizing: border-box; }
+    .slider_newProducts.owl-carousel .owl-dots .owl-dot.active {
+      background-color: #464d5a; }
 
 .bl_mark {
   position: absolute;
-  top: -24px;
-  left: -18px;
-  width: 113px;
-  height: 126px; }
-  .bl_mark__hit {
-    background: url("../image/fish_hit.svg") 0 50% no-repeat; }
-  .bl_mark__action {
-    background: url("../image/fish_action.svg") 0 50% no-repeat; }
+  top: 20px;
+  left: 0;
+  z-index: 3; }
+  .bl_mark span {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    padding-left: 10px;
+    color: #fff;
+    text-transform: uppercase; }
+  .bl_mark__top {
+    background-image: url(../image/sprite.png);
+    background-position: 0px -68px;
+    width: 85px;
+    height: 24px; }
+  .bl_mark__hot {
+    background-image: url(../image/sprite.png);
+    background-position: -135px -39px;
+    width: 97px;
+    height: 24px; }
   .bl_mark__new {
     background: url("../image/fish_new.svg") 0 50% no-repeat; }
 
@@ -1895,6 +1930,60 @@ textarea::-moz-focus-inner {
   width: 257px;
   height: 34px;
   z-index: -1; }
+
+.slider_newProducts {
+  margin-top: 40px; }
+
+.product_sliderCart__item {
+  width: 100%;
+  padding: 10px; }
+
+.product_sliderCart__link {
+  position: relative;
+  padding: 20px 14px 16px;
+  width: 100%;
+  height: 100%;
+  display: block;
+  box-sizing: border-box;
+  border: 1px solid #fff;
+  transition: all 0.2s; }
+  .product_sliderCart__link:hover {
+    transition: all 0.2s;
+    box-shadow: 0 0 18px rgba(0, 0, 0, 0.08);
+    border-color: #eee; }
+
+.product_sliderCart__name {
+  color: #12171f;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px; }
+
+.product_sliderCart__item .bl_shortReviews__fullStars {
+  height: 18px; }
+
+.product_sliderCart__price {
+  clear: both;
+  padding-top: 8px;
+  margin-top: 15px;
+  width: 100%;
+  border-top: 1px solid  #e7e7e7;
+  font-family: "Open Sans - Semibold", sans-serif;
+  font-size: 16px;
+  font-weight: 700; }
+
+.product_sliderCart__price_normalPrice {
+  color: #101216; }
+
+.product_sliderCart__price_oldPrice {
+  color: #b8b8b8;
+  font-family: "Open Sans - Semibold", sans-serif;
+  font-size: 12px;
+  text-decoration: line-through; }
+
+.product_sliderCart__price_newPrice {
+  display: block;
+  color: #ed0f33; }
 
 /*********************************************/
 /*FOOTER*/

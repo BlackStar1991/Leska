@@ -147,38 +147,38 @@ $(document).ready(function () {
 
 
 ////// slider_newProducts
-//
-//     $(".slider_newProducts").owlCarousel({
-//         items: 4,
-//         loop: true,
-//         nav: true,
-//         navText: true,
-//         dots: false,
-//         autoplay: false,
-//         stopOnHover: true,
-//         margin: 0,
-//         smartSpeed: 1000, //Время движения слайда
-//         autoplayTimeout: 4000, //Время смены слайда
-//         pagination: false,
-//         responsiveClass: true,
-//         responsive: {
-//             1200: {
-//                 items: 4
-//             },
-//             992: {
-//                 items: 3,
-//                 center: true
-//             },
-//             550: {
-//                 items: 2
-//             },
-//             320: {
-//                 items: 1,
-//                 center: true
-//             }
-//
-//         }
-//     });
+
+    $(".slider_newProducts").owlCarousel({
+        items: 4,
+        loop: true,
+        nav: true,
+        navText: true,
+        dots: true,
+        autoplay: false,
+        stopOnHover: true,
+        margin: 6,
+        smartSpeed: 1000, //Время движения слайда
+        autoplayTimeout: 4000, //Время смены слайда
+        pagination: false,
+        responsiveClass: true,
+        responsive: {
+            1200: {
+                items: 4
+            },
+            992: {
+                items: 3,
+                center: true
+            },
+            550: {
+                items: 2
+            },
+            320: {
+                items: 1,
+                center: true
+            }
+
+        }
+    });
 
 //    probuct_image__slider - SLIDER for Product
 
