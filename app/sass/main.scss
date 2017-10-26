@@ -341,10 +341,10 @@ textarea {
 
 
 
-//.slider_popular.owl-carousel .owl-nav,
-//
+
 //.slider_withThisProductBuy.owl-carousel .owl-nav,
 //.slider_youViewed.owl-carousel .owl-nav,
+.slider_popular.owl-carousel .owl-nav,
 .slider_newProducts.owl-carousel .owl-nav{
   width: initial;
   height: auto;
@@ -396,6 +396,7 @@ textarea {
 
 }
 
+.slider_popular.owl-carousel .owl-dots,
 .slider_newProducts.owl-carousel .owl-dots{
   position: absolute;
   top: -74px; ////////
@@ -417,7 +418,15 @@ textarea {
 
 }
 
+//////////corrected
 
+.slider_popular.owl-carousel .owl-nav{
+  top: -18px;
+}
+
+.slider_popular.owl-carousel .owl-dots{
+  top: -32px;
+}
 
 // OWL END
 
@@ -426,7 +435,7 @@ textarea {
 
 .bl_mark {
   position: absolute;
-  top: 20px;
+  top: 18px;
   left: 0;
 
   z-index:3;
@@ -448,8 +457,8 @@ textarea {
     @include sprite($mark-hot);
   }
 
-  &__new {
-    background: url("../image/fish_new.svg") 0 50% no-repeat;
+  &__hit {
+    @include sprite($mark-hit);
   }
 
 }
@@ -1209,7 +1218,7 @@ textarea {
 
 .product_sliderCart__link{
   position: relative;
-  padding: 20px 14px 16px;
+  padding: 20px 14px 0;
   width: 100%;
   height:100%;
   display: block;
@@ -1246,6 +1255,7 @@ textarea {
   padding-top: 8px;
   margin-top: 15px;
   width: 100%;
+  min-height:54px;
   border-top: 1px solid  #e7e7e7;
 
   font-family: $OpenSansSemibold;
@@ -1268,6 +1278,45 @@ textarea {
   display: block;
   color: $color_pink;
 }
+
+////// Slider Popular
+.bl_popular{
+  width: 100%;
+  margin-top: 62px;
+}
+
+
+
+//  News Paper
+.bl_newspaper{
+  width: 100%;
+  margin-top: 48px;
+}
+
+.bl_newspaper__fullBlock{
+  width: 100%;
+  margin-top: 62px;
+}
+
+.bl_newspaper__item{
+  position: relative;
+  width: 50%;
+  float: left;
+
+}
+
+.bl_newspaper__image{
+  vertical-align: top;
+  max-width: 50%;
+  display: inline-block;
+}
+
+.bl_newspaper__description{
+  width: 50%;
+  display: inline-block;
+  margin-left: 20px;
+}
+
 
 /*********************************************/
 /*FOOTER*/

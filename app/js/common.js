@@ -117,10 +117,10 @@ $(document).ready(function () {
         loop: true,
         nav: true,
         navText: true,
-        dots: false,
+        dots: true,
         autoplay: false,
         stopOnHover: true,
-        margin: 0,
+        margin: 6,
         smartSpeed: 1000, //Время движения слайда
         autoplayTimeout: 4000, //Время смены слайда
         pagination: false,
@@ -133,7 +133,6 @@ $(document).ready(function () {
                 items: 3,
                 center: true
             },
-
             550: {
                 items: 2
             },
