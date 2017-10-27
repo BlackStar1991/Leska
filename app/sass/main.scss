@@ -343,7 +343,7 @@ textarea {
 
 
 //.slider_withThisProductBuy.owl-carousel .owl-nav,
-//.slider_youViewed.owl-carousel .owl-nav,
+.slider_brands.owl-carousel .owl-nav,
 .slider_popular.owl-carousel .owl-nav,
 .slider_newProducts.owl-carousel .owl-nav{
   width: initial;
@@ -389,7 +389,7 @@ textarea {
     border-left: 1px solid $colorSlider1;
     &:before {
       content: "\f105";
-      top: 28%;
+      top: 27%;
       background: none;
     }
   }
@@ -426,6 +426,15 @@ textarea {
 
 .slider_popular.owl-carousel .owl-dots{
   top: -32px;
+}
+
+
+.slider_brands.owl-carousel .owl-nav{
+  .owl-prev,
+  .owl-next{
+    background: none;
+  }
+
 }
 
 // OWL END
@@ -1284,8 +1293,40 @@ textarea {
   width: 100%;
   margin-top: 62px;
 }
+///// Slider Brands
+.bl_brands{
+  width: 100%;
+  margin-top: 28px;
+}
+
+.slider_brands__item{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height:80px;
+}
+.slider_brands__link{
+  width: 100%;
+  display: block;
+}
 
 
+
+
+
+
+
+
+.bl_aboutShop__link{
+  display: block;
+  max-width: 250px;
+  margin-top: 47px;
+  padding:6px 34px;
+  &:hover{
+    color: #fff;
+    text-decoration: underline;
+  }
+}
 
 //  News Paper
 .bl_newspaper{
@@ -1394,8 +1435,38 @@ textarea {
 
 
 .ceo_block{
-
+  width: 100%;
+  margin-top: 40px;
+  line-height: 24px;
+  color: #1e232c;
 }
+
+.ceo_title{
+  font-family: $OpenSans;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.ceo_subtitle{
+  font-family: $OpenSansSemibold;
+  font-weight: 700;
+}
+
+.ceo_text{
+  margin-top: 15px;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.ceo_list{
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 20px;
+  margin-top: 15px;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+
 
 /*********************************************/
 /*FOOTER*/
