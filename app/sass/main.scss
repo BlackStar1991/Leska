@@ -1173,7 +1173,7 @@ textarea {
 
 ///////////
 
-.slider_name{
+.block_name{
   position: relative;
   height: 36px;
   line-height: 36px;
@@ -1295,14 +1295,14 @@ textarea {
 
 .bl_newspaper__fullBlock{
   width: 100%;
-  margin-top: 62px;
+  //margin-top: 62px;
 }
 
 .bl_newspaper__item{
   position: relative;
   width: 50%;
   float: left;
-
+  margin-top: 52px;
 }
 
 .bl_newspaper__image{
@@ -1312,11 +1312,90 @@ textarea {
 }
 
 .bl_newspaper__description{
+  position: relative;
+
   width: 50%;
   display: inline-block;
   margin-left: 20px;
+  line-height: 24px;
+
 }
 
+
+.bl_newspaper__name{
+  position: relative;
+  color: #1e232c;
+  height: 50px;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 700;
+  overflow: hidden;
+}
+
+.bl_newspaper__shortDescription{
+  font-size: 14px;
+  font-weight: 300;
+  height: 100px;
+  overflow: hidden;
+}
+
+
+.bl_newspaper__data{
+  display: block;
+  font-weight: 300;
+  color: #b5b5b5;
+  font-size: 14px;
+}
+
+
+.bl_newspaper__link{
+  position: relative;
+  color: $color_button;
+  font-family: $OpenSansSemibold;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+
+.decor_triangle__right{
+  &:after{
+    content: "\f0da";
+    font-family: $FontAwesome;
+    position: absolute;
+    right: -9px;
+    top: -4px;
+    font-size: 14px;
+    color: inherit;
+  }
+
+}
+
+.bl_newspaper__allNews{
+  display: block;
+  width: 100%;
+  margin-top: 50px;
+  text-align: center;
+  color: $color_button;
+  font-family: $OpenSansSemibold;
+  font-size: 14px;
+  font-weight: 400;
+  text-decoration: underline;
+}
+
+
+// CEO 
+
+.bl_aboutShop{
+  width: 100%;
+  margin-top: 60px;
+  position: relative;
+}
+
+
+.ceo_block{
+
+}
 
 /*********************************************/
 /*FOOTER*/
