@@ -47,6 +47,17 @@ $(document).ready(function () {
         $(this).parent(".bl_catalogs__item").toggleClass(active);
         $(this).siblings("ul").eq(0).slideToggle(400);
     });
+///////// Filters Button
+    var buttonFilterSection = $(".bl_filters__button");
+        // decorButtonLine = "decor_filterLine",
+        // decorButtonTriangle = "decor_filterTriangle";
+
+    buttonFilterSection.on("click", function(){
+       $(this).toggleClass("decor_filterLine decor_filterTriangle");
+       $(this).next(".bl_filters__section").slideToggle(300);
+    });
+
+
 
 /// Pages button
 
