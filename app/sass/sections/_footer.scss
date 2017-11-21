@@ -56,14 +56,15 @@
   display: block;
   float: left;
 
+
   opacity: .3;
   transition: opacity, .3s;
 
-  &:hover {
+  &:hover,
+  &:focus{
     opacity: 1;
     transition: opacity, .3s;
   }
-
 }
 
 .icon_fb {

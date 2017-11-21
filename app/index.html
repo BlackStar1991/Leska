@@ -110,10 +110,8 @@
                         </ul>
 
 
-                        <button class="btn_callBack">
-                    <span class="btn_callBack__text">
-                        Заказать бесплатный звонок
-                    </span>
+                        <button class="btn_callBack" type="button" title="CallBack">
+                             <span class="btn_callBack__text">Заказать бесплатный звонок</span>
                         </button>
 
                     </div>
@@ -145,184 +143,191 @@
             </div>
 
             <div class="container">
-                <div class="col-md-3">
-                    <div class="bl_catalogs">
-                        <button class="filter_name" type="button" title="Категории">Категории</button>
-                        <ul class="bl_catalogs__firstLevel">
-                            <li class="bl_catalogs__item ">
-                                <a class="bl_catalogs__link" href="#">Удилища </a>
-                                <button type="button" class="bl_catalogs__button decor_triangle"></button>
-                                <!-- Это добавлять кнопку <button type="button" class="bl_catalogs__button decor_triangle"></button>  только если есть  у подкатегории есть потомки -->
+                <div class="col-xs-12 col-md-3 correct_right">
+                    <aside class="sidebar">
+                        <nav class="bl_catalogs">
+                            <button class="section_name" type="button" title="Категории">Категории</button>
+                            <ul class="bl_catalogs__firstLevel">
+                                <li class="bl_catalogs__item ">
+                                    <a class="bl_catalogs__link" href="#">Удилища </a>
+                                    <button type="button" class="bl_catalogs__button decor_triangle"></button>
+                                    <!-- Это добавлять кнопку <button type="button" class="bl_catalogs__button decor_triangle"></button>  только если есть  у подкатегории есть потомки -->
 
-                                <ul class="bl_catalogs__secondLevel">
-                                    <li class="bl_catalogs__item"><a class="bl_catalogs__link"
-                                                                     href="#">Запасные части  </a>
-                                        <button type="button" class="bl_catalogs__button decor_triangle"></button>
-                                        <ul class="bl_catalogs__thirdLevel"></ul>
-                                    </li>
-
-
-                                    <li class="bl_catalogs__item"><a class="bl_catalogs__link" href="#">Спининги</a>
-                                    </li>
-
-                                    <li class="bl_catalogs__item"><a class="bl_catalogs__link " href="#">Поплавочные</a>
-                                        <button type="button" class="bl_catalogs__button decor_triangle"></button>
-
-                                        <ul class="bl_catalogs__thirdLevel ">
-                                            <li class="bl_catalogs__item">
-                                                <a href="#" class="bl_catalogs__link">Поплавочные без колец</a>
-                                            </li>
-                                            <li class="bl_catalogs__item">
-                                                <a href="#" class="bl_catalogs__link">Поплавочные с кольцами</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-
-                                    <li class="bl_catalogs__item"><a class="bl_catalogs__link" href="#">Фидерные</a>
-                                    </li>
-                                    <li class="bl_catalogs__item"><a class="bl_catalogs__link" href="#">Карповые</a>
-                                    </li>
-                                    <li class="bl_catalogs__item"><a class="bl_catalogs__link" href="#">Матчевые</a>
-                                    </li>
-                                    <li class="bl_catalogs__item"><a class="bl_catalogs__link" href="#">Нахлыстовые</a>
-                                    </li>
-                                    <li class="bl_catalogs__item"><a class="bl_catalogs__link"
-                                                                     href="#">Телескопические</a></li>
-                                    <li class="bl_catalogs__item"><a class="bl_catalogs__link" href="#">Тролинговые</a>
-                                    </li>
-                                    <li class="bl_catalogs__item"><a class="bl_catalogs__link" href="#">Серфовые</a>
-                                    </li>
-                                    <li class="bl_catalogs__item"><a class="bl_catalogs__link"
-                                                                     href="#">Вершинки и кончики</a></li>
-
-                                </ul>
-                            </li>
-                            <li class="bl_catalogs__item">
-                                <a class="bl_catalogs__link" href="#">Катушки</a>
-                                <button type="button" class="bl_catalogs__button decor_triangle"></button>
-                                <ul class="bl_catalogs__secondLevel"></ul>
-                            </li>
-
-                            <li class="bl_catalogs__item">
-                                <a class="bl_catalogs__link" href="#">Шнуры Леска</a>
-                                <button type="button" class="bl_catalogs__button decor_triangle"></button>
-                                <ul class="bl_catalogs__secondLevel"></ul>
-                            </li>
-                            <li class="bl_catalogs__item">
-                                <a class="bl_catalogs__link" href="#">Все для зимней рыбалки</a>
-                                <button type="button" class="bl_catalogs__button decor_triangle"></button>
-                                <ul class="bl_catalogs__secondLevel"></ul>
-                            </li>
-                            <li class="bl_catalogs__item">
-                                <a class="bl_catalogs__link" href="#">Приманки</a>
-                                <button type="button" class="bl_catalogs__button decor_triangle"></button>
-                                <ul class="bl_catalogs__secondLevel"></ul>
-                            </li>
-                            <li class="bl_catalogs__item">
-                                <a class="bl_catalogs__link" href="#">Прикормки и Наживки</a>
-                                <button type="button" class="bl_catalogs__button decor_triangle"></button>
-                                <ul class="bl_catalogs__secondLevel"></ul>
-                            </li>
-                            <li class="bl_catalogs__item">
-                                <a class="bl_catalogs__link" href="#">Монтаж  оснастки</a>
-                                <button type="button" class="bl_catalogs__button decor_triangle"></button>
-                                <ul class="bl_catalogs__secondLevel"></ul>
-                            </li>
-                            <li class="bl_catalogs__item">
-                                <a class="bl_catalogs__link" href="#">Аксессуары</a>
-                                <button type="button" class="bl_catalogs__button decor_triangle"></button>
-                                <ul class="bl_catalogs__secondLevel"></ul>
-                            </li>
-                            <li class="bl_catalogs__item">
-                                <a class="bl_catalogs__link" href="#">Одежда для рыбалки и охоты</a>
-                                <button type="button" class="bl_catalogs__button decor_triangle"></button>
-                                <ul class="bl_catalogs__secondLevel"></ul>
-                            </li>
-                            <li class="bl_catalogs__item">
-                                <a class="bl_catalogs__link" href="#">Обувь</a>
-                                <button type="button" class="bl_catalogs__button decor_triangle"></button>
-                                <ul class="bl_catalogs__secondLevel"></ul>
-                            </li>
-                            <li class="bl_catalogs__item">
-                                <a class="bl_catalogs__link" href="#">Турестическая Мебель и Аксессуары</a>
-                                <button type="button" class="bl_catalogs__button decor_triangle"></button>
-                                <ul class="bl_catalogs__secondLevel"></ul>
-                            </li>
-                            <li class="bl_catalogs__item">
-                                <a class="bl_catalogs__link" href="#">Новинки</a>
-                                <button type="button" class="bl_catalogs__button decor_triangle"></button>
-                                <ul class="bl_catalogs__secondLevel"></ul>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="bl_shortReviews hidden-sm hidden-xs">
-                        <p class="filter_name">Отзывы покупателей</p>
-                        <ul class="bl_shortReviews__fullReviews">
-                            <li class="bl_shortReviews__item">
-                                <img class="bl_shortReviews__image" src="image/Products/product1_min.jpg" alt="">
-                                <a class="bl_shortReviews__name" href="#">
-                                    Термобелье Norfin Winter Line Gray 303600
-                                </a>
-                                <div class="bl_shortReviews__fullStars">
-                                    <div class="bl_shortReviews__star icon_star__full"></div>
-                                    <div class="bl_shortReviews__star icon_star__full"></div>
-                                    <div class="bl_shortReviews__star icon_star__full"></div>
-                                    <div class="bl_shortReviews__star icon_star__full"></div>
-                                    <div class="bl_shortReviews__star icon_star__empty"></div>
-                                </div>
-                                <p class="bl_shortReviews__full">
-                                    Нормальное термобелье второго слоя. На штанах высокая талиея не задувает. Материал -
-                                    флис односторо..
-                                </p>
-                            </li>
-
-                            <li class="bl_shortReviews__item">
-                                <img class="bl_shortReviews__image" src="image/Products/product2_min.jpg" alt="">
-                                <a class="bl_shortReviews__name" href="#">
-                                    17064 Спиннинговое удилище шт2 Winner yellow V6 im8 0130012B 5-15g 2,4м *
-                                </a>
-                                <div class="bl_shortReviews__stars">
-                                    <div class="bl_star bl_star__full"></div>
-                                    <div class="bl_star bl_star__full"></div>
-                                    <div class="bl_star bl_star__full"></div>
-                                    <div class="bl_star bl_star__full"></div>
-                                    <div class="bl_star bl_star__full"></div>
-                                </div>
-                                <p class="bl_shortReviews__full">
-                                    Хороший спиннинг для начинающего спиннингиста. Удобный, легкий, чувствительный и не
-                                    дорогой...
-                                </p>
-                            </li>
-
-                            <li class="bl_shortReviews__item">
-                                <img class="bl_shortReviews__image" src="image/Products/product3_min.jpg" alt="">
-                                <a class="bl_shortReviews__name" href="#">
-                                    Термосумка Norfin FORSSA NFL с посуд. на 6 персон
-                                </a>
-                                <div class="bl_shortReviews__stars">
-                                    <div class="bl_star bl_star__full"></div>
-                                    <div class="bl_star bl_star__full"></div>
-                                    <div class="bl_star bl_star__full"></div>
-                                    <div class="bl_star bl_star__full"></div>
-                                    <div class="bl_star bl_star__empty"></div>
-                                </div>
-                                <p class="bl_shortReviews__full">
-                                    Всё супер!) Спасибо,все получили,подарочек приятно удивил))) Первый раз заказывал у
-                                    вас, думаю, точно...
-                                </p>
-                            </li>
+                                    <ul class="bl_catalogs__secondLevel">
+                                        <li class="bl_catalogs__item"><a class="bl_catalogs__link"
+                                                                         href="#">Запасные части  </a>
+                                            <button type="button" class="bl_catalogs__button decor_triangle"></button>
+                                            <ul class="bl_catalogs__thirdLevel"></ul>
+                                        </li>
 
 
-                        </ul>
+                                        <li class="bl_catalogs__item"><a class="bl_catalogs__link" href="#">Спининги</a>
+                                        </li>
 
-                        <a class="bl_shortReviews__link" href="#">Читать все отзывы</a>
+                                        <li class="bl_catalogs__item"><a class="bl_catalogs__link "
+                                                                         href="#">Поплавочные</a>
+                                            <button type="button" class="bl_catalogs__button decor_triangle"></button>
 
-                    </div>
+                                            <ul class="bl_catalogs__thirdLevel ">
+                                                <li class="bl_catalogs__item">
+                                                    <a href="#" class="bl_catalogs__link">Поплавочные без колец</a>
+                                                </li>
+                                                <li class="bl_catalogs__item">
+                                                    <a href="#" class="bl_catalogs__link">Поплавочные с кольцами</a>
+                                                </li>
+                                            </ul>
+                                        </li>
 
+                                        <li class="bl_catalogs__item"><a class="bl_catalogs__link" href="#">Фидерные</a>
+                                        </li>
+                                        <li class="bl_catalogs__item"><a class="bl_catalogs__link" href="#">Карповые</a>
+                                        </li>
+                                        <li class="bl_catalogs__item"><a class="bl_catalogs__link" href="#">Матчевые</a>
+                                        </li>
+                                        <li class="bl_catalogs__item"><a class="bl_catalogs__link"
+                                                                         href="#">Нахлыстовые</a>
+                                        </li>
+                                        <li class="bl_catalogs__item"><a class="bl_catalogs__link"
+                                                                         href="#">Телескопические</a></li>
+                                        <li class="bl_catalogs__item"><a class="bl_catalogs__link"
+                                                                         href="#">Тролинговые</a>
+                                        </li>
+                                        <li class="bl_catalogs__item"><a class="bl_catalogs__link" href="#">Серфовые</a>
+                                        </li>
+                                        <li class="bl_catalogs__item"><a class="bl_catalogs__link"
+                                                                         href="#">Вершинки и кончики</a></li>
+
+                                    </ul>
+                                </li>
+                                <li class="bl_catalogs__item">
+                                    <a class="bl_catalogs__link" href="#">Катушки</a>
+                                    <button type="button" class="bl_catalogs__button decor_triangle"></button>
+                                    <ul class="bl_catalogs__secondLevel"></ul>
+                                </li>
+
+                                <li class="bl_catalogs__item">
+                                    <a class="bl_catalogs__link" href="#">Шнуры Леска</a>
+                                    <button type="button" class="bl_catalogs__button decor_triangle"></button>
+                                    <ul class="bl_catalogs__secondLevel"></ul>
+                                </li>
+                                <li class="bl_catalogs__item">
+                                    <a class="bl_catalogs__link" href="#">Все для зимней рыбалки</a>
+                                    <button type="button" class="bl_catalogs__button decor_triangle"></button>
+                                    <ul class="bl_catalogs__secondLevel"></ul>
+                                </li>
+                                <li class="bl_catalogs__item">
+                                    <a class="bl_catalogs__link" href="#">Приманки</a>
+                                    <button type="button" class="bl_catalogs__button decor_triangle"></button>
+                                    <ul class="bl_catalogs__secondLevel"></ul>
+                                </li>
+                                <li class="bl_catalogs__item">
+                                    <a class="bl_catalogs__link" href="#">Прикормки и Наживки</a>
+                                    <button type="button" class="bl_catalogs__button decor_triangle"></button>
+                                    <ul class="bl_catalogs__secondLevel"></ul>
+                                </li>
+                                <li class="bl_catalogs__item">
+                                    <a class="bl_catalogs__link" href="#">Монтаж  оснастки</a>
+                                    <button type="button" class="bl_catalogs__button decor_triangle"></button>
+                                    <ul class="bl_catalogs__secondLevel"></ul>
+                                </li>
+                                <li class="bl_catalogs__item">
+                                    <a class="bl_catalogs__link" href="#">Аксессуары</a>
+                                    <button type="button" class="bl_catalogs__button decor_triangle"></button>
+                                    <ul class="bl_catalogs__secondLevel"></ul>
+                                </li>
+                                <li class="bl_catalogs__item">
+                                    <a class="bl_catalogs__link" href="#">Одежда для рыбалки и охоты</a>
+                                    <button type="button" class="bl_catalogs__button decor_triangle"></button>
+                                    <ul class="bl_catalogs__secondLevel"></ul>
+                                </li>
+                                <li class="bl_catalogs__item">
+                                    <a class="bl_catalogs__link" href="#">Обувь</a>
+                                    <button type="button" class="bl_catalogs__button decor_triangle"></button>
+                                    <ul class="bl_catalogs__secondLevel"></ul>
+                                </li>
+                                <li class="bl_catalogs__item">
+                                    <a class="bl_catalogs__link" href="#">Турестическая Мебель и Аксессуары</a>
+                                    <button type="button" class="bl_catalogs__button decor_triangle"></button>
+                                    <ul class="bl_catalogs__secondLevel"></ul>
+                                </li>
+                                <li class="bl_catalogs__item">
+                                    <a class="bl_catalogs__link" href="#">Новинки</a>
+                                    <button type="button" class="bl_catalogs__button decor_triangle"></button>
+                                    <ul class="bl_catalogs__secondLevel"></ul>
+                                </li>
+                            </ul>
+                        </nav>
+
+                        <div class="bl_shortReviews hidden-sm hidden-xs">
+                            <p class="section_name">Отзывы покупателей</p>
+                            <ul class="bl_shortReviews__fullReviews">
+                                <li class="bl_shortReviews__item">
+                                    <img class="bl_shortReviews__image" src="image/Products/product1_min.jpg" alt="">
+                                    <a class="bl_shortReviews__name" href="#">
+                                        Термобелье Norfin Winter Line Gray 303600
+                                    </a>
+                                    <div class="bl_shortReviews__fullStars">
+                                        <div class="bl_shortReviews__star icon_star__full"></div>
+                                        <div class="bl_shortReviews__star icon_star__full"></div>
+                                        <div class="bl_shortReviews__star icon_star__full"></div>
+                                        <div class="bl_shortReviews__star icon_star__full"></div>
+                                        <div class="bl_shortReviews__star icon_star__empty"></div>
+                                    </div>
+                                    <p class="bl_shortReviews__full">
+                                        Нормальное термобелье второго слоя. На штанах высокая талиея не задувает.
+                                        Материал -
+                                        флис односторо..
+                                    </p>
+                                </li>
+
+                                <li class="bl_shortReviews__item">
+                                    <img class="bl_shortReviews__image" src="image/Products/product2_min.jpg" alt="">
+                                    <a class="bl_shortReviews__name" href="#">
+                                        17064 Спиннинговое удилище шт2 Winner yellow V6 im8 0130012B 5-15g 2,4м *
+                                    </a>
+                                    <div class="bl_shortReviews__fullStars">
+                                        <div class="bl_shortReviews__star icon_star__full"></div>
+                                        <div class="bl_shortReviews__star icon_star__full"></div>
+                                        <div class="bl_shortReviews__star icon_star__full"></div>
+                                        <div class="bl_shortReviews__star icon_star__full"></div>
+                                        <div class="bl_shortReviews__star icon_star__full"></div>
+                                    </div>
+                                    <p class="bl_shortReviews__full">
+                                        Хороший спиннинг для начинающего спиннингиста. Удобный, легкий, чувствительный и
+                                        не
+                                        дорогой...
+                                    </p>
+                                </li>
+
+                                <li class="bl_shortReviews__item">
+                                    <img class="bl_shortReviews__image" src="image/Products/product3_min.jpg" alt="">
+                                    <a class="bl_shortReviews__name" href="#">
+                                        Термосумка Norfin FORSSA NFL с посуд. на 6 персон
+                                    </a>
+                                    <div class="bl_shortReviews__fullStars">
+                                        <div class="bl_shortReviews__star icon_star__full"></div>
+                                        <div class="bl_shortReviews__star icon_star__full"></div>
+                                        <div class="bl_shortReviews__star icon_star__full"></div>
+                                        <div class="bl_shortReviews__star icon_star__full"></div>
+                                        <div class="bl_shortReviews__star icon_star__empty"></div>
+                                    </div>
+                                    <p class="bl_shortReviews__full">
+                                        Всё супер!) Спасибо,все получили,подарочек приятно удивил))) Первый раз
+                                        заказывал у
+                                        вас, думаю, точно...
+                                    </p>
+                                </li>
+
+
+                            </ul>
+
+                            <a class="bl_shortReviews__link" href="#">Читать все отзывы</a>
+
+                        </div>
+                    </aside>
 
                 </div>
-                <div class="col-md-9">
+                <div class="col-xs-12 col-md-9">
 
                     <!-- Slider NEW -->
                     <div class="bl_new">
@@ -699,7 +704,7 @@
                         </div>
 
 
-                        <a class="button_simple bl_aboutShop__link"  href="#">Подробнее о магазине</a>
+                        <a class="button_simple bl_aboutShop__link" href="#">Подробнее о магазине</a>
 
                     </div>
 
@@ -708,25 +713,32 @@
                     <div class="bl_brands hidden-xs">
                         <ul class="slider_brands owl-carousel">
                             <li class="slider_brands__item">
-                                <a href="#" class="slider_brands__link"><img src="image/Brands/salmo.png" alt="" class="slider_brands__image"></a>
+                                <a href="#" class="slider_brands__link"><img src="image/Brands/salmo.png" alt=""
+                                                                             class="slider_brands__image"></a>
                             </li>
                             <li class="slider_brands__item">
-                                <a href="#" class="slider_brands__link"><img src="image/Brands/spro.png" alt="" class="slider_brands__image"></a>
+                                <a href="#" class="slider_brands__link"><img src="image/Brands/spro.png" alt=""
+                                                                             class="slider_brands__image"></a>
                             </li>
                             <li class="slider_brands__item">
-                                <a href="#" class="slider_brands__link"><img src="image/Brands/norfin.png" alt="" class="slider_brands__image"></a>
+                                <a href="#" class="slider_brands__link"><img src="image/Brands/norfin.png" alt=""
+                                                                             class="slider_brands__image"></a>
                             </li>
                             <li class="slider_brands__item">
-                                <a href="#" class="slider_brands__link"><img src="image/Brands/keitech.png" alt="" class="slider_brands__image"></a>
+                                <a href="#" class="slider_brands__link"><img src="image/Brands/keitech.png" alt=""
+                                                                             class="slider_brands__image"></a>
                             </li>
                             <li class="slider_brands__item">
-                                <a href="#" class="slider_brands__link"><img src="image/Brands/kamik.png" alt="" class="slider_brands__image"></a>
+                                <a href="#" class="slider_brands__link"><img src="image/Brands/kamik.png" alt=""
+                                                                             class="slider_brands__image"></a>
                             </li>
                             <li class="slider_brands__item">
-                                <a href="#" class="slider_brands__link"><img src="image/Brands/Heinola.jpg" alt="" class="slider_brands__image"></a>
+                                <a href="#" class="slider_brands__link"><img src="image/Brands/Heinola.jpg" alt=""
+                                                                             class="slider_brands__image"></a>
                             </li>
                             <li class="slider_brands__item">
-                                <a href="#" class="slider_brands__link"><img src="image/Brands/abuGarcia.png" alt="" class="slider_brands__image"></a>
+                                <a href="#" class="slider_brands__link"><img src="image/Brands/abuGarcia.png" alt=""
+                                                                             class="slider_brands__image"></a>
                             </li>
                         </ul>
                     </div>
@@ -831,6 +843,8 @@
             </div>
 
 
+            <!-- OfflineQuestion-->
+
             <button class="bl_offlineQuestion_button hidden-xs hidden-sm" type="button" title="offline qestion">
                 Офлайн - задать вопрос
             </button>
@@ -856,6 +870,8 @@
 
                 </div>
             </div>
+            <!-- END offlineQuestion-->
+
         </section>
 
 
@@ -891,12 +907,13 @@
         <p class="popup_likeShopbag__text  popup_likeShopbag__text_main">добавлен в корзину</p>
 
         <div class="popup_likeShopbag__buttons">
-            <button class="button_buyProduct popup_likeShopbag__continueBuying">
-                <span class="button_buyProduct__text popup_likeShopbag__buttons_text">Продолжить покупки</span>
+            <button class="button_product">
+                <span class="button_buyProduct__text">Продолжить покупки</span>
             </button>
-            <button class="button_buyProduct popup_likeShopbag__goToShopbag">
-                <a href="#" class="button_buyProduct__text popup_likeShopbag__goToShopbag_text">Оформление заказа</a>
-            </button>
+
+            <div class="button_product">
+                <a href="#" class="button_buyProduct__text">Оформление заказа</a>
+            </div>
         </div>
 
     </div>

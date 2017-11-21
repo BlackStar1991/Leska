@@ -131,9 +131,9 @@
   box-sizing:border-box;
   border-left: 1px solid #6a85b7;
   border-right: 1px solid #6a85b7;
-
   &:hover,
   &:focus{
+    text-decoration: underline;
     color: #fff;
   }
 }
@@ -209,14 +209,16 @@
       font-weight: 300;
       font-style: italic;
     }
-
-    &:hover{
-
+    &:focus{
+      box-shadow: 0 0 4px $color_lightBlue;
     }
   }
 
 
   .icon-search{
+    &:focus{
+      box-shadow: 0 0 4px $color_lightBlue;
+    }
     &:before{
       content: "";
       position: absolute;
@@ -299,4 +301,8 @@
     background-color:  #0160ac;
     transition: all, .2s;
   }
+  &:focus{
+    border-color: $color_lightBlue;
+  }
+
 }
