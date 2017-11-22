@@ -376,14 +376,771 @@
                         </ul>
                     </div>
 
+                    <h1 class="bl_catalog__title">Катушки</h1>
+
+                    <div class="bl_catalog">
+
+                        <div class="bl_view clearfix">
+
+                            <label class="bl_sorter">
+                                <select class="bl_sorter__select" onchange="location = this.value;">
+                                    <option value="" selected="selected">Рейтинг (по возрастанию)</option>
+                                    <option value="">Название (A - Я)</option>
+                                    <option value="">Название (Я - A)</option>
+                                    <option value="">Сначала подешевле</option>
+                                    <option value="">Сначала подороже</option>
+                                </select>
+                            </label>
+
+                            <a class="comparisons_link icon-libra_active" href="#">Сравнение: (99)</a>
+
+
+                            <label class="bl_numberOfItemShow hidden-xs">
+                                <span class="bl_view__text">На странице:</span>
+                                <select class="bl_numberOfItemShow__select" onchange="location = this.value;">
+                                    <option value="" selected="selected">12</option>
+                                    <option value="">50</option>
+                                    <option value="">100</option>
+                                </select>
+                            </label>
+
+                        </div>
+                        
+                        <div class="bl_products clearfix">
+                            <div class="bl_fullProducts__item">
+                                <a class="bl_fullProducts__imageWrapper" href="#">
+
+                                    <!-- вставляем сюда marker если у товара есть, акция или хит или ещё что-то, тот же модуль что и на главной-->
+
+                                    <!-- HIT -->
+                                    <div class="bl_mark bl_mark__hit">
+                                        <span>Хит сезона</span>
+                                    </div>
+                                    <!-- -->
+
+
+                                    <picture class="bl_fullProducts__image">
+                                        <source media="(min-width: 1200px)" srcset="image/Products/category/product_1.png">
+                                        <source media="(min-width: 786px)" srcset="image/Products/category/product_1.png">
+                                        <img src="image/Products/category/product_1.png" alt="product">
+                                    </picture>
+
+                                <p class="bl_fullProducts__name">Катушка Durareel MR2000 3+1BB</p>
+                                </a>
+
+
+                                    <ul class="bl_description"> <!-- Выводить только 3 первых -->
+                                        <li>Тип: Безинерционная</li>
+                                        <li>Размер шпули: 2000</li>
+                                        <li>Вес: 255 г.</li>
+                                    </ul>
 
 
 
+                                <div class="bl_fullProducts__rating clearfix">
+                                    <div class="bl_shortReviews__fullStars">
+                                        <div class="bl_shortReviews__star icon_star__full"></div>
+                                        <div class="bl_shortReviews__star icon_star__full"></div>
+                                        <div class="bl_shortReviews__star icon_star__full"></div>
+                                        <div class="bl_shortReviews__star icon_star__full"></div>
+                                        <div class="bl_shortReviews__star icon_star__empty"></div>
+                                    </div>
+
+                                    <span class="bl_availability yes">В наличии</span>
+                                    <!--<span class="bl_availability no">Нет в наличии</span>-->
+
+                                </div>
+
+                                <div class="bl_fullProduc__price">
+                                    
+                                    <!--<span class="price_oldPrice">3071 грн.</span>-->
+                                    <!--<span class="price_newPrice">2899 грн.</span>-->
+                                    <span class="price_normalPrice">790 грн.</span>
+                                </div>
+
+
+                                <div class="bl_fullProduc__buttons">
+                                    <button type="button" class="btn_addToComparisons icon-libra" title="к сравнению"></button>
+                                    <button type="button" class="btn_addToBasket" title="В корзину"></button>
+                                </div>
+
+
+
+                            </div>
+                            <div class="bl_fullProducts__item">
+                                <a class="bl_fullProducts__imageWrapper" href="#">
+
+                                    <!-- вставляем сюда marker если у товара есть, акция или хит или ещё что-то, тот же модуль что и на главной-->
+
+                                    <!-- HIT -->
+                                    <div class="bl_mark bl_mark__hit">
+                                        <span>Хит сезона</span>
+                                    </div>
+                                    <!-- -->
+
+
+                                    <picture class="bl_fullProducts__image">
+                                        <source media="(min-width: 1200px)" srcset="image/Products/category/product_1.png">
+                                        <source media="(min-width: 786px)" srcset="image/Products/category/product_1.png">
+                                        <img src="image/Products/category/product_1.png" alt="product">
+                                    </picture>
+
+                                    <p class="bl_fullProducts__name">Катушка Durareel MR2000 3+1BB</p>
+                                </a>
+
+
+                                <ul class="bl_description"> <!-- Выводить только 3 первых -->
+                                    <li>Тип: Безинерционная</li>
+                                    <li>Размер шпули: 2000</li>
+                                    <li>Вес: 255 г.</li>
+                                </ul>
+
+
+
+                                <div class="bl_fullProducts__rating clearfix">
+                                    <div class="bl_shortReviews__fullStars">
+                                        <div class="bl_shortReviews__star icon_star__full"></div>
+                                        <div class="bl_shortReviews__star icon_star__full"></div>
+                                        <div class="bl_shortReviews__star icon_star__full"></div>
+                                        <div class="bl_shortReviews__star icon_star__full"></div>
+                                        <div class="bl_shortReviews__star icon_star__empty"></div>
+                                    </div>
+
+                                    <span class="bl_availability yes">В наличии</span>
+                                    <!--<span class="bl_availability no">Нет в наличии</span>-->
+
+                                </div>
+
+                                <div class="bl_fullProduc__price">
+
+                                    <!--<span class="price_oldPrice">3071 грн.</span>-->
+                                    <!--<span class="price_newPrice">2899 грн.</span>-->
+                                    <span class="price_normalPrice">790 грн.</span>
+                                </div>
+
+
+                                <div class="bl_fullProduc__buttons">
+                                    <button type="button" class="btn_addToComparisons icon-libra" title="к сравнению"></button>
+                                    <button type="button" class="btn_addToBasket" title="В корзину"></button>
+                                </div>
+
+
+
+                            </div>
+                            <div class="bl_fullProducts__item">
+                                <a class="bl_fullProducts__imageWrapper" href="#">
+
+                                    <!-- вставляем сюда marker если у товара есть, акция или хит или ещё что-то, тот же модуль что и на главной-->
+
+                                    <!-- HIT -->
+                                    <div class="bl_mark bl_mark__hit">
+                                        <span>Хит сезона</span>
+                                    </div>
+                                    <!-- -->
+
+
+                                    <picture class="bl_fullProducts__image">
+                                        <source media="(min-width: 1200px)" srcset="image/Products/category/product_1.png">
+                                        <source media="(min-width: 786px)" srcset="image/Products/category/product_1.png">
+                                        <img src="image/Products/category/product_1.png" alt="product">
+                                    </picture>
+
+                                    <p class="bl_fullProducts__name">Катушка Durareel MR2000 3+1BB</p>
+                                </a>
+
+
+                                <ul class="bl_description"> <!-- Выводить только 3 первых -->
+                                    <li>Тип: Безинерционная</li>
+                                    <li>Размер шпули: 2000</li>
+                                    <li>Вес: 255 г.</li>
+                                </ul>
+
+
+
+                                <div class="bl_fullProducts__rating clearfix">
+                                    <div class="bl_shortReviews__fullStars">
+                                        <div class="bl_shortReviews__star icon_star__full"></div>
+                                        <div class="bl_shortReviews__star icon_star__full"></div>
+                                        <div class="bl_shortReviews__star icon_star__full"></div>
+                                        <div class="bl_shortReviews__star icon_star__full"></div>
+                                        <div class="bl_shortReviews__star icon_star__empty"></div>
+                                    </div>
+
+                                    <span class="bl_availability yes">В наличии</span>
+                                    <!--<span class="bl_availability no">Нет в наличии</span>-->
+
+                                </div>
+
+                                <div class="bl_fullProduc__price">
+
+                                    <!--<span class="price_oldPrice">3071 грн.</span>-->
+                                    <!--<span class="price_newPrice">2899 грн.</span>-->
+                                    <span class="price_normalPrice">790 грн.</span>
+                                </div>
+
+
+                                <div class="bl_fullProduc__buttons">
+                                    <button type="button" class="btn_addToComparisons icon-libra" title="к сравнению"></button>
+                                    <button type="button" class="btn_addToBasket" title="В корзину"></button>
+                                </div>
+
+
+
+                            </div>
+                            <div class="bl_fullProducts__item">
+                                <a class="bl_fullProducts__imageWrapper" href="#">
+
+                                    <!-- вставляем сюда marker если у товара есть, акция или хит или ещё что-то, тот же модуль что и на главной-->
+
+                                    <!-- HIT -->
+                                    <div class="bl_mark bl_mark__hit">
+                                        <span>Хит сезона</span>
+                                    </div>
+                                    <!-- -->
+
+
+                                    <picture class="bl_fullProducts__image">
+                                        <source media="(min-width: 1200px)" srcset="image/Products/category/product_1.png">
+                                        <source media="(min-width: 786px)" srcset="image/Products/category/product_1.png">
+                                        <img src="image/Products/category/product_1.png" alt="product">
+                                    </picture>
+
+                                    <p class="bl_fullProducts__name">Катушка Durareel MR2000 3+1BB</p>
+                                </a>
+
+
+                                <ul class="bl_description"> <!-- Выводить только 3 первых -->
+                                    <li>Тип: Безинерционная</li>
+                                    <li>Размер шпули: 2000</li>
+                                    <li>Вес: 255 г.</li>
+                                </ul>
+
+
+
+                                <div class="bl_fullProducts__rating clearfix">
+                                    <div class="bl_shortReviews__fullStars">
+                                        <div class="bl_shortReviews__star icon_star__full"></div>
+                                        <div class="bl_shortReviews__star icon_star__full"></div>
+                                        <div class="bl_shortReviews__star icon_star__full"></div>
+                                        <div class="bl_shortReviews__star icon_star__full"></div>
+                                        <div class="bl_shortReviews__star icon_star__empty"></div>
+                                    </div>
+
+                                    <span class="bl_availability yes">В наличии</span>
+                                    <!--<span class="bl_availability no">Нет в наличии</span>-->
+
+                                </div>
+
+                                <div class="bl_fullProduc__price">
+
+                                    <!--<span class="price_oldPrice">3071 грн.</span>-->
+                                    <!--<span class="price_newPrice">2899 грн.</span>-->
+                                    <span class="price_normalPrice">790 грн.</span>
+                                </div>
+
+
+                                <div class="bl_fullProduc__buttons">
+                                    <button type="button" class="btn_addToComparisons icon-libra" title="к сравнению"></button>
+                                    <button type="button" class="btn_addToBasket" title="В корзину"></button>
+                                </div>
+
+
+
+                            </div>
+                            <div class="bl_fullProducts__item">
+                                <a class="bl_fullProducts__imageWrapper" href="#">
+
+                                    <!-- вставляем сюда marker если у товара есть, акция или хит или ещё что-то, тот же модуль что и на главной-->
+
+                                    <!-- HIT -->
+                                    <div class="bl_mark bl_mark__hit">
+                                        <span>Хит сезона</span>
+                                    </div>
+                                    <!-- -->
+
+
+                                    <picture class="bl_fullProducts__image">
+                                        <source media="(min-width: 1200px)" srcset="image/Products/category/product_1.png">
+                                        <source media="(min-width: 786px)" srcset="image/Products/category/product_1.png">
+                                        <img src="image/Products/category/product_1.png" alt="product">
+                                    </picture>
+
+                                    <p class="bl_fullProducts__name">Катушка Durareel MR2000 3+1BB</p>
+                                </a>
+
+
+                                <ul class="bl_description"> <!-- Выводить только 3 первых -->
+                                    <li>Тип: Безинерционная</li>
+                                    <li>Размер шпули: 2000</li>
+                                    <li>Вес: 255 г.</li>
+                                </ul>
+
+
+
+                                <div class="bl_fullProducts__rating clearfix">
+                                    <div class="bl_shortReviews__fullStars">
+                                        <div class="bl_shortReviews__star icon_star__full"></div>
+                                        <div class="bl_shortReviews__star icon_star__full"></div>
+                                        <div class="bl_shortReviews__star icon_star__full"></div>
+                                        <div class="bl_shortReviews__star icon_star__full"></div>
+                                        <div class="bl_shortReviews__star icon_star__empty"></div>
+                                    </div>
+
+                                    <span class="bl_availability yes">В наличии</span>
+                                    <!--<span class="bl_availability no">Нет в наличии</span>-->
+
+                                </div>
+
+                                <div class="bl_fullProduc__price">
+
+                                    <!--<span class="price_oldPrice">3071 грн.</span>-->
+                                    <!--<span class="price_newPrice">2899 грн.</span>-->
+                                    <span class="price_normalPrice">790 грн.</span>
+                                </div>
+
+
+                                <div class="bl_fullProduc__buttons">
+                                    <button type="button" class="btn_addToComparisons icon-libra" title="к сравнению"></button>
+                                    <button type="button" class="btn_addToBasket" title="В корзину"></button>
+                                </div>
+
+
+
+                            </div>
+                            <div class="bl_fullProducts__item">
+                                <a class="bl_fullProducts__imageWrapper" href="#">
+
+                                    <!-- вставляем сюда marker если у товара есть, акция или хит или ещё что-то, тот же модуль что и на главной-->
+
+                                    <!-- HIT -->
+                                    <div class="bl_mark bl_mark__hit">
+                                        <span>Хит сезона</span>
+                                    </div>
+                                    <!-- -->
+
+
+                                    <picture class="bl_fullProducts__image">
+                                        <source media="(min-width: 1200px)" srcset="image/Products/category/product_1.png">
+                                        <source media="(min-width: 786px)" srcset="image/Products/category/product_1.png">
+                                        <img src="image/Products/category/product_1.png" alt="product">
+                                    </picture>
+
+                                    <p class="bl_fullProducts__name">Катушка Durareel MR2000 3+1BB</p>
+                                </a>
+
+
+                                <ul class="bl_description"> <!-- Выводить только 3 первых -->
+                                    <li>Тип: Безинерционная</li>
+                                    <li>Размер шпули: 2000</li>
+                                    <li>Вес: 255 г.</li>
+                                </ul>
+
+
+
+                                <div class="bl_fullProducts__rating clearfix">
+                                    <div class="bl_shortReviews__fullStars">
+                                        <div class="bl_shortReviews__star icon_star__full"></div>
+                                        <div class="bl_shortReviews__star icon_star__full"></div>
+                                        <div class="bl_shortReviews__star icon_star__full"></div>
+                                        <div class="bl_shortReviews__star icon_star__full"></div>
+                                        <div class="bl_shortReviews__star icon_star__empty"></div>
+                                    </div>
+
+                                    <span class="bl_availability yes">В наличии</span>
+                                    <!--<span class="bl_availability no">Нет в наличии</span>-->
+
+                                </div>
+
+                                <div class="bl_fullProduc__price">
+
+                                    <!--<span class="price_oldPrice">3071 грн.</span>-->
+                                    <!--<span class="price_newPrice">2899 грн.</span>-->
+                                    <span class="price_normalPrice">790 грн.</span>
+                                </div>
+
+
+                                <div class="bl_fullProduc__buttons">
+                                    <button type="button" class="btn_addToComparisons icon-libra" title="к сравнению"></button>
+                                    <button type="button" class="btn_addToBasket" title="В корзину"></button>
+                                </div>
+
+
+
+                            </div>
+                            <div class="bl_fullProducts__item">
+                                <a class="bl_fullProducts__imageWrapper" href="#">
+
+                                    <!-- вставляем сюда marker если у товара есть, акция или хит или ещё что-то, тот же модуль что и на главной-->
+
+                                    <!-- HIT -->
+                                    <div class="bl_mark bl_mark__hit">
+                                        <span>Хит сезона</span>
+                                    </div>
+                                    <!-- -->
+
+
+                                    <picture class="bl_fullProducts__image">
+                                        <source media="(min-width: 1200px)" srcset="image/Products/category/product_1.png">
+                                        <source media="(min-width: 786px)" srcset="image/Products/category/product_1.png">
+                                        <img src="image/Products/category/product_1.png" alt="product">
+                                    </picture>
+
+                                    <p class="bl_fullProducts__name">Катушка Durareel MR2000 3+1BB</p>
+                                </a>
+
+
+                                <ul class="bl_description"> <!-- Выводить только 3 первых -->
+                                    <li>Тип: Безинерционная</li>
+                                    <li>Размер шпули: 2000</li>
+                                    <li>Вес: 255 г.</li>
+                                </ul>
+
+
+
+                                <div class="bl_fullProducts__rating clearfix">
+                                    <div class="bl_shortReviews__fullStars">
+                                        <div class="bl_shortReviews__star icon_star__full"></div>
+                                        <div class="bl_shortReviews__star icon_star__full"></div>
+                                        <div class="bl_shortReviews__star icon_star__full"></div>
+                                        <div class="bl_shortReviews__star icon_star__full"></div>
+                                        <div class="bl_shortReviews__star icon_star__empty"></div>
+                                    </div>
+
+                                    <span class="bl_availability yes">В наличии</span>
+                                    <!--<span class="bl_availability no">Нет в наличии</span>-->
+
+                                </div>
+
+                                <div class="bl_fullProduc__price">
+
+                                    <!--<span class="price_oldPrice">3071 грн.</span>-->
+                                    <!--<span class="price_newPrice">2899 грн.</span>-->
+                                    <span class="price_normalPrice">790 грн.</span>
+                                </div>
+
+
+                                <div class="bl_fullProduc__buttons">
+                                    <button type="button" class="btn_addToComparisons icon-libra" title="к сравнению"></button>
+                                    <button type="button" class="btn_addToBasket" title="В корзину"></button>
+                                </div>
+
+
+
+                            </div>
+                            <div class="bl_fullProducts__item">
+                                <a class="bl_fullProducts__imageWrapper" href="#">
+
+                                    <!-- вставляем сюда marker если у товара есть, акция или хит или ещё что-то, тот же модуль что и на главной-->
+
+                                    <!-- HIT -->
+                                    <div class="bl_mark bl_mark__hit">
+                                        <span>Хит сезона</span>
+                                    </div>
+                                    <!-- -->
+
+
+                                    <picture class="bl_fullProducts__image">
+                                        <source media="(min-width: 1200px)" srcset="image/Products/category/product_1.png">
+                                        <source media="(min-width: 786px)" srcset="image/Products/category/product_1.png">
+                                        <img src="image/Products/category/product_1.png" alt="product">
+                                    </picture>
+
+                                    <p class="bl_fullProducts__name">Катушка Durareel MR2000 3+1BB</p>
+                                </a>
+
+
+                                <ul class="bl_description"> <!-- Выводить только 3 первых -->
+                                    <li>Тип: Безинерционная</li>
+                                    <li>Размер шпули: 2000</li>
+                                    <li>Вес: 255 г.</li>
+                                </ul>
+
+
+
+                                <div class="bl_fullProducts__rating clearfix">
+                                    <div class="bl_shortReviews__fullStars">
+                                        <div class="bl_shortReviews__star icon_star__full"></div>
+                                        <div class="bl_shortReviews__star icon_star__full"></div>
+                                        <div class="bl_shortReviews__star icon_star__full"></div>
+                                        <div class="bl_shortReviews__star icon_star__full"></div>
+                                        <div class="bl_shortReviews__star icon_star__empty"></div>
+                                    </div>
+
+                                    <span class="bl_availability yes">В наличии</span>
+                                    <!--<span class="bl_availability no">Нет в наличии</span>-->
+
+                                </div>
+
+                                <div class="bl_fullProduc__price">
+
+                                    <!--<span class="price_oldPrice">3071 грн.</span>-->
+                                    <!--<span class="price_newPrice">2899 грн.</span>-->
+                                    <span class="price_normalPrice">790 грн.</span>
+                                </div>
+
+
+                                <div class="bl_fullProduc__buttons">
+                                    <button type="button" class="btn_addToComparisons icon-libra" title="к сравнению"></button>
+                                    <button type="button" class="btn_addToBasket" title="В корзину"></button>
+                                </div>
+
+
+
+                            </div>
+                            <div class="bl_fullProducts__item">
+                                <a class="bl_fullProducts__imageWrapper" href="#">
+
+                                    <!-- вставляем сюда marker если у товара есть, акция или хит или ещё что-то, тот же модуль что и на главной-->
+
+                                    <!-- HIT -->
+                                    <div class="bl_mark bl_mark__hit">
+                                        <span>Хит сезона</span>
+                                    </div>
+                                    <!-- -->
+
+
+                                    <picture class="bl_fullProducts__image">
+                                        <source media="(min-width: 1200px)" srcset="image/Products/category/product_1.png">
+                                        <source media="(min-width: 786px)" srcset="image/Products/category/product_1.png">
+                                        <img src="image/Products/category/product_1.png" alt="product">
+                                    </picture>
+
+                                    <p class="bl_fullProducts__name">Катушка Durareel MR2000 3+1BB</p>
+                                </a>
+
+
+                                <ul class="bl_description"> <!-- Выводить только 3 первых -->
+                                    <li>Тип: Безинерционная</li>
+                                    <li>Размер шпули: 2000</li>
+                                    <li>Вес: 255 г.</li>
+                                </ul>
+
+
+
+                                <div class="bl_fullProducts__rating clearfix">
+                                    <div class="bl_shortReviews__fullStars">
+                                        <div class="bl_shortReviews__star icon_star__full"></div>
+                                        <div class="bl_shortReviews__star icon_star__full"></div>
+                                        <div class="bl_shortReviews__star icon_star__full"></div>
+                                        <div class="bl_shortReviews__star icon_star__full"></div>
+                                        <div class="bl_shortReviews__star icon_star__empty"></div>
+                                    </div>
+
+                                    <span class="bl_availability yes">В наличии</span>
+                                    <!--<span class="bl_availability no">Нет в наличии</span>-->
+
+                                </div>
+
+                                <div class="bl_fullProduc__price">
+
+                                    <!--<span class="price_oldPrice">3071 грн.</span>-->
+                                    <!--<span class="price_newPrice">2899 грн.</span>-->
+                                    <span class="price_normalPrice">790 грн.</span>
+                                </div>
+
+
+                                <div class="bl_fullProduc__buttons">
+                                    <button type="button" class="btn_addToComparisons icon-libra" title="к сравнению"></button>
+                                    <button type="button" class="btn_addToBasket" title="В корзину"></button>
+                                </div>
+
+
+
+                            </div>
+                            <div class="bl_fullProducts__item">
+                                <a class="bl_fullProducts__imageWrapper" href="#">
+
+                                    <!-- вставляем сюда marker если у товара есть, акция или хит или ещё что-то, тот же модуль что и на главной-->
+
+                                    <!-- HIT -->
+                                    <div class="bl_mark bl_mark__hit">
+                                        <span>Хит сезона</span>
+                                    </div>
+                                    <!-- -->
+
+
+                                    <picture class="bl_fullProducts__image">
+                                        <source media="(min-width: 1200px)" srcset="image/Products/category/product_1.png">
+                                        <source media="(min-width: 786px)" srcset="image/Products/category/product_1.png">
+                                        <img src="image/Products/category/product_1.png" alt="product">
+                                    </picture>
+
+                                    <p class="bl_fullProducts__name">Катушка Durareel MR2000 3+1BB</p>
+                                </a>
+
+
+                                <ul class="bl_description"> <!-- Выводить только 3 первых -->
+                                    <li>Тип: Безинерционная</li>
+                                    <li>Размер шпули: 2000</li>
+                                    <li>Вес: 255 г.</li>
+                                </ul>
+
+
+
+                                <div class="bl_fullProducts__rating clearfix">
+                                    <div class="bl_shortReviews__fullStars">
+                                        <div class="bl_shortReviews__star icon_star__full"></div>
+                                        <div class="bl_shortReviews__star icon_star__full"></div>
+                                        <div class="bl_shortReviews__star icon_star__full"></div>
+                                        <div class="bl_shortReviews__star icon_star__full"></div>
+                                        <div class="bl_shortReviews__star icon_star__empty"></div>
+                                    </div>
+
+                                    <span class="bl_availability yes">В наличии</span>
+                                    <!--<span class="bl_availability no">Нет в наличии</span>-->
+
+                                </div>
+
+                                <div class="bl_fullProduc__price">
+
+                                    <!--<span class="price_oldPrice">3071 грн.</span>-->
+                                    <!--<span class="price_newPrice">2899 грн.</span>-->
+                                    <span class="price_normalPrice">790 грн.</span>
+                                </div>
+
+
+                                <div class="bl_fullProduc__buttons">
+                                    <button type="button" class="btn_addToComparisons icon-libra" title="к сравнению"></button>
+                                    <button type="button" class="btn_addToBasket" title="В корзину"></button>
+                                </div>
+
+
+
+                            </div>
+                            <div class="bl_fullProducts__item">
+                                <a class="bl_fullProducts__imageWrapper" href="#">
+
+                                    <!-- вставляем сюда marker если у товара есть, акция или хит или ещё что-то, тот же модуль что и на главной-->
+
+                                    <!-- HIT -->
+                                    <div class="bl_mark bl_mark__hit">
+                                        <span>Хит сезона</span>
+                                    </div>
+                                    <!-- -->
+
+
+                                    <picture class="bl_fullProducts__image">
+                                        <source media="(min-width: 1200px)" srcset="image/Products/category/product_1.png">
+                                        <source media="(min-width: 786px)" srcset="image/Products/category/product_1.png">
+                                        <img src="image/Products/category/product_1.png" alt="product">
+                                    </picture>
+
+                                    <p class="bl_fullProducts__name">Катушка Durareel MR2000 3+1BB</p>
+                                </a>
+
+
+                                <ul class="bl_description"> <!-- Выводить только 3 первых -->
+                                    <li>Тип: Безинерционная</li>
+                                    <li>Размер шпули: 2000</li>
+                                    <li>Вес: 255 г.</li>
+                                </ul>
+
+
+
+                                <div class="bl_fullProducts__rating clearfix">
+                                    <div class="bl_shortReviews__fullStars">
+                                        <div class="bl_shortReviews__star icon_star__full"></div>
+                                        <div class="bl_shortReviews__star icon_star__full"></div>
+                                        <div class="bl_shortReviews__star icon_star__full"></div>
+                                        <div class="bl_shortReviews__star icon_star__full"></div>
+                                        <div class="bl_shortReviews__star icon_star__empty"></div>
+                                    </div>
+
+                                    <span class="bl_availability yes">В наличии</span>
+                                    <!--<span class="bl_availability no">Нет в наличии</span>-->
+
+                                </div>
+
+                                <div class="bl_fullProduc__price">
+
+                                    <!--<span class="price_oldPrice">3071 грн.</span>-->
+                                    <!--<span class="price_newPrice">2899 грн.</span>-->
+                                    <span class="price_normalPrice">790 грн.</span>
+                                </div>
+
+
+                                <div class="bl_fullProduc__buttons">
+                                    <button type="button" class="btn_addToComparisons icon-libra" title="к сравнению"></button>
+                                    <button type="button" class="btn_addToBasket" title="В корзину"></button>
+                                </div>
+
+
+
+                            </div>
+                            <div class="bl_fullProducts__item">
+                                <a class="bl_fullProducts__imageWrapper" href="#">
+
+                                    <!-- вставляем сюда marker если у товара есть, акция или хит или ещё что-то, тот же модуль что и на главной-->
+
+                                    <!-- HIT -->
+                                    <div class="bl_mark bl_mark__hit">
+                                        <span>Хит сезона</span>
+                                    </div>
+                                    <!-- -->
+
+
+                                    <picture class="bl_fullProducts__image">
+                                        <source media="(min-width: 1200px)" srcset="image/Products/category/product_1.png">
+                                        <source media="(min-width: 786px)" srcset="image/Products/category/product_1.png">
+                                        <img src="image/Products/category/product_1.png" alt="product">
+                                    </picture>
+
+                                    <p class="bl_fullProducts__name">Катушка Durareel MR2000 3+1BB</p>
+                                </a>
+
+
+                                <ul class="bl_description"> <!-- Выводить только 3 первых -->
+                                    <li>Тип: Безинерционная</li>
+                                    <li>Размер шпули: 2000</li>
+                                    <li>Вес: 255 г.</li>
+                                </ul>
+
+
+
+                                <div class="bl_fullProducts__rating clearfix">
+                                    <div class="bl_shortReviews__fullStars">
+                                        <div class="bl_shortReviews__star icon_star__full"></div>
+                                        <div class="bl_shortReviews__star icon_star__full"></div>
+                                        <div class="bl_shortReviews__star icon_star__full"></div>
+                                        <div class="bl_shortReviews__star icon_star__full"></div>
+                                        <div class="bl_shortReviews__star icon_star__empty"></div>
+                                    </div>
+
+                                    <span class="bl_availability yes">В наличии</span>
+                                    <!--<span class="bl_availability no">Нет в наличии</span>-->
+
+                                </div>
+
+                                <div class="bl_fullProduc__price">
+
+                                    <!--<span class="price_oldPrice">3071 грн.</span>-->
+                                    <!--<span class="price_newPrice">2899 грн.</span>-->
+                                    <span class="price_normalPrice">790 грн.</span>
+                                </div>
+
+
+                                <div class="bl_fullProduc__buttons">
+                                    <button type="button" class="btn_addToComparisons icon-libra" title="к сравнению"></button>
+                                    <button type="button" class="btn_addToBasket" title="В корзину"></button>
+                                </div>
+
+
+
+                            </div>
+                        </div>
+
+
+
+
+
+
+
+                    </div>
 
 
                         <!-- CEO -->
 
-                        <div class="ceo_block">
+                        <div class="ceo_block hidden">
                             <h2>Цена рыболовной катушки</h2>
                             <p>  Катушка для оснастки удочки это очень важная деталь, к тому же дорогостоящая. При ее покупке следует запастись минимальным багажом знаний по критерию оптимального подбора нужных характеристик. Катушки характеризуются объемом шпули, ее диаметром, передаточным числом. Но это уже для профессионалов. Начинающему рыболову достаточно знать свой способ и условия рыбалки. Ему следует выбирать на бюджетные катушки.  </p>
                             <h2>Безынерционная катушка для поплавочной удочки</h2>
@@ -395,7 +1152,7 @@
                         </div>
 
                         <!-- CEO End-->
-                        <a class="button_simple bl_aboutShop__link" href="#">Подробнее о магазине</a>
+                        <a class="button_simple bl_aboutShop__link hidden" href="#">Подробнее о магазине</a>
 
 
 
