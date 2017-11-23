@@ -32,10 +32,10 @@ $(document).ready(function () {
     }
 
 //// Categories
-    var buttonCategories = $(".filter_name"),
-        fullCategories = $(".bl_catalogs__firstLevel");
-
-    sliderEffectForButtons(buttonCategories, fullCategories, 500);
+//     var buttonCategories = $(".filter_name"),
+//         fullCategories = $(".bl_catalogs__firstLevel");
+//
+//     sliderEffectForButtons(buttonCategories, fullCategories, 500);
 
 
 //// Categories Buttons
@@ -47,6 +47,19 @@ $(document).ready(function () {
         $(this).parent(".bl_catalogs__item").toggleClass(active);
         $(this).siblings("ul").eq(0).slideToggle(400);
     });
+//    Show Filters & Categories
+    var buttonShowAllCatelogs = $(".js-button_catalogs"),
+        catalogsAllArea = $(".bl_catalogs__firstLevel");
+
+
+    var buttonShowAllFilters = $(".js-button_filters"),
+        filtersAllArea = $(".bl_filters");
+
+
+    sliderEffectForButtons(buttonShowAllCatelogs, catalogsAllArea, 500);
+    sliderEffectForButtons(buttonShowAllFilters, filtersAllArea, 500);
+
+
 ///////// Filters Button
     var buttonFilterSection = $(".bl_filters__button");
         // decorButtonLine = "decor_filterLine",
