@@ -1832,6 +1832,64 @@ textarea {
   line-height: 24px;
 }
 
+
+///////////// Product cart
+
+.bl_product__title{
+  position: relative;
+  color: #12171f;
+  font-family: $OpenSans;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 38px;
+}
+
+
+.bl_product__wrapper{
+  width: 100%;
+  margin-top: 58px;
+}
+.bl_product__additionalImages{
+  width: 100%;
+}
+
+.bl_product__items{
+  line-height: 24px;
+  border: 1px solid #E7E7E7;
+  cursor: pointer;
+  &:hover{
+      border-color: #bbb;
+  }
+}
+
+.bl_product__attributes{
+  min-height:109px;
+}
+
+.bl_product__attributes_name{
+  color: #717171;
+
+}
+
+.bl_product__attributes_item{
+  height: 16px;
+  color: #12171f;
+  line-height: 24px;
+  margin-bottom: 5px;
+}
+
+.bl_product__attributes .bl_shortReviews__fullStars{
+  vertical-align: top;
+  display: inline-block;
+  width:auto;
+}
+.bl_product__attributes_value{
+  font-family: $OpenSans;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+
 /*********************************************/
 /*FOOTER*/
 /*********************************************/

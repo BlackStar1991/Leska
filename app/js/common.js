@@ -242,39 +242,38 @@ $(document).ready(function () {
         }
     });
 
-/////// slider_withThisProductBuy - С этим товаром покупают:
+/////// additionalImages - Дополнительные изображения для товара:
 
-    // $(".slider_withThisProductBuy").owlCarousel({
-    //     items: 4,
-    //     loop: true,
-    //     nav: true,
-    //     navText: true,
-    //     dots: false,
-    //     autoplay: false,
-    //     stopOnHover: true,
-    //     margin: 0,
-    //     smartSpeed: 1000, //Время движения слайда
-    //     autoplayTimeout: 4000, //Время смены слайда
-    //     pagination: false,
-    //     responsiveClass: true,
-    //     responsive: {
-    //         1200: {
-    //             items: 4
-    //         },
-    //         992: {
-    //             items: 3,
-    //             center: true
-    //         },
-    //         550: {
-    //             items: 2
-    //         },
-    //         320: {
-    //             items: 1,
-    //             center: true
-    //         }
-    //
-    //     }
-    // });
+    $(".bl_product__additionalImages").owlCarousel({
+        items: 3,
+        loop: true,
+        nav: false,
+        navText: true,
+        dots: false,
+        autoplay: false,
+        stopOnHover: true,
+        margin: 6,
+        smartSpeed: 1000, //Время движения слайда
+        autoplayTimeout: 4000, //Время смены слайда
+        pagination: false,
+        responsiveClass: true,
+        responsive: {
+            1200: {
+                items: 3
+            },
+            992: {
+                items: 3
+            },
+            550: {
+                items: 2
+            },
+            320: {
+                items: 1,
+                center: true
+            }
+
+        }
+    });
 
 //// slider_youViewed  - Вы смотрели:
 
