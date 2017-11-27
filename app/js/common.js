@@ -62,14 +62,13 @@ $(document).ready(function () {
 
 ///////// Filters Button
     var buttonFilterSection = $(".bl_filters__button");
-        // decorButtonLine = "decor_filterLine",
-        // decorButtonTriangle = "decor_filterTriangle";
+    // decorButtonLine = "decor_filterLine",
+    // decorButtonTriangle = "decor_filterTriangle";
 
-    buttonFilterSection.on("click", function(){
-       $(this).toggleClass("decor_filterLine decor_filterTriangle");
-       $(this).next(".bl_filters__section").slideToggle(300);
+    buttonFilterSection.on("click", function () {
+        $(this).toggleClass("decor_filterLine decor_filterTriangle");
+        $(this).next(".bl_filters__section").slideToggle(300);
     });
-
 
 
 /// Pages button
@@ -309,6 +308,82 @@ $(document).ready(function () {
     //     }
     // });
 
+// ElevateZoom
+
+
+    function mainPictureForProduct() {
+
+        $('.product-galery__pic').attr('src', $('.prod-slider__item:first-child  img').attr('src'));
+
+        $('.prod-slider__item').on('click', '.prod-slider__pic', function () {
+
+            var currentSrc = $(this).attr('src');
+            var currentSrcBig = currentSrc.split(".").join("-big.");
+
+            $('.product-galery__mainImage').attr('src', currentSrc);
+            $(".zoo-item").attr("data-zoo-image", currentSrcBig);
+
+            zoomPictute();
+
+        });
+
+        zoomPictute();
+    }
+
+    mainPictureForProduct();
+
+
+    ////////////////// ZOOM PICTURE
+
+    function zoomPictute() {
+        $('.zoo-item').elevateZoom({
+            zoomType: "inner",
+            cursor: "crosshair"
+        });
+    }
+
+
+////// Product quantity
+
+    var quantityProduct = $(".block_quantity__input"),
+        plusProduct = $(".block_quantity__plus"),
+        minusProduct = $(".block_quantity__minus");
+
+    plusProduct.on("click", function () {
+        quantityProduct.val(Number(quantityProduct.val()) + 1);
+    });
+
+    minusProduct.on("click", function () {
+
+        if (quantityProduct.val() > 1) {
+            quantityProduct.val(Number(quantityProduct.val()) - 1);
+        }
+        else {
+            quantityProduct.val(1);
+        }
+    });
+
+    leaveOnlyNumber(quantityProduct);
+
+
+    function leaveOnlyNumber(inputField) {
+        inputField.on('keyup', function () {
+            var val = $(this).val();
+            var new_str = val.replace(/[^0-9]/gim, '');
+            $(this).val(new_str);
+        });
+
+        inputField.on('blur', function () {
+            var val = $(this).val();
+            var new_str = val.replace(/[^0-9]/gim, '');
+
+            if (val === "") {
+                new_str = 1;
+            }
+            $(this).val(new_str);
+        });
+    }
+
 
 // Ancor to top
 
@@ -385,14 +460,12 @@ $(document).ready(function () {
 //// Succsess PopUp
 
 
-
-
     function popupWindowSuccsess() {
 
         var fieldSuccess = $(".bl_success");
 
         closePopupWindow(blackWrapper, fieldSuccess);
-        closePopupWindow( fieldSuccess, fieldSuccess);
+        closePopupWindow(fieldSuccess, fieldSuccess);
     }
 
     popupWindowSuccsess();
