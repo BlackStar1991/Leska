@@ -111,7 +111,7 @@
 
 
                         <button class="btn_callBack" type="button" title="CallBack">
-                            <span class="btn_callBack__text">Заказать бесплатный звонок</span>
+                             <span class="btn_callBack__text">Заказать бесплатный звонок</span>
                         </button>
 
                     </div>
@@ -128,273 +128,386 @@
     <main class="main">
         <div class="mainWrapper">
 
+
+
             <div class="container">
+                <div class="col-xs-12 col-md-3 correct_right">
+                    <aside class="sidebar">
+                        <nav class="bl_catalogs">
+                            <button class="section_name js-button_catalogs" type="button" title="Категории">Категории</button>
+                            <ul class="bl_catalogs__firstLevel">
+                                <li class="bl_catalogs__item ">
+                                    <a class="bl_catalogs__link" href="catalog.html">Удилища </a>
+                                    <button type="button" class="bl_catalogs__button decor_triangle"></button>
+                                    <!-- Это добавлять кнопку <button type="button" class="bl_catalogs__button decor_triangle"></button>  только если есть  у подкатегории есть потомки -->
+
+                                    <ul class="bl_catalogs__secondLevel">
+                                        <li class="bl_catalogs__item"><a class="bl_catalogs__link"
+                                                                         href="#">Запасные части  </a>
+                                            <button type="button" class="bl_catalogs__button decor_triangle"></button>
+                                            <ul class="bl_catalogs__thirdLevel"></ul>
+                                        </li>
 
 
-                <div class="col-xs-12  hidden-xs">
-                    <ul class="bl_breadcrumbs">
-                        <li class="bl_breadcrumbs__item"><a class="bl_breadcrumbs__link" href="#">Главная</a></li>
-                        <li class="bl_breadcrumbs__item"><p class="bl_breadcrumbs__link bl_breadcrumbs__active">
-                            Корзина</p></li>
-                    </ul>
-                </div>
+                                        <li class="bl_catalogs__item"><a class="bl_catalogs__link" href="#">Спининги</a>
+                                        </li>
 
+                                        <li class="bl_catalogs__item"><a class="bl_catalogs__link "
+                                                                         href="#">Поплавочные</a>
+                                            <button type="button" class="bl_catalogs__button decor_triangle"></button>
 
-                <div class="col-xs-12">
-                    <div class="bl_basket">
+                                            <ul class="bl_catalogs__thirdLevel ">
+                                                <li class="bl_catalogs__item">
+                                                    <a href="#" class="bl_catalogs__link">Поплавочные без колец</a>
+                                                </li>
+                                                <li class="bl_catalogs__item">
+                                                    <a href="#" class="bl_catalogs__link">Поплавочные с кольцами</a>
+                                                </li>
+                                            </ul>
+                                        </li>
 
-                        <h1 class="bl_basket__title">Корзина покупок</h1>
-                        <a class="bl_basket__continueShopping" href="#">продолжить покупки</a>
+                                        <li class="bl_catalogs__item"><a class="bl_catalogs__link" href="#">Фидерные</a>
+                                        </li>
+                                        <li class="bl_catalogs__item"><a class="bl_catalogs__link" href="#">Карповые</a>
+                                        </li>
+                                        <li class="bl_catalogs__item"><a class="bl_catalogs__link" href="#">Матчевые</a>
+                                        </li>
+                                        <li class="bl_catalogs__item"><a class="bl_catalogs__link"
+                                                                         href="#">Нахлыстовые</a>
+                                        </li>
+                                        <li class="bl_catalogs__item"><a class="bl_catalogs__link"
+                                                                         href="#">Телескопические</a></li>
+                                        <li class="bl_catalogs__item"><a class="bl_catalogs__link"
+                                                                         href="#">Тролинговые</a>
+                                        </li>
+                                        <li class="bl_catalogs__item"><a class="bl_catalogs__link" href="#">Серфовые</a>
+                                        </li>
+                                        <li class="bl_catalogs__item"><a class="bl_catalogs__link"
+                                                                         href="#">Вершинки и кончики</a></li>
 
-                        <div class="row">
-                            <header class="bl_basket__header clearfix">
+                                    </ul>
+                                </li>
+                                <li class="bl_catalogs__item">
+                                    <a class="bl_catalogs__link" href="#">Катушки</a>
+                                    <button type="button" class="bl_catalogs__button decor_triangle"></button>
+                                    <ul class="bl_catalogs__secondLevel"></ul>
+                                </li>
 
-                                <div class="visible-xs visible-sm col-xs-12">
-                                    <p>Товары к покупке</p>
-                                </div>
+                                <li class="bl_catalogs__item">
+                                    <a class="bl_catalogs__link" href="#">Шнуры Леска</a>
+                                    <button type="button" class="bl_catalogs__button decor_triangle"></button>
+                                    <ul class="bl_catalogs__secondLevel"></ul>
+                                </li>
+                                <li class="bl_catalogs__item">
+                                    <a class="bl_catalogs__link" href="#">Все для зимней рыбалки</a>
+                                    <button type="button" class="bl_catalogs__button decor_triangle"></button>
+                                    <ul class="bl_catalogs__secondLevel"></ul>
+                                </li>
+                                <li class="bl_catalogs__item">
+                                    <a class="bl_catalogs__link" href="#">Приманки</a>
+                                    <button type="button" class="bl_catalogs__button decor_triangle"></button>
+                                    <ul class="bl_catalogs__secondLevel"></ul>
+                                </li>
+                                <li class="bl_catalogs__item">
+                                    <a class="bl_catalogs__link" href="#">Прикормки и Наживки</a>
+                                    <button type="button" class="bl_catalogs__button decor_triangle"></button>
+                                    <ul class="bl_catalogs__secondLevel"></ul>
+                                </li>
+                                <li class="bl_catalogs__item">
+                                    <a class="bl_catalogs__link" href="#">Монтаж  оснастки</a>
+                                    <button type="button" class="bl_catalogs__button decor_triangle"></button>
+                                    <ul class="bl_catalogs__secondLevel"></ul>
+                                </li>
+                                <li class="bl_catalogs__item">
+                                    <a class="bl_catalogs__link" href="#">Аксессуары</a>
+                                    <button type="button" class="bl_catalogs__button decor_triangle"></button>
+                                    <ul class="bl_catalogs__secondLevel"></ul>
+                                </li>
+                                <li class="bl_catalogs__item">
+                                    <a class="bl_catalogs__link" href="#">Одежда для рыбалки и охоты</a>
+                                    <button type="button" class="bl_catalogs__button decor_triangle"></button>
+                                    <ul class="bl_catalogs__secondLevel"></ul>
+                                </li>
+                                <li class="bl_catalogs__item">
+                                    <a class="bl_catalogs__link" href="#">Обувь</a>
+                                    <button type="button" class="bl_catalogs__button decor_triangle"></button>
+                                    <ul class="bl_catalogs__secondLevel"></ul>
+                                </li>
+                                <li class="bl_catalogs__item">
+                                    <a class="bl_catalogs__link" href="#">Турестическая Мебель и Аксессуары</a>
+                                    <button type="button" class="bl_catalogs__button decor_triangle"></button>
+                                    <ul class="bl_catalogs__secondLevel"></ul>
+                                </li>
+                                <li class="bl_catalogs__item">
+                                    <a class="bl_catalogs__link" href="#">Новинки</a>
+                                    <button type="button" class="bl_catalogs__button decor_triangle"></button>
+                                    <ul class="bl_catalogs__secondLevel"></ul>
+                                </li>
+                            </ul>
+                        </nav>
 
-
-                                <div class="hidden-xs hidden-sm col-xs-12 col-md-1">
-                                    <p>Фото</p>
-                                </div>
-                                <div class="hidden-xs hidden-sm col-xs-12 col-md-4">
-                                    <p>Наименование товара</p>
-                                </div>
-                                <div class="hidden-xs hidden-sm col-xs-6 col-md-2">
-                                    <p>Модель</p>
-                                </div>
-                                <div class="hidden-xs hidden-sm col-xs-6 col-md-1">
-                                    <p>Количество</p>
-                                </div>
-
-                                <div class="hidden-xs hidden-sm col-xs-6 col-md-2">
-                                    <p>Цена</p>
-                                </div>
-                                <div class="hidden-xs hidden-sm col-xs-6 col-md-1">
-                                    <p>Итого</p>
-                                </div>
-                                <div class="col-xs-6 col-md-1">
-                                    <!--for delite-->
-                                </div>
-                            </header>
-
-
-                            <!--  GOODS -->
-
-                            <!-- product 1-->
-
-                            <div class="bl_basket__good clearfix" data-product="">
-                                <div class="col-xs-12 col-md-1">
-                                    <img class="shoppingBasket_product__image"
-                                         src="image/Products/mainImage/product_1-70x70.png" alt="">
-                                </div>
-
-
-                                <div class="col-xs-12 col-md-4">
-                                    <h2 class="bl_basket__name">Катушка мультипликаторная Salmo Diamond Ice Multi
-                                        M1025</h2>
-                                </div>
-
-
-                                <div class="col-xs-6 col-md-2">
-                                    <p class="bl_basket__mark">FR-528M</p>
-                                </div>
-
-
-                                <div class="col-xs-6 col-md-1">
-
-
-                                    <div class="bl_basket__productQuantity">
-
-                                        <input class="block_quantity__input" type="text" title="good field" value="1">
-
+                        <div class="bl_shortReviews hidden-sm hidden-xs">
+                            <p class="section_name">Отзывы покупателей</p>
+                            <ul class="bl_shortReviews__fullReviews">
+                                <li class="bl_shortReviews__item">
+                                    <img class="bl_shortReviews__image" src="image/Products/product1_min.jpg" alt="">
+                                    <a class="bl_shortReviews__name" href="#">
+                                        Термобелье Norfin Winter Line Gray 303600
+                                    </a>
+                                    <div class="bl_shortReviews__fullStars">
+                                        <div class="bl_shortReviews__star icon_star__full"></div>
+                                        <div class="bl_shortReviews__star icon_star__full"></div>
+                                        <div class="bl_shortReviews__star icon_star__full"></div>
+                                        <div class="bl_shortReviews__star icon_star__full"></div>
+                                        <div class="bl_shortReviews__star icon_star__empty"></div>
                                     </div>
+                                    <p class="bl_shortReviews__full">
+                                        Нормальное термобелье второго слоя. На штанах высокая талиея не задувает.
+                                        Материал -
+                                        флис односторо..
+                                    </p>
+                                </li>
 
-
-                                </div>
-                                <div class="col-xs-6 col-md-2">
-
-
-                                    <div class="bl_basket__prices">
-                                        <p class="price_normalPrice">2 990 грн</p>
-                                        <!--<p class="price_oldPrice">5000 грн</p>-->
-                                        <!--<p class="price_newPrice">2 990 грн</p>-->
+                                <li class="bl_shortReviews__item">
+                                    <img class="bl_shortReviews__image" src="image/Products/product2_min.jpg" alt="">
+                                    <a class="bl_shortReviews__name" href="#">
+                                        17064 Спиннинговое удилище шт2 Winner yellow V6 im8 0130012B 5-15g 2,4м *
+                                    </a>
+                                    <div class="bl_shortReviews__fullStars">
+                                        <div class="bl_shortReviews__star icon_star__full"></div>
+                                        <div class="bl_shortReviews__star icon_star__full"></div>
+                                        <div class="bl_shortReviews__star icon_star__full"></div>
+                                        <div class="bl_shortReviews__star icon_star__full"></div>
+                                        <div class="bl_shortReviews__star icon_star__full"></div>
                                     </div>
+                                    <p class="bl_shortReviews__full">
+                                        Хороший спиннинг для начинающего спиннингиста. Удобный, легкий, чувствительный и
+                                        не
+                                        дорогой...
+                                    </p>
+                                </li>
 
-
-                                </div>
-                                <div class="col-xs-6 col-md-1 correct_right">
-                                    <p class="bl_basket__fullPrices">91509 грн</p>
-                                </div>
-                                <div class="col-xs-6 col-md-1">
-                                    <button class="delite_product" type="button"></button>
-                                </div>
-
-                            </div>
-
-                            <!-- product 2-->
-                            <div class="bl_basket__good clearfix" data-product="">
-                                <div class="col-xs-12 col-md-1">
-                                    <img class="shoppingBasket_product__image"
-                                         src="image/Products/mainImage/product_2-70x70.jpg" alt="">
-                                </div>
-
-
-                                <div class="col-xs-12 col-md-4">
-                                    <h2 class="bl_basket__name">Термобелье Norfin Winter Line Gray 303600</h2>
-                                </div>
-
-
-                                <div class="col-xs-6 col-md-2">
-                                    <p class="bl_basket__mark">303600</p>
-                                </div>
-
-
-                                <div class="col-xs-6 col-md-1">
-
-
-                                    <div class="bl_basket__productQuantity">
-
-                                        <input class="block_quantity__input" type="text" title="good field" value="1">
-
+                                <li class="bl_shortReviews__item">
+                                    <img class="bl_shortReviews__image" src="image/Products/product3_min.jpg" alt="">
+                                    <a class="bl_shortReviews__name" href="#">
+                                        Термосумка Norfin FORSSA NFL с посуд. на 6 персон
+                                    </a>
+                                    <div class="bl_shortReviews__fullStars">
+                                        <div class="bl_shortReviews__star icon_star__full"></div>
+                                        <div class="bl_shortReviews__star icon_star__full"></div>
+                                        <div class="bl_shortReviews__star icon_star__full"></div>
+                                        <div class="bl_shortReviews__star icon_star__full"></div>
+                                        <div class="bl_shortReviews__star icon_star__empty"></div>
                                     </div>
+                                    <p class="bl_shortReviews__full">
+                                        Всё супер!) Спасибо,все получили,подарочек приятно удивил))) Первый раз
+                                        заказывал у
+                                        вас, думаю, точно...
+                                    </p>
+                                </li>
 
 
-                                </div>
-                                <div class="col-xs-6 col-md-2">
+                            </ul>
 
+                            <a class="bl_shortReviews__link" href="#">Читать все отзывы</a>
 
-                                    <div class="bl_basket__prices">
-                                        <!--<p class="price_normalPrice">2 990 грн</p>-->
-                                        <p class="price_oldPrice">5000 грн</p>
-                                        <p class="price_newPrice">2 990 грн</p>
-                                    </div>
-
-
-                                </div>
-                                <div class="col-xs-6 col-md-1 correct_right">
-                                    <p class="bl_basket__fullPrices">91509 грн</p>
-                                </div>
-                                <div class="col-xs-6 col-md-1">
-                                    <button class="delite_product" type="button"></button>
-                                </div>
-
-                            </div>
-                            <!-- product 3-->
-                            <div class="bl_basket__good clearfix" data-product="">
-                                <div class="col-xs-12 col-md-1">
-                                    <img class="shoppingBasket_product__image"
-                                         src="image/Products/mainImage/product_3-70x70.jpg" alt="">
-                                </div>
-
-
-                                <div class="col-xs-12 col-md-4">
-                                    <h2 class="bl_basket__name">17064 Спиннинговое удилище шт2 Winner yellow V6 im8
-                                        0130012B 5-15g 2,4м *</h2>
-                                </div>
-
-
-                                <div class="col-xs-6 col-md-2">
-                                    <p class="bl_basket__mark">17064</p>
-                                </div>
-
-
-                                <div class="col-xs-6 col-md-1">
-
-
-                                    <div class="bl_basket__productQuantity">
-
-                                        <input class="block_quantity__input" type="text" title="good field" value="1">
-
-                                    </div>
-
-
-                                </div>
-                                <div class="col-xs-6 col-md-2">
-
-
-                                    <div class="bl_basket__prices">
-                                        <!--<p class="price_normalPrice">2 990 грн</p>-->
-                                        <p class="price_oldPrice">5000 грн</p>
-                                        <p class="price_newPrice">2 990 грн</p>
-                                    </div>
-
-
-                                </div>
-                                <div class="col-xs-6 col-md-1 correct_right">
-                                    <p class="bl_basket__fullPrices">91509 грн</p>
-                                </div>
-                                <div class="col-xs-6 col-md-1">
-                                    <button class="delite_product" type="button"></button>
-                                </div>
-
-                            </div>
                         </div>
-
-                    </div>
-
+                    </aside>
 
                 </div>
+                <div class="col-xs-12 col-md-9">
 
 
 
-                    <div class="col-md-9 correct_left">
-                        <div class="bl_basket__bonus">
-                            <p class="bl_bonus_mainText">Воспользуйтесь дополнительными возможностями</p>
-
-                            <p class="bl_bonus_text">Если у вас есть код купона на скидку или бонусные баллы, которые вы
-                                хотите использовать, выберите соответствующий пункт. Также можно приблизительно узнать
-                                стоимость доставки в ваш регион.</p>
-
-                            <div class="col-sm-6">
-                                <div class="bl_bonus">
-
-
-                                    <label class="bl_bonus__label">
-                                        <input  type="radio" name="bonus" value="coupon" id="use_coupon" title="coupon">
-                                        <span>Использовать купон на скидку</span>
-                                    </label>
-                                    <label class="bl_bonus__label">
-                                        <input type="radio" name="bonus" value="voucher" id="use_voucher" title="voucher">
-                                        <span>Использовать подарочный сертификат</span>
-                                    </label>
-
-                                    <p class="error_text">* Указаный код неправильный или он уже был использован!</p>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="bl_bonus__wrapper">
-                                    <input class="bl_bonus__code" type="text" title="Field for bonus code" placeholder="Введите код">
-                                    <button class="bl_bonus__button" type="button" data-loading-text="Loading...">Применить сертификат</button>
-                                </div>
-                            </div>
-
-
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="bl_basket__totalPrice clearfix">
-                            <p class="bl_totalPrice__line">
-                                <span class="bl_totalPrice__main">Сумма:</span>
-                                <span class="bl_totalPrice__value">3048 грн.</span>
-                            </p>
-                            <p class="bl_totalPrice__line">
-                                <span class="bl_totalPrice__main">Итого:</span>
-                                <span class="bl_totalPrice__value">999999 грн.</span>
-                            </p>
-                        </div>
-
-
-
-                        <div class="bl_basket__buttonBuy">
-                            <a href="#">Оформить заказ</a>
-                        </div>
-
+                    <div class="col-xs-12  hidden-xs">
+                        <ul class="bl_breadcrumbs">
+                            <li class="bl_breadcrumbs__item"><a class="bl_breadcrumbs__link" href="#">Главная</a></li>
+                            <li class="bl_breadcrumbs__item"><p class="bl_breadcrumbs__link bl_breadcrumbs__active">Новости</p></li>
+                        </ul>
                     </div>
 
 
+                    <!-- News Paper-->
+
+                    <div class="bl_newspaper bl_newspaper__corrected clearfix">
+                        <h1 class="bl_newspaper__header">Список новостей</h1>
+
+                        <ul class="bl_newspaper__fullBlock clearfix">
+                            <li class="bl_newspaper__item">
+                                <img class="bl_newspaper__image" src="image/News/new1.jpg" alt="">
+                                <div class="bl_newspaper__description">
+                                    <p class="bl_newspaper__name">Новая Услуга Подбор Кончиков!!!!</p>
+                                    <p class="bl_newspaper__shortDescription">Компания «SALMO» на рынке Украины уже 14
+                                        лет и, изучая потребность конечного</p>
+                                    <!-- Сделать запрос на количество выводимых знаков, при привышении выводить три точки -->
+                                    <time class="bl_newspaper__data">03.08.2017</time>
+                                    <a class="bl_newspaper__link decor_triangle__right" href="#">Читать далее</a>
+                                </div>
+                            </li>
+                            <li class="bl_newspaper__item">
+                                <img class="bl_newspaper__image" src="image/News/new2.jpg" alt="">
+                                <div class="bl_newspaper__description">
+                                    <p class="bl_newspaper__name">Всем клиентам скидка -10%</p>
+                                    <p class="bl_newspaper__shortDescription">Всем клиентам скидка -10% на весь заказ!!!
+                                        Доставка товара по всей Украине Новой Почтой при заказе... </p>
+                                    <!-- Сделать запрос на количество выводимых знаков, при привышении выводить три точки -->
+                                    <time class="bl_newspaper__data">03.08.2017</time>
+                                    <a class="bl_newspaper__link decor_triangle__right" href="#">Читать далее</a>
+                                </div>
+                            </li>
+                            <li class="bl_newspaper__item">
+                                <img class="bl_newspaper__image" src="image/News/new3.jpg" alt="">
+                                <div class="bl_newspaper__description">
+                                    <p class="bl_newspaper__name">ТУРИЗМ С БРЕНДОМ NORFIN:</p>
+                                    <p class="bl_newspaper__shortDescription">ТУРИЗМ С БРЕНДОМ NORFIN: ВСЁ ДЛЯ ОТДЫХА НА
+                                        ПРИРОДЕ Любители активного...  </p>
+                                    <!-- Сделать запрос на количество выводимых знаков, при привышении выводить три точки -->
+                                    <time class="bl_newspaper__data">03.08.2017</time>
+                                    <a class="bl_newspaper__link decor_triangle__right" href="#">Читать далее</a>
+                                </div>
+                            </li>
+                            <li class="bl_newspaper__item">
+                                <img class="bl_newspaper__image" src="image/News/new4.jpg" alt="">
+                                <div class="bl_newspaper__description">
+                                    <p class="bl_newspaper__name">СПИННИНГОВЫЕ УДИЛИЩА SALMO</p>
+                                    <p class="bl_newspaper__shortDescription">Популярный бренд Salmo давно занял
+                                        устойчивую позицию на рыболовном рынке: его товары... </p>
+                                    <!-- Сделать запрос на количество выводимых знаков, при привышении выводить три точки -->
+                                    <time class="bl_newspaper__data">03.08.2017</time>
+                                    <a class="bl_newspaper__link decor_triangle__right" href="#">Читать далее</a>
+                                </div>
+                            </li>
+                            <li class="bl_newspaper__item">
+                                <img class="bl_newspaper__image" src="image/News/new1.jpg" alt="">
+                                <div class="bl_newspaper__description">
+                                    <p class="bl_newspaper__name">Новая Услуга Подбор Кончиков!!!!</p>
+                                    <p class="bl_newspaper__shortDescription">Компания «SALMO» на рынке Украины уже 14
+                                        лет и, изучая потребность конечного</p>
+                                    <!-- Сделать запрос на количество выводимых знаков, при привышении выводить три точки -->
+                                    <time class="bl_newspaper__data">03.08.2017</time>
+                                    <a class="bl_newspaper__link decor_triangle__right" href="#">Читать далее</a>
+                                </div>
+                            </li>
+                            <li class="bl_newspaper__item">
+                                <img class="bl_newspaper__image" src="image/News/new2.jpg" alt="">
+                                <div class="bl_newspaper__description">
+                                    <p class="bl_newspaper__name">Всем клиентам скидка -10%</p>
+                                    <p class="bl_newspaper__shortDescription">Всем клиентам скидка -10% на весь заказ!!!
+                                        Доставка товара по всей Украине Новой Почтой при заказе... </p>
+                                    <!-- Сделать запрос на количество выводимых знаков, при привышении выводить три точки -->
+                                    <time class="bl_newspaper__data">03.08.2017</time>
+                                    <a class="bl_newspaper__link decor_triangle__right" href="#">Читать далее</a>
+                                </div>
+                            </li>
+                            <li class="bl_newspaper__item">
+                                <img class="bl_newspaper__image" src="image/News/new3.jpg" alt="">
+                                <div class="bl_newspaper__description">
+                                    <p class="bl_newspaper__name">ТУРИЗМ С БРЕНДОМ NORFIN:</p>
+                                    <p class="bl_newspaper__shortDescription">ТУРИЗМ С БРЕНДОМ NORFIN: ВСЁ ДЛЯ ОТДЫХА НА
+                                        ПРИРОДЕ Любители активного...  </p>
+                                    <!-- Сделать запрос на количество выводимых знаков, при привышении выводить три точки -->
+                                    <time class="bl_newspaper__data">03.08.2017</time>
+                                    <a class="bl_newspaper__link decor_triangle__right" href="#">Читать далее</a>
+                                </div>
+                            </li>
+                            <li class="bl_newspaper__item">
+                                <img class="bl_newspaper__image" src="image/News/new4.jpg" alt="">
+                                <div class="bl_newspaper__description">
+                                    <p class="bl_newspaper__name">СПИННИНГОВЫЕ УДИЛИЩА SALMO</p>
+                                    <p class="bl_newspaper__shortDescription">Популярный бренд Salmo давно занял
+                                        устойчивую позицию на рыболовном рынке: его товары... </p>
+                                    <!-- Сделать запрос на количество выводимых знаков, при привышении выводить три точки -->
+                                    <time class="bl_newspaper__data">03.08.2017</time>
+                                    <a class="bl_newspaper__link decor_triangle__right" href="#">Читать далее</a>
+                                </div>
+                            </li>
+                            <li class="bl_newspaper__item">
+                                <img class="bl_newspaper__image" src="image/News/new1.jpg" alt="">
+                                <div class="bl_newspaper__description">
+                                    <p class="bl_newspaper__name">Новая Услуга Подбор Кончиков!!!!</p>
+                                    <p class="bl_newspaper__shortDescription">Компания «SALMO» на рынке Украины уже 14
+                                        лет и, изучая потребность конечного</p>
+                                    <!-- Сделать запрос на количество выводимых знаков, при привышении выводить три точки -->
+                                    <time class="bl_newspaper__data">03.08.2017</time>
+                                    <a class="bl_newspaper__link decor_triangle__right" href="#">Читать далее</a>
+                                </div>
+                            </li>
+                            <li class="bl_newspaper__item">
+                                <img class="bl_newspaper__image" src="image/News/new2.jpg" alt="">
+                                <div class="bl_newspaper__description">
+                                    <p class="bl_newspaper__name">Всем клиентам скидка -10%</p>
+                                    <p class="bl_newspaper__shortDescription">Всем клиентам скидка -10% на весь заказ!!!
+                                        Доставка товара по всей Украине Новой Почтой при заказе... </p>
+                                    <!-- Сделать запрос на количество выводимых знаков, при привышении выводить три точки -->
+                                    <time class="bl_newspaper__data">03.08.2017</time>
+                                    <a class="bl_newspaper__link decor_triangle__right" href="#">Читать далее</a>
+                                </div>
+                            </li>
+                            <li class="bl_newspaper__item">
+                                <img class="bl_newspaper__image" src="image/News/new3.jpg" alt="">
+                                <div class="bl_newspaper__description">
+                                    <p class="bl_newspaper__name">ТУРИЗМ С БРЕНДОМ NORFIN:</p>
+                                    <p class="bl_newspaper__shortDescription">ТУРИЗМ С БРЕНДОМ NORFIN: ВСЁ ДЛЯ ОТДЫХА НА
+                                        ПРИРОДЕ Любители активного...  </p>
+                                    <!-- Сделать запрос на количество выводимых знаков, при привышении выводить три точки -->
+                                    <time class="bl_newspaper__data">03.08.2017</time>
+                                    <a class="bl_newspaper__link decor_triangle__right" href="#">Читать далее</a>
+                                </div>
+                            </li>
+                            <li class="bl_newspaper__item">
+                                <img class="bl_newspaper__image" src="image/News/new4.jpg" alt="">
+                                <div class="bl_newspaper__description">
+                                    <p class="bl_newspaper__name">СПИННИНГОВЫЕ УДИЛИЩА SALMO</p>
+                                    <p class="bl_newspaper__shortDescription">Популярный бренд Salmo давно занял
+                                        устойчивую позицию на рыболовном рынке: его товары... </p>
+                                    <!-- Сделать запрос на количество выводимых знаков, при привышении выводить три точки -->
+                                    <time class="bl_newspaper__data">03.08.2017</time>
+                                    <a class="bl_newspaper__link decor_triangle__right" href="#">Читать далее</a>
+                                </div>
+                            </li>
+                        </ul>
 
 
+                        <div class="bl_reviews__navigation">
+                            <!-- PAGINATION -->
+                            <div class="bl_pagination">
+                                <div class="bl_pagination">
+                                    <ul class="bl_pagination__fullItems">
+                                        <li class="bl_pagination__item"><a href="#"
+                                                                           class="bl_pagination__link bl_pagination__firstPage"></a>
+                                        </li>
+                                        <li class="bl_pagination__item"><a href="#"
+                                                                           class="bl_pagination__link bl_pagination__prevPage"></a>
+                                        </li>
+                                        <li class="bl_pagination__item"><a href="#"
+                                                                           class="bl_pagination__link">1</a></li>
+                                        <li class="bl_pagination__item"><span
+                                                class="bl_pagination__link bl_pagination__link_active">2</span></li>
+                                        <li class="bl_pagination__item"><a href="#"
+                                                                           class="bl_pagination__link">3</a></li>
+                                        <li class="bl_pagination__item"><a href="#"
+                                                                           class="bl_pagination__link">4</a></li>
+                                        <li class="bl_pagination__item"><a href="#"
+                                                                           class="bl_pagination__link bl_pagination__nextPage"></a>
+                                        </li>
+                                        <li class="bl_pagination__item"><a href="#"
+                                                                           class="bl_pagination__link bl_pagination__lastPage"></a>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                            </div>
+                            <!-- -->
+                            <span class="bl_products__viewpoint hidden-sm hidden-xs">Показано с 1 по 12 из 83 (страниц: 7)</span>
+                        </div>
+
+                    </div>
+
+
+
+
+
+                </div>
             </div>
 
 
@@ -592,7 +705,6 @@
     <p class="text_success decor_icon__seccuess">Ваш запрос принят.</p>
     <p class="text_success">Наш специалист свяжется с Вами в блежайшее время </p>
 </div>
-
 
 
 <script src="libs/jquery.min.js"></script>
