@@ -1086,6 +1086,17 @@ textarea {
   }
 }
 
+
+.icon_star_grey{
+  &:before{
+    position: absolute;
+    content: "\f006";
+    font-family: $FontAwesome;
+    color: inherit;
+    z-index:2;
+  }
+}
+
 .bl_shortReviews__full {
   margin-top: 26px;
 
@@ -2765,9 +2776,51 @@ textarea {
 
 }
 
+// CONTACTS
 
+.bl_contacts__title{
+  margin-top: 70px;
+  margin-bottom: 70px;
+  color: #101216;
+  font-family: $OpenSans;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.bl_contacts{
+  width: 100%;
 
+  color: #636363;
+}
 
+.bl_contacts__delivery{
+  max-width:200px;
+  width: 100%;
+}
+
+.bl_contacts__head{
+  color: #101216;
+  font-family: $OpenSans;
+  font-size: 16px;
+  font-weight: 700;
+  width: 100%;
+  margin-bottom: 32px;
+}
+
+.bl_contacts__novaPoshta{
+  display: block;
+  margin-top: 25px;
+}
+
+.bl_contacts__full{
+  width: 100%;
+}
+
+.bl_contacts__item{
+  position: relative;
+  width: 100%;
+  
+}
 
 
 

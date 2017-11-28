@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Leska</title>
+    <!-- SEO -->
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="image/favicon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="image/favicon/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="image/favicon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="image/favicon/apple-touch-icon-114x114.png">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,700|Palanquin+Dark:400,600,700"
+          rel="stylesheet">
+
+    <!-- build:css css/libs.min.css -->
+    <link rel="stylesheet" href="bower/normalize-css/normalize.css">
+    <link rel="stylesheet" href="bower/font-awesome/css/font-awesome.css">
+
+    <link rel="stylesheet" href="bower/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bower/bootstrap/dist/css/bootstrap-theme.min.css">
+
+    <link rel="stylesheet" href="bower/owl.carousel/dist/assets/owl.carousel.min.css">
+
+    <!-- endbuild -->
+    <!-- build:css css/main.min.css -->
+
+
+    <link rel="stylesheet" href="css/main.css">
+    <!-- endbuild -->
+
+</head>
+
+<body class="body">
+<div class="wrapperBlock">
+    <!--[if lt IE 10]>
+    <p class="browsehappy">Ваш браузер <strong>устарел</strong>. Пожалуйста <a
+            href="http://browsehappy.com/">обновите</a>
+        его.</p>
+    <![endif]-->
+
+    <!--======================================  HEADER ==========================================================-->
+    <header id="header" class="header">
+        <div class="mainWrapper">
+            <div class="bl_contactInfo hidden-xs clearfix">
+                <div class="container">
+                    <div class="col-xs-12">
+                        <span class="bl_contactInfo__item">info@leska.com.ua</span>
+                        <span class="bl_contactInfo__item">Пн-Пт: 10–18, Cб-Вс: прием заказов</span>
+                        <span class="bl_contactInfo__item">073-102-49-90</span>
+                        <span class="bl_contactInfo__item">068-780-27-35</span>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="bl_siteControls clearfix">
+                <div class="container">
+                    <div class="col-md-6">
+                        <a class="bl_logo" href="#">
+                            <span class="bl_logo__bigText">Leska</span>
+                            <span class="bl_logo__smallText">com.ua</span>
+                        </a>
+                    </div>
+                    <div class="col-md-6">
+
+                        <div class="bl_mainControls">
+                            <a class="bl_personalRoom icon-personalRoom" href="#">Личный кабинет</a>
+
+                            <div class="bl_shopBasket">
+                                <a href="#" class="bl_shopBasket__full icon-shopBasket">
+                                    <span class="bl_shopBasket__items">99</span>
+                                </a>
+                            </div>
+
+                        </div>
+
+                        <div class="bl_search">
+                            <div class="bl_search__wrapper">
+                                <input class="bl_search__field" type="text" placeholder="Что Вы желаете найти?">
+                                <button class="icon-search"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <nav class="nav_main">
+                <div class="container">
+                    <div class="col-md-12">
+
+                        <button type="button" class="btn_pages visible-xs">Страници</button>
+                        <ul class="nav_main__fullItems">
+                            <!-- Класс nav_main__link_active присваиваеться Если пользователь находится на нужной странице. Пример пользователь находится на Главной -->
+                            <li class="nav_main__items"><a href="#"
+                                                           class="nav_main__link nav_main__link_active">Главная</a>
+                            </li>
+                            <li class="nav_main__items"><a href="#" class="nav_main__link">Доставка</a></li>
+                            <li class="nav_main__items"><a href="#" class="nav_main__link">Контакты</a></li>
+                            <li class="nav_main__items"><a href="#" class="nav_main__link">Акции</a></li>
+                            <li class="nav_main__items"><a href="#" class="nav_main__link">Новинки</a></li>
+                        </ul>
+
+
+                        <button class="btn_callBack" type="button" title="CallBack">
+                             <span class="btn_callBack__text">Заказать бесплатный звонок</span>
+                        </button>
+
+                    </div>
+                </div>
+            </nav>
+
+
+        </div>
+    </header>
+
+
+    <!--======================================= MAIN ==========================================================-->
+
+    <main class="main">
+        <div class="mainWrapper">
+
+
+
+            <div class="container">
+                <div class="col-xs-12 col-md-3 correct_right">
+                    <aside class="sidebar">
+                        <nav class="bl_catalogs">
+                            <button class="section_name js-button_catalogs" type="button" title="Категории">Категории</button>
+                            <ul class="bl_catalogs__firstLevel">
+                                <li class="bl_catalogs__item ">
+                                    <a class="bl_catalogs__link" href="catalog.html">Удилища </a>
+                                    <button type="button" class="bl_catalogs__button decor_triangle"></button>
+                                    <!-- Это добавлять кнопку <button type="button" class="bl_catalogs__button decor_triangle"></button>  только если есть  у подкатегории есть потомки -->
+
+                                    <ul class="bl_catalogs__secondLevel">
+                                        <li class="bl_catalogs__item"><a class="bl_catalogs__link"
+                                                                         href="#">Запасные части  </a>
+                                            <button type="button" class="bl_catalogs__button decor_triangle"></button>
+                                            <ul class="bl_catalogs__thirdLevel"></ul>
+                                        </li>
+
+
+                                        <li class="bl_catalogs__item"><a class="bl_catalogs__link" href="#">Спининги</a>
+                                        </li>
+
+                                        <li class="bl_catalogs__item"><a class="bl_catalogs__link "
+                                                                         href="#">Поплавочные</a>
+                                            <button type="button" class="bl_catalogs__button decor_triangle"></button>
+
+                                            <ul class="bl_catalogs__thirdLevel ">
+                                                <li class="bl_catalogs__item">
+                                                    <a href="#" class="bl_catalogs__link">Поплавочные без колец</a>
+                                                </li>
+                                                <li class="bl_catalogs__item">
+                                                    <a href="#" class="bl_catalogs__link">Поплавочные с кольцами</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+
+                                        <li class="bl_catalogs__item"><a class="bl_catalogs__link" href="#">Фидерные</a>
+                                        </li>
+                                        <li class="bl_catalogs__item"><a class="bl_catalogs__link" href="#">Карповые</a>
+                                        </li>
+                                        <li class="bl_catalogs__item"><a class="bl_catalogs__link" href="#">Матчевые</a>
+                                        </li>
+                                        <li class="bl_catalogs__item"><a class="bl_catalogs__link"
+                                                                         href="#">Нахлыстовые</a>
+                                        </li>
+                                        <li class="bl_catalogs__item"><a class="bl_catalogs__link"
+                                                                         href="#">Телескопические</a></li>
+                                        <li class="bl_catalogs__item"><a class="bl_catalogs__link"
+                                                                         href="#">Тролинговые</a>
+                                        </li>
+                                        <li class="bl_catalogs__item"><a class="bl_catalogs__link" href="#">Серфовые</a>
+                                        </li>
+                                        <li class="bl_catalogs__item"><a class="bl_catalogs__link"
+                                                                         href="#">Вершинки и кончики</a></li>
+
+                                    </ul>
+                                </li>
+                                <li class="bl_catalogs__item">
+                                    <a class="bl_catalogs__link" href="#">Катушки</a>
+                                    <button type="button" class="bl_catalogs__button decor_triangle"></button>
+                                    <ul class="bl_catalogs__secondLevel"></ul>
+                                </li>
+
+                                <li class="bl_catalogs__item">
+                                    <a class="bl_catalogs__link" href="#">Шнуры Леска</a>
+                                    <button type="button" class="bl_catalogs__button decor_triangle"></button>
+                                    <ul class="bl_catalogs__secondLevel"></ul>
+                                </li>
+                                <li class="bl_catalogs__item">
+                                    <a class="bl_catalogs__link" href="#">Все для зимней рыбалки</a>
+                                    <button type="button" class="bl_catalogs__button decor_triangle"></button>
+                                    <ul class="bl_catalogs__secondLevel"></ul>
+                                </li>
+                                <li class="bl_catalogs__item">
+                                    <a class="bl_catalogs__link" href="#">Приманки</a>
+                                    <button type="button" class="bl_catalogs__button decor_triangle"></button>
+                                    <ul class="bl_catalogs__secondLevel"></ul>
+                                </li>
+                                <li class="bl_catalogs__item">
+                                    <a class="bl_catalogs__link" href="#">Прикормки и Наживки</a>
+                                    <button type="button" class="bl_catalogs__button decor_triangle"></button>
+                                    <ul class="bl_catalogs__secondLevel"></ul>
+                                </li>
+                                <li class="bl_catalogs__item">
+                                    <a class="bl_catalogs__link" href="#">Монтаж  оснастки</a>
+                                    <button type="button" class="bl_catalogs__button decor_triangle"></button>
+                                    <ul class="bl_catalogs__secondLevel"></ul>
+                                </li>
+                                <li class="bl_catalogs__item">
+                                    <a class="bl_catalogs__link" href="#">Аксессуары</a>
+                                    <button type="button" class="bl_catalogs__button decor_triangle"></button>
+                                    <ul class="bl_catalogs__secondLevel"></ul>
+                                </li>
+                                <li class="bl_catalogs__item">
+                                    <a class="bl_catalogs__link" href="#">Одежда для рыбалки и охоты</a>
+                                    <button type="button" class="bl_catalogs__button decor_triangle"></button>
+                                    <ul class="bl_catalogs__secondLevel"></ul>
+                                </li>
+                                <li class="bl_catalogs__item">
+                                    <a class="bl_catalogs__link" href="#">Обувь</a>
+                                    <button type="button" class="bl_catalogs__button decor_triangle"></button>
+                                    <ul class="bl_catalogs__secondLevel"></ul>
+                                </li>
+                                <li class="bl_catalogs__item">
+                                    <a class="bl_catalogs__link" href="#">Турестическая Мебель и Аксессуары</a>
+                                    <button type="button" class="bl_catalogs__button decor_triangle"></button>
+                                    <ul class="bl_catalogs__secondLevel"></ul>
+                                </li>
+                                <li class="bl_catalogs__item">
+                                    <a class="bl_catalogs__link" href="#">Новинки</a>
+                                    <button type="button" class="bl_catalogs__button decor_triangle"></button>
+                                    <ul class="bl_catalogs__secondLevel"></ul>
+                                </li>
+                            </ul>
+                        </nav>
+
+                        <div class="bl_shortReviews hidden-sm hidden-xs">
+                            <p class="section_name">Отзывы покупателей</p>
+                            <ul class="bl_shortReviews__fullReviews">
+                                <li class="bl_shortReviews__item">
+                                    <img class="bl_shortReviews__image" src="image/Products/product1_min.jpg" alt="">
+                                    <a class="bl_shortReviews__name" href="#">
+                                        Термобелье Norfin Winter Line Gray 303600
+                                    </a>
+                                    <div class="bl_shortReviews__fullStars">
+                                        <div class="bl_shortReviews__star icon_star__full"></div>
+                                        <div class="bl_shortReviews__star icon_star__full"></div>
+                                        <div class="bl_shortReviews__star icon_star__full"></div>
+                                        <div class="bl_shortReviews__star icon_star__full"></div>
+                                        <div class="bl_shortReviews__star icon_star__empty"></div>
+                                    </div>
+                                    <p class="bl_shortReviews__full">
+                                        Нормальное термобелье второго слоя. На штанах высокая талиея не задувает.
+                                        Материал -
+                                        флис односторо..
+                                    </p>
+                                </li>
+
+                                <li class="bl_shortReviews__item">
+                                    <img class="bl_shortReviews__image" src="image/Products/product2_min.jpg" alt="">
+                                    <a class="bl_shortReviews__name" href="#">
+                                        17064 Спиннинговое удилище шт2 Winner yellow V6 im8 0130012B 5-15g 2,4м *
+                                    </a>
+                                    <div class="bl_shortReviews__fullStars">
+                                        <div class="bl_shortReviews__star icon_star__full"></div>
+                                        <div class="bl_shortReviews__star icon_star__full"></div>
+                                        <div class="bl_shortReviews__star icon_star__full"></div>
+                                        <div class="bl_shortReviews__star icon_star__full"></div>
+                                        <div class="bl_shortReviews__star icon_star__full"></div>
+                                    </div>
+                                    <p class="bl_shortReviews__full">
+                                        Хороший спиннинг для начинающего спиннингиста. Удобный, легкий, чувствительный и
+                                        не
+                                        дорогой...
+                                    </p>
+                                </li>
+
+                                <li class="bl_shortReviews__item">
+                                    <img class="bl_shortReviews__image" src="image/Products/product3_min.jpg" alt="">
+                                    <a class="bl_shortReviews__name" href="#">
+                                        Термосумка Norfin FORSSA NFL с посуд. на 6 персон
+                                    </a>
+                                    <div class="bl_shortReviews__fullStars">
+                                        <div class="bl_shortReviews__star icon_star__full"></div>
+                                        <div class="bl_shortReviews__star icon_star__full"></div>
+                                        <div class="bl_shortReviews__star icon_star__full"></div>
+                                        <div class="bl_shortReviews__star icon_star__full"></div>
+                                        <div class="bl_shortReviews__star icon_star__empty"></div>
+                                    </div>
+                                    <p class="bl_shortReviews__full">
+                                        Всё супер!) Спасибо,все получили,подарочек приятно удивил))) Первый раз
+                                        заказывал у
+                                        вас, думаю, точно...
+                                    </p>
+                                </li>
+
+
+                            </ul>
+
+                            <a class="bl_shortReviews__link" href="#">Читать все отзывы</a>
+
+                        </div>
+                    </aside>
+
+                </div>
+                <div class="col-xs-12 col-md-9">
+
+
+
+                    <div class="col-xs-12  hidden-xs">
+                        <ul class="bl_breadcrumbs">
+                            <li class="bl_breadcrumbs__item"><a class="bl_breadcrumbs__link" href="#">Главная</a></li>
+                            <li class="bl_breadcrumbs__item"><p class="bl_breadcrumbs__link bl_breadcrumbs__active">Новости</p></li>
+                        </ul>
+                    </div>
+
+
+                    <!-- News Paper-->
+
+                    <div class="bl_newspaper bl_newspaper__corrected clearfix">
+                        <h1 class="bl_newspaper__header">Список новостей</h1>
+
+                        <ul class="bl_newspaper__fullBlock clearfix">
+                            <li class="bl_newspaper__item">
+                                <img class="bl_newspaper__image" src="image/News/new1.jpg" alt="">
+                                <div class="bl_newspaper__description">
+                                    <p class="bl_newspaper__name">Новая Услуга Подбор Кончиков!!!!</p>
+                                    <p class="bl_newspaper__shortDescription">Компания «SALMO» на рынке Украины уже 14
+                                        лет и, изучая потребность конечного</p>
+                                    <!-- Сделать запрос на количество выводимых знаков, при привышении выводить три точки -->
+                                    <time class="bl_newspaper__data">03.08.2017</time>
+                                    <a class="bl_newspaper__link decor_triangle__right" href="#">Читать далее</a>
+                                </div>
+                            </li>
+                            <li class="bl_newspaper__item">
+                                <img class="bl_newspaper__image" src="image/News/new2.jpg" alt="">
+                                <div class="bl_newspaper__description">
+                                    <p class="bl_newspaper__name">Всем клиентам скидка -10%</p>
+                                    <p class="bl_newspaper__shortDescription">Всем клиентам скидка -10% на весь заказ!!!
+                                        Доставка товара по всей Украине Новой Почтой при заказе... </p>
+                                    <!-- Сделать запрос на количество выводимых знаков, при привышении выводить три точки -->
+                                    <time class="bl_newspaper__data">03.08.2017</time>
+                                    <a class="bl_newspaper__link decor_triangle__right" href="#">Читать далее</a>
+                                </div>
+                            </li>
+                            <li class="bl_newspaper__item">
+                                <img class="bl_newspaper__image" src="image/News/new3.jpg" alt="">
+                                <div class="bl_newspaper__description">
+                                    <p class="bl_newspaper__name">ТУРИЗМ С БРЕНДОМ NORFIN:</p>
+                                    <p class="bl_newspaper__shortDescription">ТУРИЗМ С БРЕНДОМ NORFIN: ВСЁ ДЛЯ ОТДЫХА НА
+                                        ПРИРОДЕ Любители активного...  </p>
+                                    <!-- Сделать запрос на количество выводимых знаков, при привышении выводить три точки -->
+                                    <time class="bl_newspaper__data">03.08.2017</time>
+                                    <a class="bl_newspaper__link decor_triangle__right" href="#">Читать далее</a>
+                                </div>
+                            </li>
+                            <li class="bl_newspaper__item">
+                                <img class="bl_newspaper__image" src="image/News/new4.jpg" alt="">
+                                <div class="bl_newspaper__description">
+                                    <p class="bl_newspaper__name">СПИННИНГОВЫЕ УДИЛИЩА SALMO</p>
+                                    <p class="bl_newspaper__shortDescription">Популярный бренд Salmo давно занял
+                                        устойчивую позицию на рыболовном рынке: его товары... </p>
+                                    <!-- Сделать запрос на количество выводимых знаков, при привышении выводить три точки -->
+                                    <time class="bl_newspaper__data">03.08.2017</time>
+                                    <a class="bl_newspaper__link decor_triangle__right" href="#">Читать далее</a>
+                                </div>
+                            </li>
+                            <li class="bl_newspaper__item">
+                                <img class="bl_newspaper__image" src="image/News/new1.jpg" alt="">
+                                <div class="bl_newspaper__description">
+                                    <p class="bl_newspaper__name">Новая Услуга Подбор Кончиков!!!!</p>
+                                    <p class="bl_newspaper__shortDescription">Компания «SALMO» на рынке Украины уже 14
+                                        лет и, изучая потребность конечного</p>
+                                    <!-- Сделать запрос на количество выводимых знаков, при привышении выводить три точки -->
+                                    <time class="bl_newspaper__data">03.08.2017</time>
+                                    <a class="bl_newspaper__link decor_triangle__right" href="#">Читать далее</a>
+                                </div>
+                            </li>
+                            <li class="bl_newspaper__item">
+                                <img class="bl_newspaper__image" src="image/News/new2.jpg" alt="">
+                                <div class="bl_newspaper__description">
+                                    <p class="bl_newspaper__name">Всем клиентам скидка -10%</p>
+                                    <p class="bl_newspaper__shortDescription">Всем клиентам скидка -10% на весь заказ!!!
+                                        Доставка товара по всей Украине Новой Почтой при заказе... </p>
+                                    <!-- Сделать запрос на количество выводимых знаков, при привышении выводить три точки -->
+                                    <time class="bl_newspaper__data">03.08.2017</time>
+                                    <a class="bl_newspaper__link decor_triangle__right" href="#">Читать далее</a>
+                                </div>
+                            </li>
+                            <li class="bl_newspaper__item">
+                                <img class="bl_newspaper__image" src="image/News/new3.jpg" alt="">
+                                <div class="bl_newspaper__description">
+                                    <p class="bl_newspaper__name">ТУРИЗМ С БРЕНДОМ NORFIN:</p>
+                                    <p class="bl_newspaper__shortDescription">ТУРИЗМ С БРЕНДОМ NORFIN: ВСЁ ДЛЯ ОТДЫХА НА
+                                        ПРИРОДЕ Любители активного...  </p>
+                                    <!-- Сделать запрос на количество выводимых знаков, при привышении выводить три точки -->
+                                    <time class="bl_newspaper__data">03.08.2017</time>
+                                    <a class="bl_newspaper__link decor_triangle__right" href="#">Читать далее</a>
+                                </div>
+                            </li>
+                            <li class="bl_newspaper__item">
+                                <img class="bl_newspaper__image" src="image/News/new4.jpg" alt="">
+                                <div class="bl_newspaper__description">
+                                    <p class="bl_newspaper__name">СПИННИНГОВЫЕ УДИЛИЩА SALMO</p>
+                                    <p class="bl_newspaper__shortDescription">Популярный бренд Salmo давно занял
+                                        устойчивую позицию на рыболовном рынке: его товары... </p>
+                                    <!-- Сделать запрос на количество выводимых знаков, при привышении выводить три точки -->
+                                    <time class="bl_newspaper__data">03.08.2017</time>
+                                    <a class="bl_newspaper__link decor_triangle__right" href="#">Читать далее</a>
+                                </div>
+                            </li>
+                            <li class="bl_newspaper__item">
+                                <img class="bl_newspaper__image" src="image/News/new1.jpg" alt="">
+                                <div class="bl_newspaper__description">
+                                    <p class="bl_newspaper__name">Новая Услуга Подбор Кончиков!!!!</p>
+                                    <p class="bl_newspaper__shortDescription">Компания «SALMO» на рынке Украины уже 14
+                                        лет и, изучая потребность конечного</p>
+                                    <!-- Сделать запрос на количество выводимых знаков, при привышении выводить три точки -->
+                                    <time class="bl_newspaper__data">03.08.2017</time>
+                                    <a class="bl_newspaper__link decor_triangle__right" href="#">Читать далее</a>
+                                </div>
+                            </li>
+                            <li class="bl_newspaper__item">
+                                <img class="bl_newspaper__image" src="image/News/new2.jpg" alt="">
+                                <div class="bl_newspaper__description">
+                                    <p class="bl_newspaper__name">Всем клиентам скидка -10%</p>
+                                    <p class="bl_newspaper__shortDescription">Всем клиентам скидка -10% на весь заказ!!!
+                                        Доставка товара по всей Украине Новой Почтой при заказе... </p>
+                                    <!-- Сделать запрос на количество выводимых знаков, при привышении выводить три точки -->
+                                    <time class="bl_newspaper__data">03.08.2017</time>
+                                    <a class="bl_newspaper__link decor_triangle__right" href="#">Читать далее</a>
+                                </div>
+                            </li>
+                            <li class="bl_newspaper__item">
+                                <img class="bl_newspaper__image" src="image/News/new3.jpg" alt="">
+                                <div class="bl_newspaper__description">
+                                    <p class="bl_newspaper__name">ТУРИЗМ С БРЕНДОМ NORFIN:</p>
+                                    <p class="bl_newspaper__shortDescription">ТУРИЗМ С БРЕНДОМ NORFIN: ВСЁ ДЛЯ ОТДЫХА НА
+                                        ПРИРОДЕ Любители активного...  </p>
+                                    <!-- Сделать запрос на количество выводимых знаков, при привышении выводить три точки -->
+                                    <time class="bl_newspaper__data">03.08.2017</time>
+                                    <a class="bl_newspaper__link decor_triangle__right" href="#">Читать далее</a>
+                                </div>
+                            </li>
+                            <li class="bl_newspaper__item">
+                                <img class="bl_newspaper__image" src="image/News/new4.jpg" alt="">
+                                <div class="bl_newspaper__description">
+                                    <p class="bl_newspaper__name">СПИННИНГОВЫЕ УДИЛИЩА SALMO</p>
+                                    <p class="bl_newspaper__shortDescription">Популярный бренд Salmo давно занял
+                                        устойчивую позицию на рыболовном рынке: его товары... </p>
+                                    <!-- Сделать запрос на количество выводимых знаков, при привышении выводить три точки -->
+                                    <time class="bl_newspaper__data">03.08.2017</time>
+                                    <a class="bl_newspaper__link decor_triangle__right" href="#">Читать далее</a>
+                                </div>
+                            </li>
+                        </ul>
+
+
+                        <div class="bl_reviews__navigation">
+                            <!-- PAGINATION -->
+                            <div class="bl_pagination">
+                                <div class="bl_pagination">
+                                    <ul class="bl_pagination__fullItems">
+                                        <li class="bl_pagination__item"><a href="#"
+                                                                           class="bl_pagination__link bl_pagination__firstPage"></a>
+                                        </li>
+                                        <li class="bl_pagination__item"><a href="#"
+                                                                           class="bl_pagination__link bl_pagination__prevPage"></a>
+                                        </li>
+                                        <li class="bl_pagination__item"><a href="#"
+                                                                           class="bl_pagination__link">1</a></li>
+                                        <li class="bl_pagination__item"><span
+                                                class="bl_pagination__link bl_pagination__link_active">2</span></li>
+                                        <li class="bl_pagination__item"><a href="#"
+                                                                           class="bl_pagination__link">3</a></li>
+                                        <li class="bl_pagination__item"><a href="#"
+                                                                           class="bl_pagination__link">4</a></li>
+                                        <li class="bl_pagination__item"><a href="#"
+                                                                           class="bl_pagination__link bl_pagination__nextPage"></a>
+                                        </li>
+                                        <li class="bl_pagination__item"><a href="#"
+                                                                           class="bl_pagination__link bl_pagination__lastPage"></a>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                            </div>
+                            <!-- -->
+                            <span class="bl_products__viewpoint hidden-sm hidden-xs">Показано с 1 по 12 из 83 (страниц: 7)</span>
+                        </div>
+
+                    </div>
+
+
+
+
+
+                </div>
+            </div>
+
+
+        </div>
+    </main>
+
+
+    <!--====================================== FOOTER  ====================================================-->
+    <footer class="footer">
+
+        <section class="bl_footerFirst">
+            <div class="container">
+
+                <div class="col-md-2 correct_right">
+                    <div class="bl_logos">
+                        <a class="bl_logos__leska" href="#">
+                            <p class="bl_logo__bigText">Leska</p>
+                            <p class="bl_logo__smallText">com.ua</p>
+                        </a>
+                        <div class="bl_cosLinks clearfix">
+                            <a class="bl_cosLinks__link icon_fb" href="#"></a>
+                            <a class="bl_cosLinks__link icon_tw" href="#"></a>
+                            <a class="bl_cosLinks__link icon_vk" href="#"></a>
+                        </div>
+                        <div class="bl_bankCarts">
+                            <a class="bl_bankCarts__link icon_masterCard" href="#"></a>
+                            <a class="bl_bankCarts__link icon_visa" href="#"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-10 correct_left">
+
+                    <div class="col-md-10 correct_left correct_right">
+                        <div class="bl_informations">
+                            <div class="bl_informations__item">
+                                <p class="bl_informations__title decor_triangle">ЛИЧНЫЙ КАБИНЕТ</p>
+                                <ul class="bl_info">
+                                    <li class="bl_info__item"><a class="bl_info__link" href="#">  Личный Кабинет </a>
+                                    </li>
+                                    <li class="bl_info__item"><a class="bl_info__link" href="#">История заказов</a></li>
+                                    <li class="bl_info__item"><a class="bl_info__link" href="#"> Закладки </a></li>
+                                    <li class="bl_info__item"><a class="bl_info__link" href="#">Возврат товара</a></li>
+                                    <li class="bl_info__item"><a class="bl_info__link" href="#"> Рассылка</a></li>
+                                </ul>
+                            </div>
+                            <div class="bl_informations__item">
+                                <p class="bl_informations__title decor_triangle">ИНФОРМАЦИЯ  </p>
+                                <ul class="bl_info">
+                                    <li class="bl_info__item"><a class="bl_info__link" href="#">О нас  </a></li>
+                                    <li class="bl_info__item"><a class="bl_info__link" href="#">Доставка и оплата </a>
+                                    </li>
+                                    <li class="bl_info__item"><a class="bl_info__link" href="#"> Контакты</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="bl_informations__item ">
+                                <p class="bl_informations__title decor_triangle">ДОПОЛНИТЕЛЬНО  </p>
+                                <ul class="bl_info">
+                                    <li class="bl_info__item"><a class="bl_info__link" href="#">  Производители  </a>
+                                    </li>
+                                    <li class="bl_info__item"><a class="bl_info__link"
+                                                                 href="#">Подарочные сертификаты </a></li>
+                                    <li class="bl_info__item"><a class="bl_info__link"
+                                                                 href="#"> Партнёрская программа </a></li>
+                                    <li class="bl_info__item"><a class="bl_info__link" href="#">Карта сайта  </a></li>
+                                    <li class="bl_info__item"><a class="bl_info__link" href="#">Акции</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="bl_informations__item">
+                                <p class="bl_informations__title  decor_triangle">КОНТАКТЫ    </p>
+                                <ul class="bl_info">
+                                    <li class="bl_info__item icon-phone"><span>068-780-27-35</span>
+                                        <p>073-102-49-90</p> 
+                                    </li>
+                                    <li class="bl_info__item icon-clock"><span>Пн-Пт: 10–18, </span>
+                                        <p>Cб-Вс: прием заказов</p> 
+                                    </li>
+                                    <li class="bl_info__item icon-envelope">info@leska.com.ua </li>
+                                    <li class="bl_info__item icon-pointer">Киев</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2  correct_right hidden-xs hidden-sm">
+                        <a class="bl_facebook" href="#">
+                            <img class="bl_facebook__image" src="image/facebook-link.jpg" alt="">
+                        </a>
+                    </div>
+
+                    <div class="bl_ancor">
+                        <a class="bl_ancor__link decor_arrowUp" href="#header"></a>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- OfflineQuestion-->
+
+            <button class="bl_offlineQuestion_button hidden-xs hidden-sm" type="button" title="offline qestion">
+                Офлайн - задать вопрос
+            </button>
+
+            <div class="bl_offlineQuestion__full hidden">
+                <div class="bl_offlineQuestion__header">
+                    <span>Поддержка</span>
+                    <button class="bl_offlineQuestion__rollUp decor_minLine" type="button"
+                            title="rollUp button"></button>
+                </div>
+
+                <div class="bl_offlineQuestion__main clearfix">
+                    <p class="bl_offlineQuestion__text">Мы сейчас в офлайне. Приносим свои извинения. Оставьте нам
+                        сообщение, и мы свяжемся с Вами.</p>
+
+                    <form class="bl_offlineQuestion__form" method="post" action="">
+                        <input type="text" placeholder="Ваше имя" required>
+                        <input type="email" placeholder="Адрес электронной почты" required>
+                        <textarea name="" placeholder="Сообщение" rows="10" required></textarea>
+                        <button class="bl_offlineQuestion__submit" type="submit">Отправить</button>
+                    </form>
+
+
+                </div>
+            </div>
+            <!-- END offlineQuestion-->
+
+        </section>
+
+
+        <section class="bl_footerSecond">
+            <div class="container">
+                <div class="col-xs-12">
+                    <p>«Леска» — интернет магазин рыболовных снастей © 2017</p>
+                </div>
+            </div>
+        </section>
+    </footer>
+</div>
+
+
+<div class="blackWrapper hidden"></div>
+
+
+<!-- POPUP BIFORE ADD TO SHOPBAG-->
+
+<div class="TEST_BUTTON"></div>  <!--  уберешь эту кнопку и повесешь собитие на то что тебе надо-->
+
+<div class="popup_likeShopbag hidden">
+    <div class="wrapperBlock">
+        <button class="popup_likeShopbag__close">
+            <i class="fa fa-times decor_icon__close" aria-hidden="true"></i>
+        </button>
+        <p class="popup_likeShopbag__text popup_likeShopbag__text_main">Подтверждение</p>
+
+        <div class="popup_likeShopbag__product">
+            <p class="shoppingBasket_product__name">Электро-сеть ываыв ыв аываы аыв аываываыва ываываыва ываываываываыва
+                ываыва</p>
+        </div>
+        <p class="popup_likeShopbag__text  popup_likeShopbag__text_main">добавлен в корзину</p>
+
+        <div class="popup_likeShopbag__buttons">
+            <button class="button_product">
+                <span class="button_buyProduct__text">Продолжить покупки</span>
+            </button>
+
+            <div class="button_product">
+                <a href="#" class="button_buyProduct__text">Оформление заказа</a>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<!-- CALLBACK FORM -->
+
+<div class="bl_callback hidden">
+    <button class="bl_callback__close decor_close"></button>
+    <form class="bl_callback__form ">
+        <label class="bl_callback__label">
+            <input class="bl_callback__input" type="text" placeholder="Ваше имя" required>
+            <span class="text_error hidden">Пиши нормальное Имя</span> <!-- Можешь сюда выводить текст ошибки -->
+        </label>
+        <label class="bl_callback__label">
+            <input class="bl_callback__input" type="tel" placeholder="Ваш телефон" required>
+            <span class="text_error  hidden">Я не верю что это телефон</span> <!-- Можешь сюда выводить текст ошибки -->
+        </label>
+        <button class="bl_callback__button button_simple" type="submit">Заказать звонок</button>
+    </form>
+</div>
+
+<!-- Succsess FORM-->
+<div class="bl_success hidden">
+    <p class="text_success decor_icon__seccuess">Ваш запрос принят.</p>
+    <p class="text_success">Наш специалист свяжется с Вами в блежайшее время </p>
+</div>
+
+
+<script src="libs/jquery.min.js"></script>
+<script src="libs/jquery.elevateZoom-2.2.3.min.js"></script>
+<!-- build:js js/libs.min.js -->
+
+<script src="bower/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="bower/owl.carousel/dist/owl.carousel.min.js"></script>
+
+<script src="bower/fancybox/dist/jquery.fancybox.min.js"></script>
+<script src="bower/jquery.maskedinput/dist/jquery.maskedinput.min.js"></script>
+
+
+<!-- endbuild -->
+<!-- build:js js/common.min.js -->
+
+
+<script src="js/common.js"></script>
+<!-- endbuild -->
+
+
+</body>
+
+</html>
