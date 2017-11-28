@@ -20,6 +20,15 @@
     left: 40%;
   }
 
+  .bl_product__attributes,
+  .bl_manufacturer{
+    margin-top: 15px;
+  }
+  .bl_manufacturer__link{
+    float: none;
+  }
+
+
 }
 
 /* Medium Devices, Desktops 992px */
@@ -108,6 +117,9 @@
       }
     }
 
+  .bl_productDescription{
+    padding: 0;
+  }
 
   .section_name{
     margin: 0 auto 15px;
@@ -167,6 +179,9 @@
     margin-top: 10px;
     text-align: center;
   }
+
+
+
 
 
   .bl_ancor{
@@ -254,6 +269,35 @@
   }
 
 
+  .bl_rating__choose{
+    display: block;
+    margin: 15px 0;
+  }
+  .bl_rating__lables{
+    display: inline-block;
+  }
+
+
+
+  .bl_addRewiew__submit{
+    float: none;
+  }
+
+  .bl_addRewiew__capcha_image{
+    display: block;
+    margin-left: 0;
+    margin-top: 15px;
+  }
+
+  .bl_product__attributes{
+    text-align: center;
+  }
+
+  .bl_price{
+    text-align: center;
+    margin-top: 20px;
+  }
+
 }
 
 @media only screen and (max-width: 600px) {
@@ -296,6 +340,21 @@
   }
 
 
+.mobile_buyButtons{
+  width: 100%;
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+  .block_quantity__box{
+    order: -1;
+    max-width: 250px;
+    margin: 10px auto;
+  }
+.button_buyProduct{
+  margin: 14px auto;
+}
 
 }
 

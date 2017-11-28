@@ -62,8 +62,6 @@ $(document).ready(function () {
 
 ///////// Filters Button
     var buttonFilterSection = $(".bl_filters__button");
-    // decorButtonLine = "decor_filterLine",
-    // decorButtonTriangle = "decor_filterTriangle";
 
     buttonFilterSection.on("click", function () {
         $(this).toggleClass("decor_filterLine decor_filterTriangle");
@@ -276,37 +274,53 @@ $(document).ready(function () {
 
 //// slider_youViewed  - Вы смотрели:
 
-    // $(".slider_youViewed").owlCarousel({
-    //     items: 4,
-    //     loop: true,
-    //     nav: true,
-    //     navText: true,
-    //     dots: false,
-    //     autoplay: false,
-    //     stopOnHover: true,
-    //     margin: 0,
-    //     smartSpeed: 1000, //Время движения слайда
-    //     autoplayTimeout: 4000, //Время смены слайда
-    //     pagination: false,
-    //     responsiveClass: true,
-    //     responsive: {
-    //         1200: {
-    //             items: 4
-    //         },
-    //         992: {
-    //             items: 3,
-    //             center: true
-    //         },
-    //         550: {
-    //             items: 2
-    //         },
-    //         320: {
-    //             items: 1,
-    //             center: true
-    //         }
-    //
-    //     }
-    // });
+function youViewedSlider() {
+
+    var youViewedItems = $(".slider_youViewed .product_sliderCart__item").length,
+        currentItems = 4,
+        currentLoop;
+
+    (youViewedItems > currentItems) ? (currentLoop = true) : (currentLoop = false);
+
+
+    $(".slider_youViewed").owlCarousel({
+        items: currentItems,
+        loop: currentLoop,
+        nav: true,
+        navText: true,
+        dots: false,
+        autoplay: false,
+        stopOnHover: true,
+        margin: 0,
+        smartSpeed: 1000, //Время движения слайда
+        autoplayTimeout: 4000, //Время смены слайда
+        pagination: false,
+        responsiveClass: true,
+        responsive: {
+            1200: {
+                items: 4
+            },
+            992: {
+                items: 3,
+                center: true
+            },
+            550: {
+
+                dots: false,
+                items: 2
+            },
+            320: {
+                dots: false,
+                items: 1,
+                center: true
+            }
+
+        }
+    });
+
+}
+
+    youViewedSlider();
 
 // ElevateZoom
 
@@ -385,14 +399,20 @@ $(document).ready(function () {
     }
 
 
-// Ancor to top
+// Ancor
 
-    $(".bl_ancor").on("click", "a", function (event) {
-        event.preventDefault();
-        var id = $(this).attr('href'),
-            top = $(id).offset().top;
-        $('body,html').animate({scrollTop: top}, 500);
-    });
+    scrollAncor($(".bl_ancor"));
+    scrollAncor($(".ancor_addRewiew"));
+
+     function scrollAncor(btn){
+         btn.on("click", "a", function (event) {
+             event.preventDefault();
+             var id = $(this).attr('href'),
+                 top = $(id).offset().top;
+             $('body,html').animate({scrollTop: top}, 500);
+         });
+     }
+
 
 // FILTER for telephone number
 
@@ -419,6 +439,17 @@ $(document).ready(function () {
         })
     }
 
+ //// BasketShop
+    $(".bl_bonus__label input").on( "click", function() {
+
+            if($(this).prop('checked') === true) {
+                $(".bl_bonus__button").addClass("bl_bonus__button_active")
+            }
+    });
+
+
+
+
 
 /// POPUP BIFORE ADD TO SHOPBAG
 
@@ -440,14 +471,16 @@ $(document).ready(function () {
 
     popupWindowBiforeAddToShopBag();
 
-////////// CallBack PopUp
+////////// CallBack PopUp + BuyOneClick
 
     function popupWindowCallBack() {
         var buttonCallback = $(".btn_callBack"),
+            buttonBuyOneClick = $(".button_buyOneClick"),
             fieldCallBack = $(".bl_callback"),
             buttonClose = $(".bl_callback__close");
 
         popupWindowShow(buttonCallback, fieldCallBack);
+        popupWindowShow(buttonBuyOneClick, fieldCallBack);
         closePopupWindow(buttonClose, fieldCallBack);
         closePopupWindow(blackWrapper, fieldCallBack);
 
