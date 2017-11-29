@@ -10,7 +10,7 @@
 /*FONTS*/
 /*********************************************/
 
-@include font-face("FontAwesome", "../fonts/FontAwesome/FontAwesome", 400, normal, eot ttf woff woff2);
+@include font-face("FontAwesome", "../fonts/FontAwesome/FontAwesome", 400, normal, woff2 woff ttf);
 
 /*********************************************/
 /*MAIN STYLES*/
@@ -1432,6 +1432,33 @@ textarea {
   position: relative;
 }
 
+.bl_aboutShop h2{
+  color: #12171f;
+  font-family: $OpenSans;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 38px;
+  margin-bottom: 80px;
+}
+
+.bl_aboutShop__mainText{
+  margin-top: 20px;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: $OpenSansSemibold;
+  font-weight: 600;
+}
+
+.bl_aboutShop__simpleText{
+  margin-top: 20px;
+  line-height: 24px;
+}
+.bl_aboutShop ol{
+  margin-top: 20px;
+  padding-left: 20px;
+}
+
+
 .ceo_block {
   width: 100%;
   margin-top: 40px;
@@ -1847,8 +1874,13 @@ textarea {
 }
 
 .bl_product__mainImage {
+  width: 100%;
   display: block;
   margin: 0 auto;
+  img{
+    display: block;
+    margin: 0 auto;
+  }
 }
 
 .bl_product__additionalImages {
@@ -2767,7 +2799,7 @@ textarea {
 
 //////////// NEWS
 
-.bl_newspaper__header{
+.bl_name__header{
   clear: both;
   width: 100%;
   color: #12171f;
@@ -2952,6 +2984,70 @@ textarea {
   }
 }
 
+//////////// DELIVERY
+
+
+.bl_delivery{
+  width: 100%;
+  margin-left: 5%;
+}
+.bl_delivery + .bl_aboutShop{
+  width: 100%;
+  margin-left: 5%;
+}
+
+
+.bl_delivery__text_blue{
+  font-family: $OpenSans;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  color: $color_button;
+}
+
+.bl_delivery__sectionName{
+  margin-top: 20px;
+  position: relative;
+  padding-left: 10px;
+  height: 34px;
+  line-height: 34px;
+  font-family: $OpenSansSemibold;
+  font-weight: 400;
+  color: #fff;
+}
+
+.bl_delivery__title{
+  margin-top: 20px;
+  font-family: $OpenSansSemibold;
+  font-weight: 700;
+  line-height: 24px;
+  color: #2d323a;
+}
+.bl_delivery__text{
+  margin-top: 15px;
+  line-height: 24px;
+  width: 100%;
+  color: #555;
+}
+
+.bl_delivery__attention{
+  position: relative;
+  font-family: $OpenSans;
+  padding-left: 4px;
+  margin-left: -4px;
+  font-size: 16px;
+  color: #ed0f33;
+  border-left: 2px solid #ed0f33;
+}
+.bl_delivery__attention p:nth-of-type(1) {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.bl_delivery__red{
+  margin-top: 20px;
+  font-size: 16px;
+  color: #ed0f33;
+}
 
 
 /*********************************************/

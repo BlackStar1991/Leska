@@ -115,79 +115,291 @@
     <main class="main">
         <div class="mainWrapper">
 
-            <div class="container clearfix">
+
+            <div class="container">
+                <div class="col-xs-12 col-md-3 correct_right">
+                    <aside class="sidebar">
+                        <nav class="bl_catalogs">
+                            <button class="section_name js-button_catalogs" type="button" title="Категории">Категории
+                            </button>
+                            <ul class="bl_catalogs__firstLevel">
+                                <li class="bl_catalogs__item ">
+                                    <a class="bl_catalogs__link" href="catalog.html">Удилища </a>
+                                    <button type="button" class="bl_catalogs__button decor_triangle"></button>
+                                    <!-- Это добавлять кнопку <button type="button" class="bl_catalogs__button decor_triangle"></button>  только если есть  у подкатегории есть потомки -->
+
+                                    <ul class="bl_catalogs__secondLevel">
+                                        <li class="bl_catalogs__item"><a class="bl_catalogs__link"
+                                                                         href="#">Запасные части  </a>
+                                            <button type="button" class="bl_catalogs__button decor_triangle"></button>
+                                            <ul class="bl_catalogs__thirdLevel"></ul>
+                                        </li>
 
 
-                <div class="col-xs-12  hidden-xs">
-                    <ul class="bl_breadcrumbs">
-                        <li class="bl_breadcrumbs__item"><a class="bl_breadcrumbs__link" href="#">Главная</a></li>
-                        <li class="bl_breadcrumbs__item"><p class="bl_breadcrumbs__link bl_breadcrumbs__active">
-                            Контакты</p></li>
-                    </ul>
-                </div>
+                                        <li class="bl_catalogs__item"><a class="bl_catalogs__link" href="#">Спининги</a>
+                                        </li>
+
+                                        <li class="bl_catalogs__item"><a class="bl_catalogs__link "
+                                                                         href="#">Поплавочные</a>
+                                            <button type="button" class="bl_catalogs__button decor_triangle"></button>
+
+                                            <ul class="bl_catalogs__thirdLevel ">
+                                                <li class="bl_catalogs__item">
+                                                    <a href="#" class="bl_catalogs__link">Поплавочные без колец</a>
+                                                </li>
+                                                <li class="bl_catalogs__item">
+                                                    <a href="#" class="bl_catalogs__link">Поплавочные с кольцами</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+
+                                        <li class="bl_catalogs__item"><a class="bl_catalogs__link" href="#">Фидерные</a>
+                                        </li>
+                                        <li class="bl_catalogs__item"><a class="bl_catalogs__link" href="#">Карповые</a>
+                                        </li>
+                                        <li class="bl_catalogs__item"><a class="bl_catalogs__link" href="#">Матчевые</a>
+                                        </li>
+                                        <li class="bl_catalogs__item"><a class="bl_catalogs__link"
+                                                                         href="#">Нахлыстовые</a>
+                                        </li>
+                                        <li class="bl_catalogs__item"><a class="bl_catalogs__link"
+                                                                         href="#">Телескопические</a></li>
+                                        <li class="bl_catalogs__item"><a class="bl_catalogs__link"
+                                                                         href="#">Тролинговые</a>
+                                        </li>
+                                        <li class="bl_catalogs__item"><a class="bl_catalogs__link" href="#">Серфовые</a>
+                                        </li>
+                                        <li class="bl_catalogs__item"><a class="bl_catalogs__link"
+                                                                         href="#">Вершинки и кончики</a></li>
+
+                                    </ul>
+                                </li>
+                                <li class="bl_catalogs__item">
+                                    <a class="bl_catalogs__link" href="#">Катушки</a>
+                                    <button type="button" class="bl_catalogs__button decor_triangle"></button>
+                                    <ul class="bl_catalogs__secondLevel"></ul>
+                                </li>
+
+                                <li class="bl_catalogs__item">
+                                    <a class="bl_catalogs__link" href="#">Шнуры Леска</a>
+                                    <button type="button" class="bl_catalogs__button decor_triangle"></button>
+                                    <ul class="bl_catalogs__secondLevel"></ul>
+                                </li>
+                                <li class="bl_catalogs__item">
+                                    <a class="bl_catalogs__link" href="#">Все для зимней рыбалки</a>
+                                    <button type="button" class="bl_catalogs__button decor_triangle"></button>
+                                    <ul class="bl_catalogs__secondLevel"></ul>
+                                </li>
+                                <li class="bl_catalogs__item">
+                                    <a class="bl_catalogs__link" href="#">Приманки</a>
+                                    <button type="button" class="bl_catalogs__button decor_triangle"></button>
+                                    <ul class="bl_catalogs__secondLevel"></ul>
+                                </li>
+                                <li class="bl_catalogs__item">
+                                    <a class="bl_catalogs__link" href="#">Прикормки и Наживки</a>
+                                    <button type="button" class="bl_catalogs__button decor_triangle"></button>
+                                    <ul class="bl_catalogs__secondLevel"></ul>
+                                </li>
+                                <li class="bl_catalogs__item">
+                                    <a class="bl_catalogs__link" href="#">Монтаж  оснастки</a>
+                                    <button type="button" class="bl_catalogs__button decor_triangle"></button>
+                                    <ul class="bl_catalogs__secondLevel"></ul>
+                                </li>
+                                <li class="bl_catalogs__item">
+                                    <a class="bl_catalogs__link" href="#">Аксессуары</a>
+                                    <button type="button" class="bl_catalogs__button decor_triangle"></button>
+                                    <ul class="bl_catalogs__secondLevel"></ul>
+                                </li>
+                                <li class="bl_catalogs__item">
+                                    <a class="bl_catalogs__link" href="#">Одежда для рыбалки и охоты</a>
+                                    <button type="button" class="bl_catalogs__button decor_triangle"></button>
+                                    <ul class="bl_catalogs__secondLevel"></ul>
+                                </li>
+                                <li class="bl_catalogs__item">
+                                    <a class="bl_catalogs__link" href="#">Обувь</a>
+                                    <button type="button" class="bl_catalogs__button decor_triangle"></button>
+                                    <ul class="bl_catalogs__secondLevel"></ul>
+                                </li>
+                                <li class="bl_catalogs__item">
+                                    <a class="bl_catalogs__link" href="#">Турестическая Мебель и Аксессуары</a>
+                                    <button type="button" class="bl_catalogs__button decor_triangle"></button>
+                                    <ul class="bl_catalogs__secondLevel"></ul>
+                                </li>
+                                <li class="bl_catalogs__item">
+                                    <a class="bl_catalogs__link" href="#">Новинки</a>
+                                    <button type="button" class="bl_catalogs__button decor_triangle"></button>
+                                    <ul class="bl_catalogs__secondLevel"></ul>
+                                </li>
+                            </ul>
+                        </nav>
+
+                        <div class="bl_shortReviews hidden-sm hidden-xs">
+                            <p class="section_name">Отзывы покупателей</p>
+                            <ul class="bl_shortReviews__fullReviews">
+                                <li class="bl_shortReviews__item">
+                                    <img class="bl_shortReviews__image" src="image/Products/product1_min.jpg" alt="">
+                                    <a class="bl_shortReviews__name" href="#">
+                                        Термобелье Norfin Winter Line Gray 303600
+                                    </a>
+                                    <div class="bl_shortReviews__fullStars">
+                                        <div class="bl_shortReviews__star icon_star__full"></div>
+                                        <div class="bl_shortReviews__star icon_star__full"></div>
+                                        <div class="bl_shortReviews__star icon_star__full"></div>
+                                        <div class="bl_shortReviews__star icon_star__full"></div>
+                                        <div class="bl_shortReviews__star icon_star__empty"></div>
+                                    </div>
+                                    <p class="bl_shortReviews__full">
+                                        Нормальное термобелье второго слоя. На штанах высокая талиея не задувает.
+                                        Материал -
+                                        флис односторо..
+                                    </p>
+                                </li>
+
+                                <li class="bl_shortReviews__item">
+                                    <img class="bl_shortReviews__image" src="image/Products/product2_min.jpg" alt="">
+                                    <a class="bl_shortReviews__name" href="#">
+                                        17064 Спиннинговое удилище шт2 Winner yellow V6 im8 0130012B 5-15g 2,4м *
+                                    </a>
+                                    <div class="bl_shortReviews__fullStars">
+                                        <div class="bl_shortReviews__star icon_star__full"></div>
+                                        <div class="bl_shortReviews__star icon_star__full"></div>
+                                        <div class="bl_shortReviews__star icon_star__full"></div>
+                                        <div class="bl_shortReviews__star icon_star__full"></div>
+                                        <div class="bl_shortReviews__star icon_star__full"></div>
+                                    </div>
+                                    <p class="bl_shortReviews__full">
+                                        Хороший спиннинг для начинающего спиннингиста. Удобный, легкий, чувствительный и
+                                        не
+                                        дорогой...
+                                    </p>
+                                </li>
+
+                                <li class="bl_shortReviews__item">
+                                    <img class="bl_shortReviews__image" src="image/Products/product3_min.jpg" alt="">
+                                    <a class="bl_shortReviews__name" href="#">
+                                        Термосумка Norfin FORSSA NFL с посуд. на 6 персон
+                                    </a>
+                                    <div class="bl_shortReviews__fullStars">
+                                        <div class="bl_shortReviews__star icon_star__full"></div>
+                                        <div class="bl_shortReviews__star icon_star__full"></div>
+                                        <div class="bl_shortReviews__star icon_star__full"></div>
+                                        <div class="bl_shortReviews__star icon_star__full"></div>
+                                        <div class="bl_shortReviews__star icon_star__empty"></div>
+                                    </div>
+                                    <p class="bl_shortReviews__full">
+                                        Всё супер!) Спасибо,все получили,подарочек приятно удивил))) Первый раз
+                                        заказывал у
+                                        вас, думаю, точно...
+                                    </p>
+                                </li>
 
 
-                <div class="col-xs-12">
+                            </ul>
 
-                    <h1 class="bl_contacts__title">Связаться с нами</h1>
-                </div>
-                <div class="bl_contacts clearfix">
-                    <div class=" col-sm-6 col-md-3">
-                        <div class="bl_contacts__delivery">
-                            <p class="bl_contacts__head">Быстрая доставка</p>
-                            <p>Доставка осуществляется по всей территории Украины "Новой Почтой".
-                                При заказе на сумму
-                                от 600 грн - доставка бесплатная.</p>
-                            <a href="#" class="bl_contacts__novaPoshta" target="_blank">
-                                <img src="image/nova-poshta.png" alt="Nova Poshta link">
-                            </a>
+                            <a class="bl_shortReviews__link" href="#">Читать все отзывы</a>
+
                         </div>
+                    </aside>
+
+                </div>
+                <div class="col-xs-12 col-md-9">
 
 
-                    </div>
-                    <div class=" col-sm-6 col-md-4">
-                        <p class="bl_contacts__head">Наши контакты</p>
-                        <ul class="bl_contacts__full">
-                            <li class="bl_contacts__item icon_star_grey"><span>«Леска» — интернет магазин рыболовных снастей</span>
-                            </li>
-                            <li class="bl_contacts__item icon-pointer_grey"><span>Киев</span></li>
-                            <li class="bl_contacts__item icon-phone_grey">
-                                <a href="tel: 0687802735">068-780-27-35</a>
-                                <a href="tel: 0731024990">073-102-49-90</a>
-                            </li>
-                            <li class="bl_contacts__item icon-clock_grey">
-                                <span>Пн-Пт: 10–18, Cб-Вс: прием заказов</span></li>
-                            <li class="bl_contacts__item icon-envelope_grey"><a
-                                    href="mailto:info@leska.com.ua">info@leska.com.ua</a></li>
+                    <div class="col-xs-12  hidden-xs">
+                        <ul class="bl_breadcrumbs">
+                            <li class="bl_breadcrumbs__item"><a class="bl_breadcrumbs__link" href="#">Главная</a></li>
+                            <li class="bl_breadcrumbs__item"><p class="bl_breadcrumbs__link bl_breadcrumbs__active">
+                                Доставка и оплата</p></li>
                         </ul>
                     </div>
-                    <div class="col-md-5">
-                        <p class="bl_contacts__head">Написать нам</p>
-                        <form class="bl_contactForm" action="">
-                            <input class="bl_contactForm__name" type="text" placeholder="Ваше имя" required>
-                            <input class="bl_contactForm__email" type="email" placeholder="Ваше email" required>
-                            <textarea class="bl_contactForm__textarea" placeholder="Ваше сообщение" required></textarea>
-                            <div class="bl_contactForm__capcha">
-                                <p class="bl_contactForm__text">Введите код указанный на картинке</p>
-                                <input class="bl_contactForm__capcha_field" type="text" required>
-                                <img class="bl_contactForm__capcha_image" src="image/capcha.png"
-                                     alt="Capcha image">
 
-                            </div>
-                            <button class="bl_contactForm__submit" type="button" data-loading-text="Загрузка...">
-                                Отправить
-                            </button>
-                        </form>
+
+                    <!-- Delivery-->
+
+                    <div class="bl_delivery  clearfix">
+
+
+
+                                <div class="col-xs-12">
+                                    <h1 class="bl_name__header">Доставка и оплата</h1>
+                                </div>
+                                <div class="col-md-5">
+                                    <p class="bl_delivery__text_blue">
+                                        Доставка и оплата товаров интернет магазина рыболовных снастей
+                                        Leska.com.ua осуществляется следующим образом:
+                                    </p>
+                                    <p class="bl_delivery__sectionName decor_greyTrapeze">Оплата товаров:</p>
+                                    <p class="bl_delivery__title">Банковский перевод на карту Приват-банка.</p>
+                                    <p class="bl_delivery__text">Номер карты указывается при оформлении заказа. При
+                                        таком способе оплаты после того как оформили заказ и уточнили все данные с нашим
+                                        менеджером, Вы переводите деньги на указанную карту. Как только деньги поступят
+                                        на наш счет, статус заказа изменится на "оплаченный" и в течении дня заказ будет
+                                        отправлен Вам.</p>
+                                    <p class="bl_delivery__title">Наложенный платеж.</p>
+                                    <p class="bl_delivery__text">Покупатель оплачивает стоимость товара при получении в
+                                        отделении "Новой почты" + проценты за услугу "наложенный платеж". Стоимость
+                                        услуги "належенный платеж" составляет 25 грн + 2% от суммы заказа. После
+                                        оформления заказа Вам перезвонит наш менеджер и уточнит все данные по заказу.
+                                        После согласования заказ полученный до 14:00 отправится в тот же день. После
+                                        отправки посылки на ваш телефон поступит смс с номером посылки. Вам необходимо
+                                        прийти в отделение Новой почты и оплатить его.</p>
+
+
+                                </div>
+                                <div class="col-md-6 col-md-offset-1">
+                                    <div class="bl_delivery__attention">
+                                        <p>ВНИМАНИЕ!</p>
+                                        <p>Интернет-магазин "Леска" не имеет стационарного магазина с витриной где можно
+                                            посмотреть и пощупать товар. Вы можете сделать это в пункте выдачи товара
+                                            предварительно оговорив интересующий вас товар по телефону или оформив
+                                            заказ. </p>
+                                    </div>
+                                    <p class="bl_delivery__red">Оплачивать товар следует только после того, как Вам
+                                        перезвонит наш менеджер и уточнит все данные по Вашему заказу.</p>
+                                    <p class="bl_delivery__sectionName decor_greyTrapeze">Способы доставки:</p>
+                                    <p class="bl_delivery__text">Доставка по г.Киеву осуществляется курьером и
+                                        составляет 50 грн. Также есть возможность забрать товар самовывозом из пункта
+                                        выдачи по адресу: г.Киев. Для этого вам следует сначала оформить покупку на
+                                        нашем интернет-магазине или по телефону.</p>
+                                    <p class="bl_delivery__text">Доставка осуществляется "Новой почтой" по всей
+                                        территории Украины.</p>
+
+                                    <p class="bl_delivery__sectionName decor_greyTrapeze">Стоимость доставки:</p>
+                                    <p class="bl_delivery__text">1. Фиксированная стоимость доставки для заказа до 600
+                                        грн расчитывается удивидуально для каждый посылки. В основном стоимость доставки
+                                        составляет от 25грн.Доставка курьером по Киеву 50грн</p>
+                                    <p class="bl_delivery__text">2. <span style="color: #0160ac; font-weight: 700;">Бесплатная доставка.</span>
+                                        Осуществляется при заказе от 600 грн.</p>
+
+                                </div>
+                         
+
 
                     </div>
 
 
+                    <div class="bl_aboutShop">
+                        <h2>Рыболовный магазин Леска</h2>
+
+
+                        <p class="bl_aboutShop__mainText">Почему люди выбирают рыболовный интернет-магазин Леска</p>
+                        <p class="bl_aboutShop__simpleText">Сегодня рыболовные магазины в Украине появляются в больших количествах, но далеко не все могут похвастаться такими щедрыми акциями и скидками на рыболовные снасти как Леска.</p>
+
+                        <ol>
+                            <li>Акции поражают своими предложениями. В них Вы можете купить рыболовные снасти по супер выгодным ценам или получить классный подарок.</li>
+                            <li>Наши менеджеры помогут выбрать лучшие рыболовные снасти или посоветуют, что подходит именно Вам.</li>
+                            <li>Быстрая доставка при который мы отправляем снасти в день заказа товара. Вы можете воспользоваться услугой "наложенный платеж" или оплатить товар при получении.</li>
+                            <li>Наши низкие цены являются самыми вкусными.</li>
+                            <li>Вся представленная на нашем сайте информация является актуальной.</li>
+                        </ol>
+
+                        <p class="bl_aboutShop__mainText">Доставка рыболовных снастей</p>
+                        <p class="bl_aboutShop__simpleText">Рыболовный магазин Леска осуществляет доставку по всей территории Украины. В Киеве вы можете забрать товар у нашего курьера, а доставка рыбацких снастей в крупные города, как Харьков или Днепропетровск, занимает всего один день. Команда сайта "Леска" позаботится чтобы вы получили заказ целым и невредимым. Мы уверены что все для рыбалки вы найдете в нашем каталоге. Даже если Вы ничего не понимаете в рыбалке и хотите купить подарок для рыбака в виде удочки или набора, то наши консультанты с удовольствием подскажут самые лучшие снасти для рыбной ловли. Закажите понравившийся товар - и мы перезвоним Вам, чтобы уточнить условия заказа и доставки. Доставка осуществляется по всей территории Украины "Новой Почтой". При заказе на сумму от 600 грн - доставка бесплатная.</p>
+                        <a class="button_simple bl_aboutShop__link" href="#">Подробнее о магазине</a>
+                    </div>
+
+
                 </div>
-
-
-            </div>
-            <div class="bl_contacts__imageBox hidden-xs">
-                <img  src="image/map.png" alt="Kiev map">
             </div>
 
 
