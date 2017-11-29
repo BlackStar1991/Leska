@@ -1090,6 +1090,7 @@ textarea {
 .icon_star_grey{
   &:before{
     position: absolute;
+    left: 0;
     content: "\f006";
     font-family: $FontAwesome;
     color: inherit;
@@ -2260,7 +2261,7 @@ textarea {
   font-weight: 300;
   font-style: italic;
 
-  input[type="text"] {
+  input[type="text"]{
     border: 1px solid #c6c6c6;
     text-indent: 12px;
 
@@ -2343,9 +2344,19 @@ textarea {
   width: 100%;
   min-height: 96px;
   resize: none;
+  border: 1px solid #c6c6c6;
+  text-indent: 12px;
+
+  &::placeholder {
+    color: #919191;
+    font-family: $OpenSansLight;
+    font-size: 16px;
+    font-weight: 300;
+    font-style: italic;
+  }
 }
 
-.bl_addRewiew__capcha {
+.bl_addRewiew__capcha{
   margin-top: 16px;
   display: inline-block;
 }
@@ -2362,7 +2373,8 @@ textarea {
   margin-left: 20px;
 }
 
-.bl_addRewiew__submit {
+.bl_addRewiew__submit,
+.bl_contactForm__submit{
   margin-top: 16px;
   float: right;
   display: block;
@@ -2819,7 +2831,125 @@ textarea {
 .bl_contacts__item{
   position: relative;
   width: 100%;
-  
+  padding-left: 33px;
+  margin-bottom: 18px;
+  a{
+    color: #636363;
+    font-family: $OpenSans;
+    font-size: 16px;
+  }
+}
+
+.icon-pointer_grey{
+  &:before{
+    content: "";
+    position: absolute;
+    top: 20%;
+    left: 0;
+    @include sprite($icon-pointer-grey);
+  }
+}
+
+.icon-phone_grey{
+  &:before{
+    content: "";
+    position: absolute;
+    top: 20%;
+    left: 0;
+    @include sprite($icon-phone-grey);
+  }
+}
+
+
+.icon-clock_grey{
+  &:before{
+    content: "";
+    position: absolute;
+    top: 20%;
+    left: 0;
+    @include sprite($icon-clock-grey);
+  }
+}
+
+.icon-envelope_grey{
+  &:before{
+    content: "";
+    position: absolute;
+    top: 20%;
+    left: 0;
+    @include sprite($icon-envelope-grey);
+  }
+}
+
+
+
+
+.bl_contactForm{
+  width: 100%;
+
+  input,
+  textarea{
+    border: 1px solid #c6c6c6;
+    box-sizing: border-box;
+    padding-left: 13px;
+    &::placeholder{
+      color: #919191;
+      font-family: $OpenSansLight;
+      font-size: 16px;
+      font-weight: 300;
+      font-style: italic;
+    }
+  }
+}
+.bl_contactForm__name,
+.bl_contactForm__email{
+  display: inline-block;
+  height: 33px;
+  width: 48%;
+  max-width: 500px;
+}
+
+.bl_contactForm__email{
+  margin-left: 3%;
+}
+
+.bl_contactForm__textarea{
+  margin-top: 16px;
+  width: 100%;
+  max-width: 500px;
+  min-height: 104px;
+  resize: none;
+}
+
+
+.bl_contactForm__text{
+  color: #919191;
+  font-family: $OpenSansLight;
+  font-size: 12px;
+  font-weight: 300;
+  font-style: italic;
+}
+.bl_contactForm__capcha_field{
+  height: 33px;
+  width: 122px;
+}
+.bl_contactForm__capcha{
+  display: inline-block;
+}
+.bl_contactForm__submit{
+  width: 127px;
+}
+
+
+.bl_contacts__imageBox{
+  clear: both;
+  margin-top: 70px;
+  width: 100%;
+  min-height:70px;
+  img{
+    width:auto;
+    display: block;
+  }
 }
 
 

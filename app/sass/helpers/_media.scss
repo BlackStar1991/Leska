@@ -31,6 +31,19 @@
     float: none;
   }
 
+  .bl_contactForm__name,
+  .bl_contactForm__email{
+    width: 100%;
+  }
+  .bl_contactForm__email{
+    margin-left: 0;
+    margin-top: 16px;
+  }
+  .bl_contactForm__submit{
+    float: none;
+    margin: 10px auto;
+  }
+
 }
 
 /* Medium Devices, Desktops 992px */
@@ -301,6 +314,24 @@
   .bl_price {
     text-align: center;
     margin-top: 20px;
+  }
+  .bl_contacts__title,
+  .bl_contacts__novaPoshta{
+    margin: 20px auto;
+    text-align: center;
+  }
+
+  .bl_contacts__head{
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  .bl_contactForm{
+    text-align: center;
+  }
+
+  .bl_contacts__delivery{
+    max-width: 300px;
+    margin: 15px auto;
   }
 
 }
