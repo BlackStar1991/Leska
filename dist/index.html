@@ -21,6 +21,19 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,700|Palanquin+Dark:400,600,700"
           rel="stylesheet">
 
+
+
+
+    <!-- @formatter:off -->
+    <style>
+        /*! normalize.css */
+        html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background-color:transparent}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:700}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0}input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{height:auto}input[type=search]{-webkit-appearance:textfield;box-sizing:content-box}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{border:0}textarea{overflow:auto}optgroup{font-weight:700}table{border-collapse:collapse;border-spacing:0}legend,td,th{padding:0}
+    </style>
+    <!-- @formatter:on -->
+
+
+
+
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/main.min.css">
 
@@ -64,7 +77,7 @@
 
                             <div class="bl_shopBasket">
                                 <a href="#" class="bl_shopBasket__full icon-shopBasket">
-                                    <span class="bl_shopBasket__items">99</span>
+                                    <span class="bl_shopBasket__items">0</span>
                                 </a>
                             </div>
 
@@ -98,7 +111,7 @@
 
 
                         <button class="btn_callBack" type="button" title="CallBack">
-                            <span class="btn_callBack__text">Заказать бесплатный звонок</span>
+                             <span class="btn_callBack__text">Заказать бесплатный звонок</span>
                         </button>
 
                     </div>
@@ -115,13 +128,25 @@
     <main class="main">
         <div class="mainWrapper">
 
+            <div class="bl_mainSlider__fullBlock hidden-xs">
+                <ul class="bl_mainSlider owl-carousel">
+                    <li class="bl_mainSlider__item"><img src="image/mainSlider/slide1.jpg" alt=""
+                                                         class="bl_mainSlider__image">
+                    </li>
+                    <li class="bl_mainSlider__item"><img src="image/mainSlider/slide2.jpg" alt=""
+                                                         class="bl_mainSlider__image">
+                    </li>
+                    <li class="bl_mainSlider__item"><img src="image/mainSlider/slide3.jpg" alt=""
+                                                         class="bl_mainSlider__image">
+                    </li>
+                </ul>
+            </div>
 
             <div class="container">
                 <div class="col-xs-12 col-md-3 correct_right">
                     <aside class="sidebar">
                         <nav class="bl_catalogs">
-                            <button class="section_name js-button_catalogs" type="button" title="Категории">Категории
-                            </button>
+                            <button class="section_name js-button_catalogs" type="button" title="Категории">Категории</button>
                             <ul class="bl_catalogs__firstLevel">
                                 <li class="bl_catalogs__item ">
                                     <a class="bl_catalogs__link" href="catalog.html">Удилища </a>
@@ -304,98 +329,420 @@
                 </div>
                 <div class="col-xs-12 col-md-9">
 
+                    <!-- Slider NEW -->
+                    <div class="bl_new">
+                        <p class="block_name decor_greyTrapeze">Новые поступления</p>
+                        <ul class="slider_newProducts owl-carousel">
+                            <li class="product_sliderCart__item">
+                                <a href="#" class="product_sliderCart__link">
+                                    <img class="product_sliderCart__image" src="image/Products/product4_min.jpg"
+                                         alt="">
+                                    <p class="product_sliderCart__name">
+                                        Удочка-балалайка зимняя Salmo SPORT
+                                    </p>
 
-                    <div class="col-xs-12  hidden-xs">
-                        <ul class="bl_breadcrumbs">
-                            <li class="bl_breadcrumbs__item"><a class="bl_breadcrumbs__link" href="#">Главная</a></li>
-                            <li class="bl_breadcrumbs__item"><p class="bl_breadcrumbs__link bl_breadcrumbs__active">
-                                Доставка и оплата</p></li>
+
+                                    <div class="bl_shortReviews__fullStars">
+                                        <div class="bl_shortReviews__star icon_star__full"></div>
+                                        <div class="bl_shortReviews__star icon_star__full"></div>
+                                        <div class="bl_shortReviews__star icon_star__full"></div>
+                                        <div class="bl_shortReviews__star icon_star__full"></div>
+                                        <div class="bl_shortReviews__star icon_star__empty"></div>
+                                    </div>
+                                    <div class="product_sliderCart__price clearfix">
+                                        <!--<span class="product_sliderCart__price_oldPrice">2034 грн.</span>-->
+                                        <!--<span class="product_sliderCart__price_newPrice">100 грн.</span>-->
+                                        <span class="product_sliderCart__price_normalPrice">101 грн.</span>
+                                        <!-- ///Если акции нету -->
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="product_sliderCart__item">
+                                <a href="#" class="product_sliderCart__link">
+                                    <!-- TOP -->
+                                    <div class="bl_mark bl_mark__top">
+                                        <span>TOP</span>
+                                    </div>
+
+
+                                    <img class="product_sliderCart__image" src="image/Products/product5_min.jpg"
+                                         alt="">
+                                    <p class="product_sliderCart__name">
+                                        Удочка-балалайка зимняя Salmo SPORT
+                                    </p>
+
+
+                                    <div class="bl_shortReviews__fullStars">
+                                        <div class="bl_shortReviews__star icon_star__full"></div>
+                                        <div class="bl_shortReviews__star icon_star__full"></div>
+                                        <div class="bl_shortReviews__star icon_star__full"></div>
+                                        <div class="bl_shortReviews__star icon_star__full"></div>
+                                        <div class="bl_shortReviews__star icon_star__empty"></div>
+                                    </div>
+                                    <div class="product_sliderCart__price clearfix">
+                                        <!--<span class="product_sliderCart__price_oldPrice">2034 грн.</span>-->
+                                        <!--<span class="product_sliderCart__price_newPrice">100 грн.</span>-->
+                                        <span class="product_sliderCart__price_normalPrice">101 грн.</span>
+                                        <!-- ///Если акции нету -->
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="product_sliderCart__item">
+                                <a href="#" class="product_sliderCart__link">
+                                    <img class="product_sliderCart__image" src="image/Products/product6_min.jpg"
+                                         alt="">
+                                    <p class="product_sliderCart__name">
+                                        Удочка-балалайка зимняя Salmo SPORT
+                                    </p>
+
+
+                                    <div class="bl_shortReviews__fullStars">
+                                        <div class="bl_shortReviews__star icon_star__full"></div>
+                                        <div class="bl_shortReviews__star icon_star__full"></div>
+                                        <div class="bl_shortReviews__star icon_star__full"></div>
+                                        <div class="bl_shortReviews__star icon_star__full"></div>
+                                        <div class="bl_shortReviews__star icon_star__empty"></div>
+                                    </div>
+                                    <div class="product_sliderCart__price clearfix">
+                                        <!--<span class="product_sliderCart__price_oldPrice">2034 грн.</span>-->
+                                        <!--<span class="product_sliderCart__price_newPrice">100 грн.</span>-->
+                                        <span class="product_sliderCart__price_normalPrice">101 грн.</span>
+                                        <!-- ///Если акции нету -->
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="product_sliderCart__item">
+                                <a href="#" class="product_sliderCart__link">
+
+                                    <!-- HOT -->
+                                    <div class="bl_mark bl_mark__hot">
+                                        <span>Горячее</span>
+                                    </div>
+
+
+                                    <img class="product_sliderCart__image" src="image/Products/product7_min.jpg"
+                                         alt="">
+                                    <p class="product_sliderCart__name">
+                                        Удочка-балалайка зимняя Salmo SPORT
+                                    </p>
+
+
+                                    <div class="bl_shortReviews__fullStars">
+                                        <div class="bl_shortReviews__star icon_star__full"></div>
+                                        <div class="bl_shortReviews__star icon_star__full"></div>
+                                        <div class="bl_shortReviews__star icon_star__full"></div>
+                                        <div class="bl_shortReviews__star icon_star__full"></div>
+                                        <div class="bl_shortReviews__star icon_star__empty"></div>
+                                    </div>
+                                    <div class="product_sliderCart__price clearfix">
+                                        <span class="product_sliderCart__price_oldPrice">2034 грн.</span>
+                                        <span class="product_sliderCart__price_newPrice">100 грн.</span>
+                                        <!--<span class="product_sliderCart__price_normalPrice">101 грн.</span>-->
+                                        <!-- ///Если акции нету -->
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="product_sliderCart__item">
+                                <a href="#" class="product_sliderCart__link">
+                                    <img class="product_sliderCart__image" src="image/Products/product8_min.jpg"
+                                         alt="">
+                                    <p class="product_sliderCart__name">
+                                        Удочка-балалайка зимняя Salmo SPORT
+                                    </p>
+
+
+                                    <div class="bl_shortReviews__fullStars">
+                                        <div class="bl_shortReviews__star icon_star__full"></div>
+                                        <div class="bl_shortReviews__star icon_star__full"></div>
+                                        <div class="bl_shortReviews__star icon_star__full"></div>
+                                        <div class="bl_shortReviews__star icon_star__full"></div>
+                                        <div class="bl_shortReviews__star icon_star__empty"></div>
+                                    </div>
+                                    <div class="product_sliderCart__price clearfix">
+                                        <!--<span class="product_sliderCart__price_oldPrice">2034 грн.</span>-->
+                                        <!--<span class="product_sliderCart__price_newPrice">100 грн.</span>-->
+                                        <span class="product_sliderCart__price_normalPrice">101 грн.</span>
+                                        <!-- ///Если акции нету -->
+                                    </div>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                    <!-- Slider popular-->
+                    <div class="bl_popular">
+                        <p class="block_name decor_greyTrapeze">Популярное</p>
+                        <ul class="slider_popular owl-carousel">
+                            <li class="product_sliderCart__item">
+                                <a href="#" class="product_sliderCart__link">
+                                    <!-- HIT -->
+                                    <div class="bl_mark bl_mark__hit">
+                                        <span>Хит сезона</span>
+                                    </div>
+
+
+                                    <img class="product_sliderCart__image" src="image/Products/product8_min.jpg"
+                                         alt="">
+                                    <p class="product_sliderCart__name">
+                                        Катушка Durareel  Байтранер YB6000 5+1BB
+                                    </p>
+
+
+                                    <div class="bl_shortReviews__fullStars">
+                                        <div class="bl_shortReviews__star "></div>
+                                        <div class="bl_shortReviews__star "></div>
+                                        <div class="bl_shortReviews__star "></div>
+                                        <div class="bl_shortReviews__star "></div>
+                                        <div class="bl_shortReviews__star "></div>
+                                    </div>
+                                    <div class="product_sliderCart__price clearfix">
+                                        <!--<span class="product_sliderCart__price_oldPrice">2034 грн.</span>-->
+                                        <!--<span class="product_sliderCart__price_newPrice">100 грн.</span>-->
+                                        <span class="product_sliderCart__price_normalPrice">101 грн.</span>
+                                        <!-- ///Если акции нету -->
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="product_sliderCart__item">
+                                <a href="#" class="product_sliderCart__link">
+                                    <!-- TOP -->
+                                    <div class="bl_mark bl_mark__top">
+                                        <span>TOP</span>
+                                    </div>
+
+
+                                    <img class="product_sliderCart__image" src="image/Products/product5_min.jpg"
+                                         alt="">
+                                    <p class="product_sliderCart__name">
+                                        Удочка-балалайка зимняя Salmo SPORT
+                                    </p>
+
+
+                                    <div class="bl_shortReviews__fullStars">
+                                        <div class="bl_shortReviews__star icon_star__full"></div>
+                                        <div class="bl_shortReviews__star icon_star__full"></div>
+                                        <div class="bl_shortReviews__star icon_star__full"></div>
+                                        <div class="bl_shortReviews__star icon_star__full"></div>
+                                        <div class="bl_shortReviews__star icon_star__empty"></div>
+                                    </div>
+                                    <div class="product_sliderCart__price clearfix">
+                                        <!--<span class="product_sliderCart__price_oldPrice">2034 грн.</span>-->
+                                        <!--<span class="product_sliderCart__price_newPrice">100 грн.</span>-->
+                                        <span class="product_sliderCart__price_normalPrice">101 грн.</span>
+                                        <!-- ///Если акции нету -->
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="product_sliderCart__item">
+                                <a href="#" class="product_sliderCart__link">
+                                    <img class="product_sliderCart__image" src="image/Products/product6_min.jpg"
+                                         alt="">
+                                    <p class="product_sliderCart__name">
+                                        Удочка-балалайка зимняя Salmo SPORT
+                                    </p>
+
+
+                                    <div class="bl_shortReviews__fullStars">
+                                        <div class="bl_shortReviews__star icon_star__full"></div>
+                                        <div class="bl_shortReviews__star icon_star__full"></div>
+                                        <div class="bl_shortReviews__star icon_star__full"></div>
+                                        <div class="bl_shortReviews__star icon_star__full"></div>
+                                        <div class="bl_shortReviews__star icon_star__empty"></div>
+                                    </div>
+                                    <div class="product_sliderCart__price clearfix">
+                                        <!--<span class="product_sliderCart__price_oldPrice">2034 грн.</span>-->
+                                        <!--<span class="product_sliderCart__price_newPrice">100 грн.</span>-->
+                                        <span class="product_sliderCart__price_normalPrice">101 грн.</span>
+                                        <!-- ///Если акции нету -->
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="product_sliderCart__item">
+                                <a href="#" class="product_sliderCart__link">
+
+
+                                    <img class="product_sliderCart__image" src="image/Products/product9_min.jpg"
+                                         alt="">
+                                    <p class="product_sliderCart__name">
+                                        Удочка-балалайка зимняя Salmo SPORT
+                                    </p>
+
+
+                                    <div class="bl_shortReviews__fullStars">
+                                        <div class="bl_shortReviews__star icon_star__full"></div>
+                                        <div class="bl_shortReviews__star icon_star__full"></div>
+                                        <div class="bl_shortReviews__star icon_star__full"></div>
+                                        <div class="bl_shortReviews__star icon_star__full"></div>
+                                        <div class="bl_shortReviews__star icon_star__empty"></div>
+                                    </div>
+                                    <div class="product_sliderCart__price clearfix">
+                                        <span class="product_sliderCart__price_oldPrice">2034 грн.</span>
+                                        <span class="product_sliderCart__price_newPrice">100 грн.</span>
+                                        <!--<span class="product_sliderCart__price_normalPrice">101 грн.</span>-->
+                                        <!-- ///Если акции нету -->
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="product_sliderCart__item">
+                                <a href="#" class="product_sliderCart__link">
+                                    <img class="product_sliderCart__image" src="image/Products/product10_min.jpg"
+                                         alt="">
+                                    <p class="product_sliderCart__name">
+                                        Удочка-балалайка зимняя Salmo SPORT
+                                    </p>
+
+
+                                    <div class="bl_shortReviews__fullStars">
+                                        <div class="bl_shortReviews__star icon_star__full"></div>
+                                        <div class="bl_shortReviews__star icon_star__full"></div>
+                                        <div class="bl_shortReviews__star icon_star__full"></div>
+                                        <div class="bl_shortReviews__star icon_star__full"></div>
+                                        <div class="bl_shortReviews__star icon_star__empty"></div>
+                                    </div>
+                                    <div class="product_sliderCart__price clearfix">
+                                        <!--<span class="product_sliderCart__price_oldPrice">2034 грн.</span>-->
+                                        <!--<span class="product_sliderCart__price_newPrice">100 грн.</span>-->
+                                        <span class="product_sliderCart__price_normalPrice">101 грн.</span>
+                                        <!-- ///Если акции нету -->
+                                    </div>
+                                </a>
+                            </li>
+
                         </ul>
                     </div>
 
 
-                    <!-- Delivery-->
+                    <!-- News Paper-->
 
-                    <div class="bl_delivery  clearfix">
+                    <div class="bl_newspaper clearfix">
+                        <p class="block_name decor_greyTrapeze">Новости</p>
 
-
-
-                                <div class="col-xs-12">
-                                    <h1 class="bl_name__header">Доставка и оплата</h1>
+                        <ul class="bl_newspaper__fullBlock clearfix">
+                            <li class="bl_newspaper__item">
+                                <img class="bl_newspaper__image" src="image/News/new1.jpg" alt="">
+                                <div class="bl_newspaper__description">
+                                    <p class="bl_newspaper__name">Новая Услуга Подбор Кончиков!!!!</p>
+                                    <p class="bl_newspaper__shortDescription">Компания «SALMO» на рынке Украины уже 14
+                                        лет и, изучая потребность конечного</p>
+                                    <!-- Сделать запрос на количество выводимых знаков, при привышении выводить три точки -->
+                                    <time class="bl_newspaper__data">03.08.2017</time>
+                                    <a class="bl_newspaper__link decor_triangle__right" href="#">Читать далее</a>
                                 </div>
-                                <div class="col-md-5">
-                                    <p class="bl_delivery__text_blue">
-                                        Доставка и оплата товаров интернет магазина рыболовных снастей
-                                        Leska.com.ua осуществляется следующим образом:
-                                    </p>
-                                    <p class="bl_delivery__sectionName decor_greyTrapeze">Оплата товаров:</p>
-                                    <p class="bl_delivery__title">Банковский перевод на карту Приват-банка.</p>
-                                    <p class="bl_delivery__text">Номер карты указывается при оформлении заказа. При
-                                        таком способе оплаты после того как оформили заказ и уточнили все данные с нашим
-                                        менеджером, Вы переводите деньги на указанную карту. Как только деньги поступят
-                                        на наш счет, статус заказа изменится на "оплаченный" и в течении дня заказ будет
-                                        отправлен Вам.</p>
-                                    <p class="bl_delivery__title">Наложенный платеж.</p>
-                                    <p class="bl_delivery__text">Покупатель оплачивает стоимость товара при получении в
-                                        отделении "Новой почты" + проценты за услугу "наложенный платеж". Стоимость
-                                        услуги "належенный платеж" составляет 25 грн + 2% от суммы заказа. После
-                                        оформления заказа Вам перезвонит наш менеджер и уточнит все данные по заказу.
-                                        После согласования заказ полученный до 14:00 отправится в тот же день. После
-                                        отправки посылки на ваш телефон поступит смс с номером посылки. Вам необходимо
-                                        прийти в отделение Новой почты и оплатить его.</p>
-
-
+                            </li>
+                            <li class="bl_newspaper__item">
+                                <img class="bl_newspaper__image" src="image/News/new2.jpg" alt="">
+                                <div class="bl_newspaper__description">
+                                    <p class="bl_newspaper__name">Всем клиентам скидка -10%</p>
+                                    <p class="bl_newspaper__shortDescription">Всем клиентам скидка -10% на весь заказ!!!
+                                        Доставка товара по всей Украине Новой Почтой при заказе... </p>
+                                    <!-- Сделать запрос на количество выводимых знаков, при привышении выводить три точки -->
+                                    <time class="bl_newspaper__data">03.08.2017</time>
+                                    <a class="bl_newspaper__link decor_triangle__right" href="#">Читать далее</a>
                                 </div>
-                                <div class="col-md-6 col-md-offset-1">
-                                    <div class="bl_delivery__attention">
-                                        <p>ВНИМАНИЕ!</p>
-                                        <p>Интернет-магазин "Леска" не имеет стационарного магазина с витриной где можно
-                                            посмотреть и пощупать товар. Вы можете сделать это в пункте выдачи товара
-                                            предварительно оговорив интересующий вас товар по телефону или оформив
-                                            заказ. </p>
-                                    </div>
-                                    <p class="bl_delivery__red">Оплачивать товар следует только после того, как Вам
-                                        перезвонит наш менеджер и уточнит все данные по Вашему заказу.</p>
-                                    <p class="bl_delivery__sectionName decor_greyTrapeze">Способы доставки:</p>
-                                    <p class="bl_delivery__text">Доставка по г.Киеву осуществляется курьером и
-                                        составляет 50 грн. Также есть возможность забрать товар самовывозом из пункта
-                                        выдачи по адресу: г.Киев. Для этого вам следует сначала оформить покупку на
-                                        нашем интернет-магазине или по телефону.</p>
-                                    <p class="bl_delivery__text">Доставка осуществляется "Новой почтой" по всей
-                                        территории Украины.</p>
-
-                                    <p class="bl_delivery__sectionName decor_greyTrapeze">Стоимость доставки:</p>
-                                    <p class="bl_delivery__text">1. Фиксированная стоимость доставки для заказа до 600
-                                        грн расчитывается удивидуально для каждый посылки. В основном стоимость доставки
-                                        составляет от 25грн.Доставка курьером по Киеву 50грн</p>
-                                    <p class="bl_delivery__text">2. <span style="color: #0160ac; font-weight: 700;">Бесплатная доставка.</span>
-                                        Осуществляется при заказе от 600 грн.</p>
-
+                            </li>
+                            <li class="bl_newspaper__item">
+                                <img class="bl_newspaper__image" src="image/News/new3.jpg" alt="">
+                                <div class="bl_newspaper__description">
+                                    <p class="bl_newspaper__name">ТУРИЗМ С БРЕНДОМ NORFIN:</p>
+                                    <p class="bl_newspaper__shortDescription">ТУРИЗМ С БРЕНДОМ NORFIN: ВСЁ ДЛЯ ОТДЫХА НА
+                                        ПРИРОДЕ Любители активного...  </p>
+                                    <!-- Сделать запрос на количество выводимых знаков, при привышении выводить три точки -->
+                                    <time class="bl_newspaper__data">03.08.2017</time>
+                                    <a class="bl_newspaper__link decor_triangle__right" href="#">Читать далее</a>
                                 </div>
-                         
+                            </li>
+                            <li class="bl_newspaper__item">
+                                <img class="bl_newspaper__image" src="image/News/new4.jpg" alt="">
+                                <div class="bl_newspaper__description">
+                                    <p class="bl_newspaper__name">СПИННИНГОВЫЕ УДИЛИЩА SALMO</p>
+                                    <p class="bl_newspaper__shortDescription">Популярный бренд Salmo давно занял
+                                        устойчивую позицию на рыболовном рынке: его товары... </p>
+                                    <!-- Сделать запрос на количество выводимых знаков, при привышении выводить три точки -->
+                                    <time class="bl_newspaper__data">03.08.2017</time>
+                                    <a class="bl_newspaper__link decor_triangle__right" href="#">Читать далее</a>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <a class="bl_newspaper__allNews" href="#">Просмотреть всё</a>
 
 
                     </div>
 
 
-                    <div class="bl_aboutShop">
-                        <h2>Рыболовный магазин Леска</h2>
+                    <div class="bl_aboutShop clearfix">
+                        <p class="block_name decor_greyTrapeze">О магазине</p>
 
+                        <!-- CEO -->
 
-                        <p class="bl_aboutShop__mainText">Почему люди выбирают рыболовный интернет-магазин Леска</p>
-                        <p class="bl_aboutShop__simpleText">Сегодня рыболовные магазины в Украине появляются в больших количествах, но далеко не все могут похвастаться такими щедрыми акциями и скидками на рыболовные снасти как Леска.</p>
+                        <div class="ceo_block">
+                            <h2>Рыболовный магазин Леска</h2>
+                            <p>  Леска - это не просто лучший рыболовный магазин в Украине. В нем можно
+                                купить рыболовные снасти по самым низким ценам. Леска - это место где рыбаки могут
+                                посмотреть характеристики топовых удилищ, получить консультацию о самых уловистых
+                                приманках, посмотреть отзывы других рыбаков. У нас вы найдете ответы на вопросы как и на
+                                что ловить эту хитрую в наше время рыбу.  </p>
+                            <h3>Почему люди выбирают рыболовный интернет-магазин Леска  </h3>
+                            <p>Сегодня рыболовные магазины в Украине появляются в больших количествах,
+                                но далеко не все могут похвастаться такими щедрыми акциями и скидками на рыболовные
+                                снасти как Леска.</p>
 
-                        <ol>
-                            <li>Акции поражают своими предложениями. В них Вы можете купить рыболовные снасти по супер выгодным ценам или получить классный подарок.</li>
-                            <li>Наши менеджеры помогут выбрать лучшие рыболовные снасти или посоветуют, что подходит именно Вам.</li>
-                            <li>Быстрая доставка при который мы отправляем снасти в день заказа товара. Вы можете воспользоваться услугой "наложенный платеж" или оплатить товар при получении.</li>
-                            <li>Наши низкие цены являются самыми вкусными.</li>
-                            <li>Вся представленная на нашем сайте информация является актуальной.</li>
-                        </ol>
+                            <ol>
+                                <li>  Акции поражают своими предложениями. В них Вы можете купить рыболовные снасти по
+                                    супер выгодным ценам или получить классный подарок. 
+                                </li>
+                                <li>Наши менеджеры помогут выбрать лучшие рыболовные снасти или посоветуют, что подходит
+                                    именно Вам. 
+                                </li>
+                                <li>Быстрая доставка при который мы отправляем снасти в день заказа товара. Вы можете
+                                    воспользоваться услугой "наложенный платеж" или оплатить товар при получении. 
+                                </li>
+                                <li>Наши низкие цены являются самыми вкусными. 5. Вся представленная на нашем сайте
+                                    информация является актуальной.
+                                </li>
+                            </ol>
+                        </div>
 
-                        <p class="bl_aboutShop__mainText">Доставка рыболовных снастей</p>
-                        <p class="bl_aboutShop__simpleText">Рыболовный магазин Леска осуществляет доставку по всей территории Украины. В Киеве вы можете забрать товар у нашего курьера, а доставка рыбацких снастей в крупные города, как Харьков или Днепропетровск, занимает всего один день. Команда сайта "Леска" позаботится чтобы вы получили заказ целым и невредимым. Мы уверены что все для рыбалки вы найдете в нашем каталоге. Даже если Вы ничего не понимаете в рыбалке и хотите купить подарок для рыбака в виде удочки или набора, то наши консультанты с удовольствием подскажут самые лучшие снасти для рыбной ловли. Закажите понравившийся товар - и мы перезвоним Вам, чтобы уточнить условия заказа и доставки. Доставка осуществляется по всей территории Украины "Новой Почтой". При заказе на сумму от 600 грн - доставка бесплатная.</p>
+                        <!-- CEO End-->
                         <a class="button_simple bl_aboutShop__link" href="#">Подробнее о магазине</a>
+
+                    </div>
+
+
+
+                    <!-- Slider Brands-->
+                    <div class="bl_brands hidden-xs">
+                        <ul class="slider_brands owl-carousel">
+                            <li class="slider_brands__item">
+                                <a href="#" class="slider_brands__link"><img src="image/Brands/salmo.png" alt=""
+                                                                             class="slider_brands__image"></a>
+                            </li>
+                            <li class="slider_brands__item">
+                                <a href="#" class="slider_brands__link"><img src="image/Brands/spro.png" alt=""
+                                                                             class="slider_brands__image"></a>
+                            </li>
+                            <li class="slider_brands__item">
+                                <a href="#" class="slider_brands__link"><img src="image/Brands/norfin.png" alt=""
+                                                                             class="slider_brands__image"></a>
+                            </li>
+                            <li class="slider_brands__item">
+                                <a href="#" class="slider_brands__link"><img src="image/Brands/keitech.png" alt=""
+                                                                             class="slider_brands__image"></a>
+                            </li>
+                            <li class="slider_brands__item">
+                                <a href="#" class="slider_brands__link"><img src="image/Brands/kamik.png" alt=""
+                                                                             class="slider_brands__image"></a>
+                            </li>
+                            <li class="slider_brands__item">
+                                <a href="#" class="slider_brands__link"><img src="image/Brands/Heinola.jpg" alt=""
+                                                                             class="slider_brands__image"></a>
+                            </li>
+                            <li class="slider_brands__item">
+                                <a href="#" class="slider_brands__link"><img src="image/Brands/abuGarcia.png" alt=""
+                                                                             class="slider_brands__image"></a>
+                            </li>
+                        </ul>
                     </div>
 
 
@@ -600,7 +947,7 @@
 
 
 <script src="libs/jquery.min.js"></script>
-<script src="libs/jquery.elevateZoom-2.2.3.min.js"></script>
+<script src="libs/zoomove.min.js" async></script>
 <script src="js/libs.min.js"></script>
 <script src="js/common.min.js"></script>
 

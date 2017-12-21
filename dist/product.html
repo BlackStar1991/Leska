@@ -21,6 +21,19 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,700|Palanquin+Dark:400,600,700"
           rel="stylesheet">
 
+
+
+
+    <!-- @formatter:off -->
+    <style>
+        /*! normalize.css */
+        html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background-color:transparent}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:700}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0}input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{height:auto}input[type=search]{-webkit-appearance:textfield;box-sizing:content-box}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{border:0}textarea{overflow:auto}optgroup{font-weight:700}table{border-collapse:collapse;border-spacing:0}legend,td,th{padding:0}
+    </style>
+    <!-- @formatter:on -->
+
+
+
+
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/main.min.css">
 
@@ -322,18 +335,28 @@
 
                     <div class="bl_product__wrapper">
                         <div class="col-lg-4">
-                            <figure class="zoo-item" data-zoo-image="image/category/1_category-big.jpg"
-                                    data-zoo-cursor="true" data-zoo-scale="1.5">
-                                <img class="bl_product__mainImage"
-                                     src="image/Products/mainImage/product_1-220x220.png"
-                                     alt="katyshka">
-                            </figure>
+
+<figure class="zoo-item" data-zoo-image="image/Products/mainImage/product_1-600x600.jpg"
+        data-zoo-cursor="true" data-zoo-scale="1.5">
+    <picture class="bl_product__mainImage" >
+        <source class="bl_product__currentImage_big" media="(min-width: 992px)"
+                srcset="image/Products/mainImage/product_1-220x220.jpg">
+        <source class="bl_product__currentImage_small" media="(min-width: 319px)"
+                srcset="image/Products/mainImage/product_1-220x220.jpg">
+        <img class="bl_product__currentImage"  src="image/Products/mainImage/product_1-220x220.jpg"
+             alt="katyshka">
+    </picture>
+</figure>
+
+
+
+
 
 
                             <!-- Дополнительные фото/ главное фото всегда добавлять в дополнительные -->
                             <ul class="bl_product__additionalImages owl-carousel">
                                 <li class="bl_product__item">
-                                    <img class="prod-slider__pic" src="image/Products/mainImage/product_1-70x70.png"
+                                    <img class="prod-slider__pic" src="image/Products/mainImage/product_1-70x70.jpg"
                                          alt="">
                                 </li>
                                 <li class="bl_product__item">
@@ -345,7 +368,7 @@
                                          alt="">
                                 </li>
                                 <li class="bl_product__item">
-                                    <img class="prod-slider__pic" src="image/Products/mainImage/product_1-70x70.png"
+                                    <img class="prod-slider__pic" src="image/Products/mainImage/product_2-70x70.jpg"
                                          alt="">
                                 </li>
                             </ul>
@@ -381,9 +404,9 @@
                                 </ul>
 
                                 <div class="bl_price">
-                                    <p class="price_normalPrice">790 грн.</p>
-                                    <!--<p class="price_oldPrice">790 грн.</p>-->
-                                    <!--<p class="price_newPrice">100 грн.</p>-->
+                                    <!--<p class="price_normalPrice">790 грн.</p>-->
+                                    <p class="price_oldPrice">790 грн.</p>
+                                    <p class="price_newPrice">100 грн.</p>
                                 </div>
                                 <button class="button_buyOneClick" type="button">Купить в один клик</button>
                             </div>
@@ -943,10 +966,12 @@
 </div>
 
 
+
 <script src="libs/jquery.min.js"></script>
-<script src="libs/jquery.elevateZoom-2.2.3.min.js"></script>
+<script src="libs/zoomove.min.js" async></script>
 <script src="js/libs.min.js"></script>
 <script src="js/common.min.js"></script>
+
 
 
 </body>
