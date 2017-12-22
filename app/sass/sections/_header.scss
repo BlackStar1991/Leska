@@ -29,11 +29,12 @@
   position: relative;
   display: block;
   color: #fff;
-  min-width: 254px;
+  max-width: 254px;
 
   transition: all, .2s;
   &:hover,
   &:focus{
+    outline: none;
     transition: all, .2s;
     color: $color_lightBlue;
   }
@@ -269,6 +270,7 @@
 
   &:hover,
   &:focus{
+    outline: none;
     color: $color_lightBlue;
   }
 }

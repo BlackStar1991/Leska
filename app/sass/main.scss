@@ -530,6 +530,12 @@ textarea {
     &:hover {
       color: #000;
     }
+    &:focus{
+      outline: none;
+      color: #000;
+      text-decoration: underline;
+    }
+
   }
   &__active {
     display: inline-block;
@@ -860,7 +866,7 @@ textarea {
 }
 
 .popup_likeShopbag__product {
-
+  text-align: center;
 }
 
 .button_product {
@@ -963,6 +969,10 @@ textarea {
 
   &:hover {
     color: #000;
+  }
+  &:focus{
+    color: $color_button;
+    outline: none;
   }
 
 }
@@ -2513,6 +2523,16 @@ textarea {
   margin: 0;
   color: #464d5a;
   font-size: 16px;
+}
+
+
+.bl_basket__good .block_quantity__minus, .bl_basket__good .block_quantity__plus{
+  width: 20px;
+  height: 28px;
+
+}
+.bl_basket__good .block_quantity__input{
+  width: 30px;
 }
 
 .bl_basket__mark {
