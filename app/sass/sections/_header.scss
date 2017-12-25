@@ -7,6 +7,36 @@
 
 }
 
+.bl_contactInfo__links{
+  display: inline-block;
+  color: $color_darkBlue;
+}
+
+.bl_contactInfo__compare,
+.bl_contactInfo__marker{
+  color: $color_darkBlue;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 2;
+  &:hover,
+  &:focus{
+    color: #fff;
+    text-decoration: underline;
+    outline: none;
+  }
+}
+
+.bl_contactInfo__compare.active,
+.bl_contactInfo__marker.active{
+  color: #fff;
+}
+
+.bl_contactInfo__marker{
+  margin-left: 15px;
+}
+
+
+
 .bl_contactInfo__item{
   float: right;
   margin-right: 20px;
@@ -110,7 +140,7 @@
   right: 0;
   border-radius: 50%;
   text-align: center;
-  width: 21px;
+  min-width: 21px;
   height: 21px;
   padding-left: 1px;
   background-color: #464d5a;
@@ -299,7 +329,8 @@
   border: 1px solid $color_textName;
   transition: all, .2s;
 
-  &:hover{
+  &:hover,
+  &:focus{
     color: #fff;
     background-color:  #0160ac;
     transition: all, .2s;

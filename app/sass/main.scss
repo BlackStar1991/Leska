@@ -183,9 +183,15 @@ textarea {
 /*********************************************/
 
 .main {
+
   //background: linear-gradient(to right, #f00, #f1da36);
   padding-bottom: 24px;
 }
+
+.main {
+  flex: 1 0 auto;
+}
+
 
 .mainWrapper {
   position: relative;
@@ -1521,7 +1527,7 @@ textarea {
 
 .bl_view {
   width: 100%;
-  padding-bottom: 68px;
+  padding-bottom: 40px;
 }
 
 .bl_sorter {
@@ -1588,7 +1594,7 @@ textarea {
 .bl_fullProducts__item {
   float: left;
   width: 32%;
-  height: 476px;
+  height: 510px;
   padding: 20px 10px 2px;
   margin-bottom: 2%;
   background-color: #fff;
@@ -1639,7 +1645,7 @@ textarea {
 .bl_description {
   display: block;
   width: 100%;
-  height: 44px;
+  height: 80px;
   li {
     color: #717171;
     font-family: $OpenSans;
@@ -1650,7 +1656,7 @@ textarea {
 
 .bl_fullProducts__rating {
   width: 100%;
-  margin-top: 18px;
+  margin-top: 2px;
   padding-bottom: 18px;
   border-bottom: 1px solid #e7e7e7;
 }
@@ -1723,6 +1729,7 @@ textarea {
   height: 30px;
   border-radius: 50%;
   background-color: #fff;
+  cursor: pointer;
 
   &:focus {
     box-shadow: 0 0 2px $color_lightBlue;
@@ -2471,6 +2478,7 @@ textarea {
   color: $color_button;
   font-size: 18px;
   font-weight: 700;
+
   text-transform: uppercase;
 
   &:before {
@@ -2486,12 +2494,49 @@ textarea {
 
   &:hover,
   &:focus {
+    outline: none;
     color: $color_button;
     text-decoration: underline;
   }
 }
 
-.bl_basket__header {
+
+.btn_continueShopping{
+  display: block;
+  margin: 15px 0;
+  position: relative;
+  max-width:160px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  border-radius: 24px;
+  background-color: $color_button;
+  padding: 6px 15px 6px 35px;
+
+  &:before{
+    content: "\f112";
+    position: absolute;
+    top: 8px;
+    left: 12px;
+
+    font-size: 18px;
+    color: inherit;
+    font-family:$FontAwesome;
+  }
+  &:hover,
+  &:focus {
+    outline: none;
+    color: #fff;
+    text-decoration: underline;
+    background-color: $color_lightBlue;
+  }
+}
+
+
+
+
+.bl_basket__header,
+.wishlist-info thead{
   margin-top: 95px;
   clear: both;
   width: 100%;
@@ -2562,7 +2607,7 @@ textarea {
   font-weight: 700;
 }
 
-.delite_product {
+.delete_product {
   position: relative;
   display: block;
   margin: 0 auto;
@@ -2804,14 +2849,26 @@ textarea {
 
   border-radius: 24px;
   background-color: $color_button;
+  transition: .2s all;
+  &:hover,
+  &:focus{
+    transition: .2s all;
+    background-color:$color_lightBlue;
+    box-shadow: 0 0 2px 1px $color_lightBlue;
+  }
+
   a {
     display: block;
     width: 100%;
+    height: 100%;
     line-height: 46px;
     color: #fff;
     padding: 0 48px;
+
     &:hover,
     &:focus {
+
+      outline: none;
       text-decoration: underline;
     }
   }
@@ -3068,6 +3125,76 @@ textarea {
   font-size: 16px;
   color: #ed0f33;
 }
+
+
+///// Сравнение Товаров
+
+
+
+.bl_compare .bl_catalogs {
+  margin-top: 0;
+}
+
+.bl_compare__title {
+  margin: 18px 0 15px;
+  font-weight: 700;
+  font-size: 18px;
+  color: #1e232c;
+}
+
+.compare-info {
+  width: 100%;
+}
+
+.compare-info tr td {
+  min-height: 40px;
+  border: 1px solid #e9e9e9;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.compare-info tr td:first-child {
+  min-width: 170px;
+  font-size: 1.1em;
+  font-weight: 600;
+
+}
+
+.compare_btn__addToCart,
+.compare_btn__remove {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: #3b5fa1;
+  background: none;
+
+}
+
+.compare_btn__addToCart:focus,
+.compare_btn__remove:focus {
+  outline: 2px #29bfeb;
+  box-shadow: 0 0 2px 1px #29bfeb;
+}
+
+.compare_btn__remove {
+  margin-left: 5%;
+}
+
+///// Закладки wishlist
+
+.wishlist-info table{
+  width: 100%;
+}
+
+.wishlist-info thead td{
+  padding: 4px 5px;
+
+}
+.wishlist-info td{
+  text-align: center;
+  vertical-align: middle;
+}
+
 
 
 /*********************************************/

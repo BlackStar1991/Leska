@@ -49,6 +49,11 @@
 /* Medium Devices, Desktops 992px */
 @media only screen and (max-width: 991px) {
 
+  .bl_contactInfo__links{
+    width: 100%;
+    text-align: center;
+  }
+
   .bl_logo {
     margin: 0 auto;
   }
