@@ -28,13 +28,11 @@ body {
   min-width: 320px;
   position: relative;
 
-  //background-color: $color_grey;
-
-  display: -webkit-box;
-  display: flex;
-
-  -webkit-box-orient: vertical;
-  flex-direction: column;
+  //display: -webkit-box;
+  //display: flex;
+  //
+  //-webkit-box-orient: vertical;
+  //flex-direction: column;
   height: 100%;
   min-height: 100vh;
 
@@ -1929,7 +1927,10 @@ textarea {
   margin-bottom: 5px;
 }
 
+
+
 .bl_product__attributes .bl_shortReviews__fullStars {
+  margin-top: -5px;
   vertical-align: top;
   display: inline-block;
   width: auto;
@@ -2080,6 +2081,9 @@ textarea {
     &:after {
       background-color: #000;
     }
+  }
+  &:focus{
+    outline: 1px solid $color_button;
   }
 }
 
@@ -2326,7 +2330,8 @@ textarea {
 }
 
 .bl_addRewiew__input {
-  display: inline-block;
+ display: inline-block;
+  float: left;
   width: 273px;
   height: 33px;
 
