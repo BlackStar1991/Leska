@@ -629,7 +629,8 @@ textarea {
   }
 }
 
-.bl_filters__name {
+.bl_filters__name,
+.option_name{
   display: inline-block;
   color: $color_button;
   line-height: 36px;
@@ -662,6 +663,7 @@ textarea {
   display: block;
   width: 100%;
   color: #000;
+  cursor: pointer;
   &:hover,
   &:focus {
     color: $color_button;
@@ -671,7 +673,7 @@ textarea {
   }
 }
 
-.bl_filters__input:checked + .filter_text {
+.bl_filters__input:checked ~ .filter_text {
   font-weight: bold;
   color: $color_button;
 }
@@ -691,7 +693,7 @@ textarea {
   }
 }
 
-.bl_filters__lable .bl_filters__input:checked + .decor_lickCheckbox:before {
+.bl_filters__lable .bl_filters__input:checked ~ .decor_lickCheckbox:before {
 
   border: 1px solid $color_button;
   background-color: $color_button;
