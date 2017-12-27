@@ -28,11 +28,11 @@ body {
   min-width: 320px;
   position: relative;
 
-  //display: -webkit-box;
-  //display: flex;
-  //
-  //-webkit-box-orient: vertical;
-  //flex-direction: column;
+  display: -webkit-box;
+  display: flex;
+
+  -webkit-box-orient: vertical;
+  flex-direction: column;
   height: 100%;
   min-height: 100vh;
 
