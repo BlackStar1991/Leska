@@ -360,21 +360,26 @@ function youViewedSlider() {
 
 ////// Product quantity
 
+
     var quantityProduct = $(".block_quantity__input"),
         plusProduct = $(".block_quantity__plus"),
         minusProduct = $(".block_quantity__minus");
 
     plusProduct.on("click", function () {
-        quantityProduct.val(Number(quantityProduct.val()) + 1);
+        var field = $(this).prev(".block_quantity__input");
+        field.val(Number(field.val()) + 1);
     });
 
     minusProduct.on("click", function () {
 
-        if (quantityProduct.val() > 1) {
-            quantityProduct.val(Number(quantityProduct.val()) - 1);
+        var field = $(this).next(".block_quantity__input");
+
+
+        if (field.val() > 1) {
+            field.val(Number(field.val()) - 1);
         }
         else {
-            quantityProduct.val(1);
+            field.val(1);
         }
     });
 
@@ -398,8 +403,6 @@ function youViewedSlider() {
             $(this).val(new_str);
         });
     }
-
-
 // Ancor
 
     scrollAncor($(".bl_ancor"));

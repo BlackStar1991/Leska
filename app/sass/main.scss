@@ -642,8 +642,8 @@ textarea {
 .bl_filters__input {
   position: absolute;
   left: 0;
-  visibility: hidden;
-  opacity: 0;
+  //visibility: hidden;
+  //opacity: 0;
 }
 
 .filter_text {
@@ -665,10 +665,10 @@ textarea {
   }
 }
 
-.bl_filters__input:checked ~ .filter_text {
-  font-weight: bold;
-  color: $color_button;
-}
+//.bl_filters__input:checked ~ .filter_text {
+//  font-weight: bold;
+//  color: $color_button;
+//}
 
 .decor_lickCheckbox {
   &:before {
@@ -685,53 +685,65 @@ textarea {
   }
 }
 
-.bl_filters__lable .bl_filters__input:checked ~ .decor_lickCheckbox:before {
 
+td.checkedFilter + td > .filter_text {
+  font-weight: bold;
+  color: $color_button;
+}
+
+td.checkedFilter + td > .decor_lickCheckbox:before {
   border: 1px solid $color_button;
   background-color: $color_button;
 }
 
-.bl_filters__allFilters .noUi-connect {
 
-  height: 9px;
-  background-color: #e7e7e7;
-}
-
-.bl_filters__allFilters .noUi-horizontal .noUi-handle {
-  height: 23px;
-}
-
-.bl_filters__allFilters .noUi-horizontal .noUi-handle {
-  width: 23px;
-  height: 23px;
-  border-radius: 50%;
-  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.17);
-  border: 2px solid #cadded;
-  background: #0160ac linear-gradient(to top, #0160ac 0%, #1d82d3 100%);
-  cursor: pointer;
-}
-
-.bl_filters__allFilters .noUi-horizontal .noUi-handle:before,
-.bl_filters__allFilters .noUi-horizontal .noUi-handle:after {
-  content: none;
-}
-
-.bl_filters__allFilters .noUi-origin {
-  margin-top: 4px;
-}
-
-.bl_filters__allFilters .btn-danger {
-  //background-color: $color_blue;
-  //border-color: $color_blueDark;
-}
-
-.bl_filters__allFilters .ocfilter-option .fa-times {
-  //color: $color_red;
-}
-
-.ocfilter-option {
-  margin-bottom: 30px;
-}
+//.bl_filters__lable .bl_filters__input:checked ~ .decor_lickCheckbox:before {
+//
+//  border: 1px solid $color_button;
+//  background-color: $color_button;
+//}
+//
+//.bl_filters__allFilters .noUi-connect {
+//
+//  height: 9px;
+//  background-color: #e7e7e7;
+//}
+//
+//.bl_filters__allFilters .noUi-horizontal .noUi-handle {
+//  height: 23px;
+//}
+//
+//.bl_filters__allFilters .noUi-horizontal .noUi-handle {
+//  width: 23px;
+//  height: 23px;
+//  border-radius: 50%;
+//  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.17);
+//  border: 2px solid #cadded;
+//  background: #0160ac linear-gradient(to top, #0160ac 0%, #1d82d3 100%);
+//  cursor: pointer;
+//}
+//
+//.bl_filters__allFilters .noUi-horizontal .noUi-handle:before,
+//.bl_filters__allFilters .noUi-horizontal .noUi-handle:after {
+//  content: none;
+//}
+//
+//.bl_filters__allFilters .noUi-origin {
+//  margin-top: 4px;
+//}
+//
+//.bl_filters__allFilters .btn-danger {
+//  //background-color: $color_blue;
+//  //border-color: $color_blueDark;
+//}
+//
+//.bl_filters__allFilters .ocfilter-option .fa-times {
+//  //color: $color_red;
+//}
+//
+//.ocfilter-option {
+//  margin-bottom: 30px;
+//}
 
 /////
 
