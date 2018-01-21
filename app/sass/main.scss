@@ -1891,16 +1891,25 @@ td.checkedFilter + td > .decor_lickCheckbox:before {
 
 .bl_product__mainImage {
   width: 100%;
+  clear: both;
+  min-height: 330px;
   display: block;
   margin: 0 auto;
-  img {
+  figure {
+    width: 100%;
+
     display: block;
     margin: 0 auto;
+    &.zoo-item .zoo-img{
+      background-size: contain;
+    }
   }
 }
 
 .bl_product__additionalImages {
+  clear: both;
   width: 100%;
+  background-color: #fff;
 }
 
 .bl_product__item {
