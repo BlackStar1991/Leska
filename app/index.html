@@ -35,11 +35,8 @@
     <link rel="stylesheet" href="bower/zoomove/dist/zoomove.min.css">
     <link rel="stylesheet" href="bower/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="bower/bootstrap/dist/css/bootstrap-theme.min.css">
-
     <link rel="stylesheet" href="bower/owl.carousel/dist/assets/owl.carousel.min.css">
-
-
-
+    <link rel="stylesheet" href="bower/fancybox/dist/jquery.fancybox.min.css">
     <!-- endbuild -->
     <!-- build:css css/main.min.css -->
 
@@ -351,11 +348,14 @@
                         <div class="col-lg-4">
 
 
-                                <div class=" bl_product__mainImage clearfix">
-                                    <figure class="bl_product__currentImage zoo-item" data-zoo-image="image/Products/mainImage/product_1-220x220.jpg" data-zoo-cursor="true" data-zoo-scale="1.5">
-                                </div>
-
-
+                            <div class=" bl_product__mainImage clearfix">
+                                <a class="fancybox-animated" href="image/Products/mainImage/product_1-600x600.jpg" title="">
+                                    <figure class="bl_product__currentImage zoo-item"
+                                            data-zoo-image="image/Products/mainImage/product_1-220x220.jpg"
+                                            data-zoo-cursor="true" data-zoo-scale="1.5"></figure>
+                                </a>
+                            </div>
+                            
                             <!-- Дополнительные фото/ главное фото всегда добавлять в дополнительные -->
                             <ul class="bl_product__additionalImages owl-carousel">
                                 <li class="bl_product__item">
@@ -968,16 +968,16 @@
     <p class="text_success">Наш специалист свяжется с Вами в блежайшее время </p>
 </div>
 
-
 <script src="libs/jquery.min.js"></script>
 <script src="libs/zoomove.min.js"></script>
 <script src="libs/owl.carousel.min.js"></script>
-<!-- build:js js/libs.min.js -->
 
+
+<!-- build:js js/libs.min.js -->
 <script src="bower/bootstrap/dist/js/bootstrap.min.js"></script>
 
 <script src="bower/jquery.maskedinput/dist/jquery.maskedinput.min.js"></script>
-
+<script src="bower/fancybox/dist/jquery.fancybox.min.js"></script>
 <!-- endbuild -->
 <!-- build:js js/common.min.js -->
 
